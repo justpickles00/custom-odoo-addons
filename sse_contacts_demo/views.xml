@@ -1,0 +1,9 @@
+<odoo>
+    <record id="action_live_contacts" model="ir.actions.client">
+        <field name="name">Live Contacts Activity</field>
+        <field name="tag">sse_contacts_demo.activity</field>
+        <field name="path">live-contacts</field>
+    </record>
+    <menuitem id="menu_live_contacts" name="Live Contacts Activity"
+              action="action_live_contacts" groups="base.group_system" sequence="25"/>
+</odoo>
