@@ -1,7 +1,7 @@
 {
     "name": "Live Contacts Activity",
     "author": "justpickles00",
-    "version": "20.0.1.0.0",
+    "version": "1.0.0",
     "license": "LGPL-3",
     "depends": ["contacts", "sse_server"],
     "data": ["views.xml"],

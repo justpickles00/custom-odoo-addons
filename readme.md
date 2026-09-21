@@ -1,4 +1,6 @@
-# SSE server bootstrap — Odoo 20.0
+# SSE server bootstrap — Odoo master
+
+Pair this branch with Odoo's `master` worktree (currently 20.1 development).
 
 `sse_server` adds one asyncio process to Odoo's Linux prefork server.
 `sse_contacts_demo` provides the administrator-only **Live Contacts Activity**

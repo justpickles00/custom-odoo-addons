@@ -1,7 +1,7 @@
 {
     "name": "SSE Server",
     "author": "justpickles00",
-    "version": "20.0.1.0.0",
+    "version": "1.0.0",
     "license": "LGPL-3",
     "depends": ["web"],
     "external_dependencies": {"python": ["aiohttp"]},
