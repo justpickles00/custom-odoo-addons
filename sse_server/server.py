@@ -130,6 +130,7 @@ class SSEWorker(Worker):
 
 def post_load():
     if getattr(PreforkServer.process_spawn, "_sse", False):
+        # JCB: If this happen, perhaps it's better to raise an error
         return
     original = PreforkServer.process_spawn
 
