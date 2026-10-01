@@ -24,6 +24,7 @@ they are not a durable delivery queue. There are no read hooks or automated
 tests in this bootstrap.
 
 The [agent loop utility experiment](docs/sse-utility-experiment.md) describes
-how to compare live progress and transaction outcomes using the current server.
+live progress and transaction comparisons using the current server, followed by
+a separate capacity study to select connection limits from measurements.
 [SSE improvement suggestions](docs/sse-improvements.md) are recorded separately
 for later review. Both documents are proposals; the experiment has not run.

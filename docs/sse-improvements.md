@@ -1,9 +1,11 @@
 # SSE improvements for later review
 
-These suggestions are recorded for review. None is approved for implementation
-by this document, and the utility experiment should use the existing SSE server
-without implementing them. The purpose of the service is immediate agent
-progress without committing the tool's business transaction.
+These suggestions are recorded for later review and have not been implemented.
+The functional and cost experiments use the existing SSE server. A separate
+capacity experiment plans only an isolated override of connection admission
+gates to identify measured limits; the optimizations below remain deferred.
+The purpose of the service is immediate agent progress without committing the
+tool's business transaction.
 
 ## Agent events and publishing semantics
 
@@ -64,5 +66,8 @@ several streams or the asyncio process also handles provider networking.
 
 The current 128 connections per database, 1,024 total connections, 100 queued
 events per subscriber, and 256 KiB publishing limit are policy choices, not
-benchmarked capacity figures. Changing or removing them is outside the initial
-[utility experiment](sse-utility-experiment.md).
+benchmarked capacity figures. The
+[capacity phase](sse-utility-experiment.md#third-experiment-choosing-admission-limits)
+will sweep connection counts with test-only admission overrides and recommend
+limits for a stated workload and resource budget. Production configurability,
+new fairness mechanisms, and queue or payload policy changes remain deferred.
