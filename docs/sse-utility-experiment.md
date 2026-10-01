@@ -32,6 +32,112 @@ fixture and consumer are needed, but they must not optimize or alter the SSE
 server. The contacts demo is not the workload: its staging rows, count queries,
 and locks would obscure the transport comparison.
 
+## Deployment target
+
+Use the user's proposed deployment as the target: 1,000 provisioned tenant
+databases served by one Odoo instance, with 20 HTTP workers, one cron worker,
+and one gevent worker. These are experiment assumptions, not a claim that this
+sizing is adequate or typical for every thousand-database fleet. Odoo's
+[deployment guidance](https://github.com/odoo/documentation/blob/19.0/content/administration/on_premise/deploy.rst)
+describes worker sizing in terms of hardware and workload, with shared HTTP
+workers, additional cron workers, and an event-driven worker.
+
+| Role | Bus deployment | Deployment with SSE | Responsibility |
+| --- | --- | --- | --- |
+| HTTP workers | 20 | 20 | Ordinary requests, webhook handling, ORM tools, and stream authorization |
+| Cron workers | 1 | 1 | Scheduled work across the fleet |
+| Gevent workers | 1 | 1 | Existing bus WebSocket connections and notification dispatch |
+| SSE workers | 0 | 1 | Immediate trace delivery across all subscribed tenants |
+
+This table excludes the supervisor, PostgreSQL, proxy, fake provider, and load
+generator. HTTP workers serve requests for different databases; there is no
+worker allocation per tenant. The single gevent worker includes its internal
+dispatch tasks, whose count is separate from HTTP worker population. Likewise,
+the current addon spawns one SSE process for the entire instance, not one per
+database. Its event routing uses database and stream identity without loading
+Odoo registries in that process.
+
+For the paired master implementation, the target process settings are
+`workers = 20`, `max_cron_threads = 1`, and `gevent_workers = 1`. A later
+deployment with dedicated continuation workers is a different topology and
+needs a separate result; the webhook experiment executes tools in HTTP workers
+as proposed here.
+
+Keep four fleet measurements distinct: provisioned databases, tenants with
+ordinary application traffic, tenants with active agent runs, and connected
+subscribers. One thousand provisioned databases need not produce one thousand
+concurrent tools or streams. A model wait can leave a run active while no HTTP
+worker is executing it. Define per-run event rate and observer fanout as well
+as the number of active runs.
+
+Use two kinds of resource comparison. For the controlled transport comparison,
+keep the SSE process loaded but idle in the bus cases so process population and
+resource limits stay constant. For the deployment cost comparison, measure the
+bus deployment without the SSE broker against the deployment with it. Include
+the added process's CPU and memory, ticket authorization and renewal requests,
+and the proxy in the total. Both deployments use the same host CPU and memory
+budget; an additional process is not an additional reserved core.
+
+Capture PostgreSQL's connection limit and the process-local Odoo pool settings,
+including the gevent pool override when used. These pools serve connections to
+multiple databases; they do not reserve a pool per provisioned tenant. Count
+actual connections across HTTP, cron, and gevent processes and other cluster
+users. Separate-transaction bus progress can need extra simultaneous connections
+while a tool holds its business cursor; include that demand in the comparison.
+SSE authorization still uses normal HTTP workers and database access.
+
+Warm the intended active tenant set through ordinary routing. Run a separate
+profile that rotates activity into previously inactive tenants, recording
+registry loading, worker memory, and request latency. Keep registry/cache
+settings identical and report cold activation separately from event delivery.
+Registry optimization is outside this experiment. Keep the cron process enabled
+with the same tenant list, due jobs, and schedule in every case; its polling
+and registry activity are part of the fleet cost even for tenants with no user
+or agent traffic.
+
+## Deployment workload profiles
+
+Start with the small functional fixture, then increase the real tenant fleet
+through feasible stages toward 1,000 databases. The final stage must use the
+target worker counts and a host budget suitable for that deployment. If this VM
+cannot host the target fleet and process population, report the smaller result
+and leave the target stage unexecuted; a simulated list of tenant IDs does not
+establish thousand-database behavior.
+
+The following profiles are proposed exploration points. In the target stage,
+all 1,000 databases exist, while the agent workload varies independently:
+
+| Profile | Tenants with active agent runs | Connected SSE streams | Purpose |
+| --- | --- | --- | --- |
+| Sparse activity | 10 | 20 | Baseline cost when most tenants have no agent traffic |
+| Moderate activity | 50 | 100 | Shared workers with distributed agent traffic |
+| Broad activity | 200 | 400 | Delivery across more tenants with the same process population |
+| Uneven activity | 50 | 100 | One busy tenant alongside lightly active tenants |
+
+These examples assume one run per active tenant and two observers per run.
+Specify ordinary bus clients and HTTP traffic independently. Hold the offered
+event rate constant in one comparison to isolate tenant distribution, and
+increase it in a separate comparison to measure event-volume effects. Record
+queued webhooks and active tools separately: 200 active runs do not imply that
+200 tools execute concurrently through 20 HTTP workers.
+
+Include an HTTP occupancy profile with 0, 5, 15, and 20 long-running tool
+requests while offering ordinary requests, additional webhooks, and ticket
+authorization/renewal. Twenty busy tools can occupy all 20 HTTP workers. Existing
+SSE connections can still receive events emitted by those tools, while a new
+webhook or renewal request can wait for an HTTP worker. Measure fake-provider
+callback submission to handler entry, handler publication to receipt/render,
+ordinary request latency, and renewal success separately. This identifies queue
+delay before publication rather than attributing it to the transport.
+
+The global cap remains 1,024 active SSE connections. One stream in each of 1,000
+databases fits numerically with only 24 connections of headroom; two in each
+database requires 2,000 connections and exceeds the current cap. The initial
+utility profiles deliberately stay below the limits. A future admission test
+may demonstrate rejection above them, but it cannot establish uncapped capacity
+without a separately reviewed limit change. Configured fleet size and connected
+observer capacity are different claims.
+
 ## The proposed tracer
 
 The intended agent loop tracer addon depends on `sse_server`. It subscribes to a
@@ -195,11 +301,13 @@ trace events helps other users. The immediate bus alternative is the primary
 performance comparison; the normal bus case documents the cost of its different
 delivery timing.
 
-For a small tenant profile, use four dedicated databases with at most 96 SSE
-connections in each. Make one tenant busy and the others lightly active. Count
-all active experiment connections, including multiple streams, before starting.
-Stay below 128 per database and 1,024 total. This tests modest interference,
-not thousand-tenant capacity or an admission limit removed from the server.
+For the preliminary tenant profile, use four dedicated databases with at most
+96 SSE connections in each. Make one tenant busy and the others lightly active.
+The deployment profiles above extend this to a provisioned fleet on suitable
+hardware. Count all active experiment connections, including multiple streams,
+before starting, and stay below 128 per database and 1,024 total. The preliminary
+profile tests modest interference; it does not establish thousand-tenant
+capacity or capacity with an admission limit removed from the server.
 
 Include a controlled slow receiver to observe queue saturation, disconnects,
 and whether healthy receivers continue receiving promptly. Bus and SSE have
@@ -225,9 +333,11 @@ events must not make a service appear faster.
 Collect CPU, peak memory, open descriptors, actual connection counts, tool and
 HTTP latency, PostgreSQL connection usage, and notification rows and database
 work where attributable. Account for the SSE process as well as HTTP workers,
-the gevent process, PostgreSQL, and the proxy. Keep deployment settings and
-resource budgets identical across cases. The service improves visibility during
-tool execution; it does not free an HTTP worker that is still executing the tool.
+the gevent process, PostgreSQL, and the proxy. Keep workload and host resource
+budgets identical across cases, reporting both the controlled transport and
+incremental deployment comparisons described above. The service improves
+visibility during tool execution; it does not free an HTTP worker that is still
+executing the tool.
 
 For same-host network measurements, use a collector with the same host monotonic
 clock as the publishers. Browser `performance.now()` uses a different time
