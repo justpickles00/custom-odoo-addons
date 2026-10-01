@@ -22,3 +22,8 @@ Delivery is best effort, with bounded queues and no replay. Reconnect refreshes
 the count. Internal transient rows stage mutations through commit/savepoints;
 they are not a durable delivery queue. There are no read hooks or automated
 tests in this bootstrap.
+
+The [agent loop utility experiment](docs/sse-utility-experiment.md) describes
+how to compare live progress and transaction outcomes using the current server.
+[SSE improvement suggestions](docs/sse-improvements.md) are recorded separately
+for later review. Both documents are proposals; the experiment has not run.
