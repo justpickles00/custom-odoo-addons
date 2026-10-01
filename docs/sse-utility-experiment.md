@@ -1,6 +1,8 @@
 # SSE utility experiment with an agent loop tracer
 
-This is an experiment design; it contains no benchmark results. It evaluates
+This is the experiment design. [Measured results](sse-utility-results.md) and
+the [reproducible harness](../scripts/sse_experiment/README.md) are now available.
+The results report records the implemented scope and limitations. This design evaluates
 whether the current SSE service provides useful live agent progress while a tool
 keeps its business transaction intact. It also compares that behavior with an
 existing alternative: publish progress through the Odoo bus using independent

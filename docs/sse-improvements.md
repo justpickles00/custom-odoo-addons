@@ -1,11 +1,31 @@
 # SSE improvements for later review
 
 These suggestions are recorded for later review and have not been implemented.
+The [experiment results](sse-utility-results.md) now give evidence for their
+priority. Production SSE code remains unchanged.
 The functional and cost experiments use the existing SSE server. A separate
 capacity experiment plans only an isolated override of connection admission
 gates to identify measured limits; the optimizations below remain deferred.
 The purpose of the service is immediate agent progress without committing the
 tool's business transaction.
+
+## Priorities established by the experiment
+
+1. Isolate publication failure from business execution. A paused relay made an
+   unhandled `publish()` timeout fail the tool request; the bus control committed.
+   Explicitly define best-effort progress and required committed outcomes.
+2. Fix renewal and recovery. The existing SharedWorker missed 3/920 events at
+   natural lease expirations. The 8,192-stream long test encountered renewal
+   bursts, publishing errors, and losses. Consider staggered proactive renewal,
+   bounded replay, event deduplication, and durable snapshot reconciliation.
+3. Provide the generic run/attempt/tool event client and authorization needed by
+   the tracer. The prototype used the generic SharedWorker directly and kept
+   provisional progress separate from committed business writes.
+4. Budget delivery work as well as connections. Low-fanout short tests reached
+   16,384 connections, whereas broadcast around 22,000–26,000 frames/s saturated
+   one CPU. Keep the original caps pending hardening and further validation.
+5. Measure encoding once and IPC reuse against that bottleneck before changing
+   them. Short connection capacity does not establish a safe long-lived cap.
 
 ## Agent events and publishing semantics
 

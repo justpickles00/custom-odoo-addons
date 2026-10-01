@@ -1,0 +1,7748 @@
+[
+  {
+    "service": "bus",
+    "connections": 256,
+    "ready": 188,
+    "databases": 32,
+    "repeat": 0,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 5.600326344021596,
+    "send_elapsed_s": 35.86999342596391,
+    "offered_events": 3000,
+    "expected_deliveries": 17632,
+    "received_deliveries": 15239,
+    "delivery_fraction": 0.8642808529945554,
+    "latency_ms": {
+      "n": 15239,
+      "mean": 405.23834586915154,
+      "p50": 365.100625,
+      "p95": 882.167793,
+      "p99": 1108.065137,
+      "max": 1486.089576
+    },
+    "http_ms": {
+      "n": 54,
+      "mean": 483.24623727670837,
+      "p50": 7.439463981427252,
+      "p95": 509.22283297404647,
+      "p99": 7486.0344949993305,
+      "max": 14395.653631014284
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [
+      {
+        "kind": "handshake failure",
+        "count": 68
+      }
+    ],
+    "publish_errors": [
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ClientOSError(104, 'Connection reset by peer')",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ContentTypeError: HTTP 408 (request headers omitted)",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')",
+      "ConnectionTimeoutError('Connection timeout to host http://127.0.0.1:8076/sse_experiment/trial')"
+    ],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4898816,
+        "pss": 3087360,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 141197312,
+        "pss": 18275328,
+        "fds": 96,
+        "cpu_s": 1.29
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 119017472,
+        "pss": 23371776,
+        "fds": 14,
+        "cpu_s": 0.11000000000000001
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 118767616,
+        "pss": 22637568,
+        "fds": 17,
+        "cpu_s": 0.06
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 118669312,
+        "pss": 22524928,
+        "fds": 21,
+        "cpu_s": 0.07
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 118284288,
+        "pss": 21241856,
+        "fds": 25,
+        "cpu_s": 0.05
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 120791040,
+        "pss": 23645184,
+        "fds": 29,
+        "cpu_s": 0.12
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 118292480,
+        "pss": 21227520,
+        "fds": 33,
+        "cpu_s": 0.05
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 178667520,
+        "pss": 127077376,
+        "fds": 39,
+        "cpu_s": 9.14
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 118972416,
+        "pss": 22819840,
+        "fds": 41,
+        "cpu_s": 0.08
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 118603776,
+        "pss": 22296576,
+        "fds": 45,
+        "cpu_s": 0.08
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 118317056,
+        "pss": 21302272,
+        "fds": 49,
+        "cpu_s": 0.05
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 118546432,
+        "pss": 22105088,
+        "fds": 54,
+        "cpu_s": 0.09000000000000001
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 114585600,
+        "pss": 9854976,
+        "fds": 56,
+        "cpu_s": 0.03
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 120893440,
+        "pss": 23860224,
+        "fds": 61,
+        "cpu_s": 0.08
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 122859520,
+        "pss": 27386880,
+        "fds": 66,
+        "cpu_s": 0.44
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 120799232,
+        "pss": 23566336,
+        "fds": 70,
+        "cpu_s": 0.11
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 114585600,
+        "pss": 9846784,
+        "fds": 72,
+        "cpu_s": 0.03
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 118296576,
+        "pss": 21183488,
+        "fds": 77,
+        "cpu_s": 0.05
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 119042048,
+        "pss": 23087104,
+        "fds": 81,
+        "cpu_s": 0.08
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 120610816,
+        "pss": 26105856,
+        "fds": 85,
+        "cpu_s": 0.44999999999999996
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 118349824,
+        "pss": 21374976,
+        "fds": 89,
+        "cpu_s": 0.07
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 232914944,
+        "pss": 205891584,
+        "fds": 588,
+        "cpu_s": 5.33
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 117178368,
+        "pss": 12542976,
+        "fds": 92,
+        "cpu_s": 0.9299999999999999
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 116551680,
+        "pss": 13586432,
+        "fds": 101,
+        "cpu_s": 0.1
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 52862976,
+        "pss": 36080640,
+        "fds": 195,
+        "cpu_s": 0.6
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3059712,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 34065408,
+        "fds": 96,
+        "cpu_s": 1.96
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 200175616,
+        "pss": 149178368,
+        "fds": 15,
+        "cpu_s": 5.92
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 200241152,
+        "pss": 149239808,
+        "fds": 18,
+        "cpu_s": 6.449999999999999
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 199892992,
+        "pss": 148961280,
+        "fds": 22,
+        "cpu_s": 5.86
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 200011776,
+        "pss": 148939776,
+        "fds": 26,
+        "cpu_s": 5.88
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 196771840,
+        "pss": 144314368,
+        "fds": 30,
+        "cpu_s": 5.55
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 200159232,
+        "pss": 149080064,
+        "fds": 34,
+        "cpu_s": 6.51
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 209088512,
+        "pss": 157185024,
+        "fds": 38,
+        "cpu_s": 12.69
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197996544,
+        "pss": 146955264,
+        "fds": 42,
+        "cpu_s": 5.8100000000000005
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 200220672,
+        "pss": 149171200,
+        "fds": 46,
+        "cpu_s": 6.58
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 199905280,
+        "pss": 148806656,
+        "fds": 50,
+        "cpu_s": 5.82
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 199983104,
+        "pss": 148922368,
+        "fds": 54,
+        "cpu_s": 6.04
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 200163328,
+        "pss": 149072896,
+        "fds": 58,
+        "cpu_s": 6.26
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 201912320,
+        "pss": 149455872,
+        "fds": 62,
+        "cpu_s": 6.01
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 202559488,
+        "pss": 150552576,
+        "fds": 66,
+        "cpu_s": 6.12
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 202051584,
+        "pss": 149571584,
+        "fds": 70,
+        "cpu_s": 6.1
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197169152,
+        "pss": 146078720,
+        "fds": 74,
+        "cpu_s": 5.82
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 192303104,
+        "pss": 141212672,
+        "fds": 78,
+        "cpu_s": 5.72
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197754880,
+        "pss": 146713600,
+        "fds": 82,
+        "cpu_s": 5.930000000000001
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 200736768,
+        "pss": 150017024,
+        "fds": 87,
+        "cpu_s": 6.239999999999999
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 146424832,
+        "fds": 90,
+        "cpu_s": 6.02
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 232636416,
+        "pss": 205756416,
+        "fds": 588,
+        "cpu_s": 11.11
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 117862400,
+        "pss": 29406208,
+        "fds": 92,
+        "cpu_s": 2.04
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 116559872,
+        "pss": 28984320,
+        "fds": 101,
+        "cpu_s": 0.15
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 84160512,
+        "pss": 67354624,
+        "fds": 195,
+        "cpu_s": 7.76
+      }
+    ]
+  },
+  {
+    "service": "sse",
+    "connections": 256,
+    "ready": 256,
+    "databases": 32,
+    "repeat": 0,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 0.09312788100214675,
+    "send_elapsed_s": 15.000081059988588,
+    "offered_events": 3000,
+    "expected_deliveries": 24000,
+    "received_deliveries": 24000,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 24000,
+      "mean": 0.8030892682083334,
+      "p50": 0.747047,
+      "p95": 1.273161,
+      "p99": 1.571922,
+      "max": 26.175786
+    },
+    "http_ms": {
+      "n": 78,
+      "mean": 6.682227535071807,
+      "p50": 6.0275670257397,
+      "p95": 12.505455990321934,
+      "p99": 13.288129004649818,
+      "max": 13.405573030468076
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3059712,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 34301952,
+        "fds": 96,
+        "cpu_s": 1.96
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 200175616,
+        "pss": 149178368,
+        "fds": 15,
+        "cpu_s": 5.92
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 200241152,
+        "pss": 149239808,
+        "fds": 18,
+        "cpu_s": 6.449999999999999
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 199892992,
+        "pss": 148960256,
+        "fds": 22,
+        "cpu_s": 5.86
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 200011776,
+        "pss": 148939776,
+        "fds": 26,
+        "cpu_s": 5.88
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 196771840,
+        "pss": 144314368,
+        "fds": 30,
+        "cpu_s": 5.55
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 200159232,
+        "pss": 149079040,
+        "fds": 34,
+        "cpu_s": 6.51
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 209088512,
+        "pss": 157185024,
+        "fds": 38,
+        "cpu_s": 12.69
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197996544,
+        "pss": 146955264,
+        "fds": 42,
+        "cpu_s": 5.8100000000000005
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 200220672,
+        "pss": 149171200,
+        "fds": 46,
+        "cpu_s": 6.58
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 199905280,
+        "pss": 148806656,
+        "fds": 50,
+        "cpu_s": 5.82
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 199983104,
+        "pss": 148922368,
+        "fds": 54,
+        "cpu_s": 6.04
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 200163328,
+        "pss": 149071872,
+        "fds": 58,
+        "cpu_s": 6.26
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 201912320,
+        "pss": 149454848,
+        "fds": 63,
+        "cpu_s": 6.02
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 202559488,
+        "pss": 150551552,
+        "fds": 66,
+        "cpu_s": 6.12
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 202051584,
+        "pss": 149570560,
+        "fds": 70,
+        "cpu_s": 6.1
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197169152,
+        "pss": 146077696,
+        "fds": 74,
+        "cpu_s": 5.82
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 192303104,
+        "pss": 141211648,
+        "fds": 78,
+        "cpu_s": 5.72
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197754880,
+        "pss": 146713600,
+        "fds": 82,
+        "cpu_s": 5.94
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 200736768,
+        "pss": 150016000,
+        "fds": 87,
+        "cpu_s": 6.239999999999999
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 146423808,
+        "fds": 90,
+        "cpu_s": 6.02
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 231202816,
+        "pss": 204321792,
+        "fds": 24,
+        "cpu_s": 11.4
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 117862400,
+        "pss": 29465600,
+        "fds": 92,
+        "cpu_s": 2.04
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 121331712,
+        "pss": 33879040,
+        "fds": 357,
+        "cpu_s": 0.24
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 84287488,
+        "pss": 67481600,
+        "fds": 263,
+        "cpu_s": 8.07
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3058688,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 34312192,
+        "fds": 96,
+        "cpu_s": 2.02
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 200224768,
+        "pss": 149235712,
+        "fds": 15,
+        "cpu_s": 5.97
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 200269824,
+        "pss": 149276672,
+        "fds": 19,
+        "cpu_s": 6.49
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 199974912,
+        "pss": 148994048,
+        "fds": 22,
+        "cpu_s": 5.89
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 200032256,
+        "pss": 148959232,
+        "fds": 27,
+        "cpu_s": 5.92
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 196816896,
+        "pss": 144357376,
+        "fds": 30,
+        "cpu_s": 5.6
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 200163328,
+        "pss": 149082112,
+        "fds": 34,
+        "cpu_s": 6.55
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 209129472,
+        "pss": 157224960,
+        "fds": 39,
+        "cpu_s": 12.74
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 198012928,
+        "pss": 146970624,
+        "fds": 43,
+        "cpu_s": 5.840000000000001
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 200241152,
+        "pss": 149190656,
+        "fds": 47,
+        "cpu_s": 6.619999999999999
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 199966720,
+        "pss": 148867072,
+        "fds": 50,
+        "cpu_s": 5.88
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 200032256,
+        "pss": 148970496,
+        "fds": 55,
+        "cpu_s": 6.08
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 200175616,
+        "pss": 149083136,
+        "fds": 59,
+        "cpu_s": 6.3
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 201920512,
+        "pss": 149462016,
+        "fds": 63,
+        "cpu_s": 6.050000000000001
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 202584064,
+        "pss": 150575104,
+        "fds": 66,
+        "cpu_s": 6.17
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 149585920,
+        "fds": 70,
+        "cpu_s": 6.15
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197173248,
+        "pss": 146080768,
+        "fds": 74,
+        "cpu_s": 5.86
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 192315392,
+        "pss": 141222912,
+        "fds": 79,
+        "cpu_s": 5.75
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197763072,
+        "pss": 146720768,
+        "fds": 83,
+        "cpu_s": 5.98
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 200777728,
+        "pss": 150055936,
+        "fds": 87,
+        "cpu_s": 6.2700000000000005
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197545984,
+        "pss": 146473984,
+        "fds": 91,
+        "cpu_s": 6.07
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 231202816,
+        "pss": 204319744,
+        "fds": 24,
+        "cpu_s": 11.4
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 117862400,
+        "pss": 29475840,
+        "fds": 92,
+        "cpu_s": 2.04
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 122028032,
+        "pss": 34629632,
+        "fds": 357,
+        "cpu_s": 2.91
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 84287488,
+        "pss": 67479552,
+        "fds": 263,
+        "cpu_s": 10.93
+      }
+    ]
+  },
+  {
+    "service": "sse",
+    "connections": 256,
+    "ready": 256,
+    "databases": 32,
+    "repeat": 1,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 0.0914915960165672,
+    "send_elapsed_s": 14.998559806030244,
+    "offered_events": 3000,
+    "expected_deliveries": 24000,
+    "received_deliveries": 24000,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 24000,
+      "mean": 0.8043877565833333,
+      "p50": 0.751505,
+      "p95": 1.316443,
+      "p99": 1.613411,
+      "max": 5.732274
+    },
+    "http_ms": {
+      "n": 78,
+      "mean": 5.99446628191986,
+      "p50": 5.92424999922514,
+      "p95": 7.0929210050962865,
+      "p99": 7.569781970232725,
+      "max": 7.587206026073545
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3058688,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 34320384,
+        "fds": 96,
+        "cpu_s": 2.02
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 200224768,
+        "pss": 149235712,
+        "fds": 15,
+        "cpu_s": 5.97
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 200269824,
+        "pss": 149276672,
+        "fds": 19,
+        "cpu_s": 6.49
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 199974912,
+        "pss": 148994048,
+        "fds": 22,
+        "cpu_s": 5.89
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 200032256,
+        "pss": 148959232,
+        "fds": 27,
+        "cpu_s": 5.92
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 196816896,
+        "pss": 144357376,
+        "fds": 30,
+        "cpu_s": 5.6
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 200163328,
+        "pss": 149082112,
+        "fds": 34,
+        "cpu_s": 6.55
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 209129472,
+        "pss": 157224960,
+        "fds": 39,
+        "cpu_s": 12.74
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 198021120,
+        "pss": 146978816,
+        "fds": 43,
+        "cpu_s": 5.840000000000001
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 200241152,
+        "pss": 149190656,
+        "fds": 47,
+        "cpu_s": 6.619999999999999
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 199966720,
+        "pss": 148867072,
+        "fds": 50,
+        "cpu_s": 5.88
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 200032256,
+        "pss": 148970496,
+        "fds": 55,
+        "cpu_s": 6.08
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 200175616,
+        "pss": 149083136,
+        "fds": 59,
+        "cpu_s": 6.3
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 201920512,
+        "pss": 149462016,
+        "fds": 63,
+        "cpu_s": 6.050000000000001
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 202584064,
+        "pss": 150575104,
+        "fds": 66,
+        "cpu_s": 6.17
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 149585920,
+        "fds": 70,
+        "cpu_s": 6.15
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197173248,
+        "pss": 146080768,
+        "fds": 74,
+        "cpu_s": 5.86
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 192315392,
+        "pss": 141222912,
+        "fds": 79,
+        "cpu_s": 5.75
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197763072,
+        "pss": 146720768,
+        "fds": 83,
+        "cpu_s": 5.98
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 200777728,
+        "pss": 150055936,
+        "fds": 87,
+        "cpu_s": 6.2700000000000005
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197554176,
+        "pss": 146482176,
+        "fds": 91,
+        "cpu_s": 6.07
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 231202816,
+        "pss": 204319744,
+        "fds": 24,
+        "cpu_s": 11.4
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 117862400,
+        "pss": 29479936,
+        "fds": 92,
+        "cpu_s": 2.04
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 122105856,
+        "pss": 34742272,
+        "fds": 357,
+        "cpu_s": 3.0500000000000003
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 84291584,
+        "pss": 67484672,
+        "fds": 263,
+        "cpu_s": 11.26
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3058688,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 34320384,
+        "fds": 96,
+        "cpu_s": 2.0700000000000003
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 200261632,
+        "pss": 149272576,
+        "fds": 15,
+        "cpu_s": 6.010000000000001
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 200286208,
+        "pss": 149293056,
+        "fds": 19,
+        "cpu_s": 6.529999999999999
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 199999488,
+        "pss": 149018624,
+        "fds": 22,
+        "cpu_s": 5.94
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 200040448,
+        "pss": 148967424,
+        "fds": 27,
+        "cpu_s": 5.96
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 196845568,
+        "pss": 144386048,
+        "fds": 30,
+        "cpu_s": 5.65
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 200171520,
+        "pss": 149090304,
+        "fds": 34,
+        "cpu_s": 6.58
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 209178624,
+        "pss": 157274112,
+        "fds": 39,
+        "cpu_s": 12.780000000000001
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 198062080,
+        "pss": 147019776,
+        "fds": 43,
+        "cpu_s": 5.890000000000001
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 200261632,
+        "pss": 149211136,
+        "fds": 47,
+        "cpu_s": 6.65
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 200015872,
+        "pss": 148916224,
+        "fds": 50,
+        "cpu_s": 5.94
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 200077312,
+        "pss": 149015552,
+        "fds": 55,
+        "cpu_s": 6.12
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 200200192,
+        "pss": 149107712,
+        "fds": 59,
+        "cpu_s": 6.33
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 201965568,
+        "pss": 149507072,
+        "fds": 63,
+        "cpu_s": 6.1000000000000005
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 202584064,
+        "pss": 150575104,
+        "fds": 66,
+        "cpu_s": 6.2
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 149585920,
+        "fds": 70,
+        "cpu_s": 6.2
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197206016,
+        "pss": 146113536,
+        "fds": 74,
+        "cpu_s": 5.91
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 192327680,
+        "pss": 141235200,
+        "fds": 79,
+        "cpu_s": 5.79
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197812224,
+        "pss": 146769920,
+        "fds": 83,
+        "cpu_s": 6.03
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 200822784,
+        "pss": 150100992,
+        "fds": 87,
+        "cpu_s": 6.33
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197591040,
+        "pss": 146519040,
+        "fds": 91,
+        "cpu_s": 6.11
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 231202816,
+        "pss": 204319744,
+        "fds": 24,
+        "cpu_s": 11.41
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 117862400,
+        "pss": 29479936,
+        "fds": 92,
+        "cpu_s": 2.04
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 122134528,
+        "pss": 34770944,
+        "fds": 357,
+        "cpu_s": 5.77
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 84291584,
+        "pss": 67484672,
+        "fds": 263,
+        "cpu_s": 14.09
+      }
+    ]
+  },
+  {
+    "service": "bus",
+    "connections": 256,
+    "ready": 210,
+    "databases": 32,
+    "repeat": 1,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 3.505557733005844,
+    "send_elapsed_s": 15.027408703987021,
+    "offered_events": 3000,
+    "expected_deliveries": 19692,
+    "received_deliveries": 19692,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 19692,
+      "mean": 533.7877415703839,
+      "p50": 497.195039,
+      "p95": 1090.804914,
+      "p99": 1204.595695,
+      "max": 1412.569551
+    },
+    "http_ms": {
+      "n": 67,
+      "mean": 38.66572859488539,
+      "p50": 35.92679201392457,
+      "p95": 81.03734801989049,
+      "p99": 108.6084860144183,
+      "max": 129.688082030043
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [
+      {
+        "kind": "handshake failure",
+        "count": 46
+      }
+    ],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3058688,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 34320384,
+        "fds": 96,
+        "cpu_s": 2.0700000000000003
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 200278016,
+        "pss": 149288960,
+        "fds": 15,
+        "cpu_s": 6.010000000000001
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 200286208,
+        "pss": 149294080,
+        "fds": 19,
+        "cpu_s": 6.54
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 200007680,
+        "pss": 149026816,
+        "fds": 22,
+        "cpu_s": 5.94
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 200040448,
+        "pss": 148967424,
+        "fds": 27,
+        "cpu_s": 5.96
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 196845568,
+        "pss": 144386048,
+        "fds": 30,
+        "cpu_s": 5.65
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 200171520,
+        "pss": 149090304,
+        "fds": 34,
+        "cpu_s": 6.58
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 209178624,
+        "pss": 157274112,
+        "fds": 39,
+        "cpu_s": 12.780000000000001
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 198062080,
+        "pss": 147019776,
+        "fds": 43,
+        "cpu_s": 5.890000000000001
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 200261632,
+        "pss": 149211136,
+        "fds": 47,
+        "cpu_s": 6.65
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 200015872,
+        "pss": 148916224,
+        "fds": 50,
+        "cpu_s": 5.94
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 200097792,
+        "pss": 149036032,
+        "fds": 55,
+        "cpu_s": 6.12
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 200212480,
+        "pss": 149120000,
+        "fds": 59,
+        "cpu_s": 6.34
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 201965568,
+        "pss": 149507072,
+        "fds": 63,
+        "cpu_s": 6.1000000000000005
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 202584064,
+        "pss": 150575104,
+        "fds": 66,
+        "cpu_s": 6.2
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 149585920,
+        "fds": 70,
+        "cpu_s": 6.2
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197206016,
+        "pss": 146113536,
+        "fds": 74,
+        "cpu_s": 5.91
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 192348160,
+        "pss": 141255680,
+        "fds": 79,
+        "cpu_s": 5.800000000000001
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197812224,
+        "pss": 146769920,
+        "fds": 83,
+        "cpu_s": 6.04
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 200822784,
+        "pss": 150100992,
+        "fds": 87,
+        "cpu_s": 6.33
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197591040,
+        "pss": 146519040,
+        "fds": 91,
+        "cpu_s": 6.12
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 234668032,
+        "pss": 207784960,
+        "fds": 654,
+        "cpu_s": 14.08
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 117862400,
+        "pss": 29479936,
+        "fds": 92,
+        "cpu_s": 2.04
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 122159104,
+        "pss": 34795520,
+        "fds": 101,
+        "cpu_s": 5.8100000000000005
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 84291584,
+        "pss": 67484672,
+        "fds": 217,
+        "cpu_s": 14.620000000000001
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3059712,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 34317312,
+        "fds": 96,
+        "cpu_s": 2.91
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 201388032,
+        "pss": 150400000,
+        "fds": 14,
+        "cpu_s": 7.72
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 201633792,
+        "pss": 150641664,
+        "fds": 18,
+        "cpu_s": 8.1
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 201248768,
+        "pss": 150268928,
+        "fds": 22,
+        "cpu_s": 7.550000000000001
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 201093120,
+        "pss": 150020096,
+        "fds": 26,
+        "cpu_s": 7.56
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 202829824,
+        "pss": 150371328,
+        "fds": 30,
+        "cpu_s": 7.51
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 201666560,
+        "pss": 150586368,
+        "fds": 34,
+        "cpu_s": 8.25
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 210272256,
+        "pss": 158368768,
+        "fds": 38,
+        "cpu_s": 14.43
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 201375744,
+        "pss": 150334464,
+        "fds": 43,
+        "cpu_s": 7.61
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 201662464,
+        "pss": 150611968,
+        "fds": 46,
+        "cpu_s": 8.24
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 201027584,
+        "pss": 149927936,
+        "fds": 51,
+        "cpu_s": 7.47
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 200970240,
+        "pss": 149908480,
+        "fds": 54,
+        "cpu_s": 7.69
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 201715712,
+        "pss": 150624256,
+        "fds": 58,
+        "cpu_s": 8.01
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 203399168,
+        "pss": 150941696,
+        "fds": 63,
+        "cpu_s": 7.72
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 204005376,
+        "pss": 151997440,
+        "fds": 66,
+        "cpu_s": 7.74
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 203448320,
+        "pss": 150967296,
+        "fds": 71,
+        "cpu_s": 7.82
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 200810496,
+        "pss": 149719040,
+        "fds": 75,
+        "cpu_s": 7.6
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 200658944,
+        "pss": 149567488,
+        "fds": 78,
+        "cpu_s": 7.7299999999999995
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 201465856,
+        "pss": 150423552,
+        "fds": 82,
+        "cpu_s": 7.78
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 202338304,
+        "pss": 151620608,
+        "fds": 86,
+        "cpu_s": 7.98
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 201179136,
+        "pss": 150108160,
+        "fds": 91,
+        "cpu_s": 7.95
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 235642880,
+        "pss": 208760832,
+        "fds": 654,
+        "cpu_s": 18.799999999999997
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 117866496,
+        "pss": 29485056,
+        "fds": 93,
+        "cpu_s": 2.04
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 122159104,
+        "pss": 34795520,
+        "fds": 101,
+        "cpu_s": 5.84
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 84291584,
+        "pss": 67484672,
+        "fds": 217,
+        "cpu_s": 22.11
+      }
+    ]
+  },
+  {
+    "service": "bus",
+    "connections": 512,
+    "ready": 441,
+    "databases": 32,
+    "repeat": 0,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 8.164523693034425,
+    "send_elapsed_s": 15.02950881398283,
+    "offered_events": 3000,
+    "expected_deliveries": 41344,
+    "received_deliveries": 41344,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 41344,
+      "mean": 613.8685537287151,
+      "p50": 563.864666,
+      "p95": 1204.36787,
+      "p99": 1313.757819,
+      "max": 1409.746571
+    },
+    "http_ms": {
+      "n": 66,
+      "mean": 42.70905010740865,
+      "p50": 43.303075013682246,
+      "p95": 75.77172399032861,
+      "p99": 95.51700204610825,
+      "max": 102.44522901484743
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [
+      {
+        "kind": "handshake failure",
+        "count": 71
+      }
+    ],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3058688,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 34321408,
+        "fds": 96,
+        "cpu_s": 3.07
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 201388032,
+        "pss": 150398976,
+        "fds": 14,
+        "cpu_s": 7.72
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 201641984,
+        "pss": 150648832,
+        "fds": 19,
+        "cpu_s": 8.11
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 201252864,
+        "pss": 150272000,
+        "fds": 23,
+        "cpu_s": 7.5600000000000005
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 201093120,
+        "pss": 150020096,
+        "fds": 26,
+        "cpu_s": 7.56
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 202829824,
+        "pss": 150370304,
+        "fds": 30,
+        "cpu_s": 7.51
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 201666560,
+        "pss": 150585344,
+        "fds": 34,
+        "cpu_s": 8.25
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 210272256,
+        "pss": 158367744,
+        "fds": 38,
+        "cpu_s": 14.43
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 201375744,
+        "pss": 150333440,
+        "fds": 43,
+        "cpu_s": 7.62
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 201662464,
+        "pss": 150611968,
+        "fds": 46,
+        "cpu_s": 8.24
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 201027584,
+        "pss": 149927936,
+        "fds": 51,
+        "cpu_s": 7.47
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 200970240,
+        "pss": 149908480,
+        "fds": 54,
+        "cpu_s": 7.69
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 201728000,
+        "pss": 150635520,
+        "fds": 59,
+        "cpu_s": 8.01
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 203399168,
+        "pss": 150940672,
+        "fds": 63,
+        "cpu_s": 7.72
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 204038144,
+        "pss": 152029184,
+        "fds": 67,
+        "cpu_s": 7.77
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 203448320,
+        "pss": 150966272,
+        "fds": 71,
+        "cpu_s": 7.82
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 200830976,
+        "pss": 149738496,
+        "fds": 75,
+        "cpu_s": 7.6
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 200687616,
+        "pss": 149595136,
+        "fds": 79,
+        "cpu_s": 7.739999999999999
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 201465856,
+        "pss": 150423552,
+        "fds": 82,
+        "cpu_s": 7.78
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 202342400,
+        "pss": 151623680,
+        "fds": 87,
+        "cpu_s": 7.98
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 201179136,
+        "pss": 150107136,
+        "fds": 91,
+        "cpu_s": 7.95
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 248963072,
+        "pss": 222080000,
+        "fds": 1347,
+        "cpu_s": 25.259999999999998
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 117903360,
+        "pss": 29521920,
+        "fds": 93,
+        "cpu_s": 3.18
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 122159104,
+        "pss": 34795520,
+        "fds": 101,
+        "cpu_s": 5.8500000000000005
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 84291584,
+        "pss": 67483648,
+        "fds": 448,
+        "cpu_s": 23.08
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3059712,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 34327552,
+        "fds": 96,
+        "cpu_s": 3.9
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 202407936,
+        "pss": 151419904,
+        "fds": 15,
+        "cpu_s": 9.290000000000001
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 202244096,
+        "pss": 151251968,
+        "fds": 18,
+        "cpu_s": 9.76
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 202207232,
+        "pss": 151227392,
+        "fds": 22,
+        "cpu_s": 9.16
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 202088448,
+        "pss": 151015424,
+        "fds": 27,
+        "cpu_s": 9.18
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 203751424,
+        "pss": 151292928,
+        "fds": 30,
+        "cpu_s": 9.1
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 202137600,
+        "pss": 151057408,
+        "fds": 34,
+        "cpu_s": 9.89
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 210341888,
+        "pss": 158438400,
+        "fds": 38,
+        "cpu_s": 15.99
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 202428416,
+        "pss": 151387136,
+        "fds": 42,
+        "cpu_s": 9.22
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151099392,
+        "fds": 46,
+        "cpu_s": 9.88
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 202059776,
+        "pss": 150960128,
+        "fds": 50,
+        "cpu_s": 9.11
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 151006208,
+        "fds": 54,
+        "cpu_s": 9.360000000000001
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151058432,
+        "fds": 58,
+        "cpu_s": 9.59
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 204124160,
+        "pss": 151666688,
+        "fds": 62,
+        "cpu_s": 9.27
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 204656640,
+        "pss": 152648704,
+        "fds": 67,
+        "cpu_s": 9.36
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 204181504,
+        "pss": 151700480,
+        "fds": 70,
+        "cpu_s": 9.41
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 201768960,
+        "pss": 150677504,
+        "fds": 74,
+        "cpu_s": 9.209999999999999
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 201621504,
+        "pss": 150530048,
+        "fds": 79,
+        "cpu_s": 9.36
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 202182656,
+        "pss": 151141376,
+        "fds": 82,
+        "cpu_s": 9.420000000000002
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 202801152,
+        "pss": 152083456,
+        "fds": 86,
+        "cpu_s": 9.66
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 201863168,
+        "pss": 150792192,
+        "fds": 91,
+        "cpu_s": 9.59
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 249937920,
+        "pss": 223055872,
+        "fds": 1347,
+        "cpu_s": 30.46
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 118075392,
+        "pss": 29701120,
+        "fds": 92,
+        "cpu_s": 3.78
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 122159104,
+        "pss": 34796544,
+        "fds": 101,
+        "cpu_s": 5.89
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 87949312,
+        "pss": 71143424,
+        "fds": 448,
+        "cpu_s": 31.15
+      }
+    ]
+  },
+  {
+    "service": "sse",
+    "connections": 512,
+    "ready": 512,
+    "databases": 32,
+    "repeat": 0,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 0.13214934099232778,
+    "send_elapsed_s": 14.999965840019286,
+    "offered_events": 3000,
+    "expected_deliveries": 48000,
+    "received_deliveries": 48000,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 48000,
+      "mean": 1.0246504944583332,
+      "p50": 1.000881,
+      "p95": 1.57671,
+      "p99": 2.013976,
+      "max": 12.306196
+    },
+    "http_ms": {
+      "n": 78,
+      "mean": 6.874940753615915,
+      "p50": 6.054829980712384,
+      "p95": 12.44153396692127,
+      "p99": 13.101283984724432,
+      "max": 23.24073202908039
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3059712,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 43724800,
+        "fds": 96,
+        "cpu_s": 3.91
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 202407936,
+        "pss": 151417856,
+        "fds": 15,
+        "cpu_s": 9.290000000000001
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 202244096,
+        "pss": 151249920,
+        "fds": 18,
+        "cpu_s": 9.76
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 202207232,
+        "pss": 151225344,
+        "fds": 22,
+        "cpu_s": 9.16
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 202088448,
+        "pss": 151013376,
+        "fds": 27,
+        "cpu_s": 9.18
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 203751424,
+        "pss": 151290880,
+        "fds": 30,
+        "cpu_s": 9.1
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 202137600,
+        "pss": 151055360,
+        "fds": 35,
+        "cpu_s": 9.89
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 210341888,
+        "pss": 158435328,
+        "fds": 38,
+        "cpu_s": 15.99
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 202428416,
+        "pss": 151384064,
+        "fds": 42,
+        "cpu_s": 9.23
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151097344,
+        "fds": 47,
+        "cpu_s": 9.88
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 202059776,
+        "pss": 150958080,
+        "fds": 50,
+        "cpu_s": 9.11
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 151004160,
+        "fds": 54,
+        "cpu_s": 9.360000000000001
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151055360,
+        "fds": 59,
+        "cpu_s": 9.6
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 204124160,
+        "pss": 151663616,
+        "fds": 62,
+        "cpu_s": 9.27
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 204656640,
+        "pss": 152646656,
+        "fds": 67,
+        "cpu_s": 9.36
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 204181504,
+        "pss": 151698432,
+        "fds": 70,
+        "cpu_s": 9.41
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 201768960,
+        "pss": 150675456,
+        "fds": 74,
+        "cpu_s": 9.209999999999999
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 201621504,
+        "pss": 150528000,
+        "fds": 79,
+        "cpu_s": 9.370000000000001
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 202182656,
+        "pss": 151138304,
+        "fds": 82,
+        "cpu_s": 9.420000000000002
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 202801152,
+        "pss": 152081408,
+        "fds": 86,
+        "cpu_s": 9.66
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 201863168,
+        "pss": 150789120,
+        "fds": 91,
+        "cpu_s": 9.59
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 246951936,
+        "pss": 220067840,
+        "fds": 24,
+        "cpu_s": 31.12
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 118075392,
+        "pss": 38812672,
+        "fds": 92,
+        "cpu_s": 3.78
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 127291392,
+        "pss": 75431936,
+        "fds": 613,
+        "cpu_s": 6.14
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 87257088,
+        "pss": 70450176,
+        "fds": 519,
+        "cpu_s": 31.52
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3058688,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 43723776,
+        "fds": 96,
+        "cpu_s": 3.96
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 202407936,
+        "pss": 151416832,
+        "fds": 15,
+        "cpu_s": 9.34
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 202244096,
+        "pss": 151248896,
+        "fds": 19,
+        "cpu_s": 9.8
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 202207232,
+        "pss": 151224320,
+        "fds": 23,
+        "cpu_s": 9.2
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 202088448,
+        "pss": 151012352,
+        "fds": 27,
+        "cpu_s": 9.209999999999999
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 203755520,
+        "pss": 151293952,
+        "fds": 31,
+        "cpu_s": 9.14
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 202137600,
+        "pss": 151054336,
+        "fds": 35,
+        "cpu_s": 9.93
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 210341888,
+        "pss": 158434304,
+        "fds": 39,
+        "cpu_s": 16.03
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 202428416,
+        "pss": 151383040,
+        "fds": 43,
+        "cpu_s": 9.27
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151096320,
+        "fds": 47,
+        "cpu_s": 9.92
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 202059776,
+        "pss": 150957056,
+        "fds": 50,
+        "cpu_s": 9.14
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 151003136,
+        "fds": 55,
+        "cpu_s": 9.39
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151055360,
+        "fds": 59,
+        "cpu_s": 9.66
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 204124160,
+        "pss": 151663616,
+        "fds": 63,
+        "cpu_s": 9.319999999999999
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 204656640,
+        "pss": 152645632,
+        "fds": 67,
+        "cpu_s": 9.39
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 204181504,
+        "pss": 151697408,
+        "fds": 71,
+        "cpu_s": 9.450000000000001
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 201768960,
+        "pss": 150674432,
+        "fds": 75,
+        "cpu_s": 9.25
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 201621504,
+        "pss": 150526976,
+        "fds": 79,
+        "cpu_s": 9.399999999999999
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 202182656,
+        "pss": 151137280,
+        "fds": 83,
+        "cpu_s": 9.47
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 202805248,
+        "pss": 152084480,
+        "fds": 86,
+        "cpu_s": 9.709999999999999
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 201863168,
+        "pss": 150789120,
+        "fds": 91,
+        "cpu_s": 9.639999999999999
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 246951936,
+        "pss": 220065792,
+        "fds": 24,
+        "cpu_s": 31.12
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 118075392,
+        "pss": 38811648,
+        "fds": 92,
+        "cpu_s": 3.78
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 128360448,
+        "pss": 76504064,
+        "fds": 613,
+        "cpu_s": 10.14
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 87257088,
+        "pss": 70449152,
+        "fds": 519,
+        "cpu_s": 35.54
+      }
+    ]
+  },
+  {
+    "service": "sse",
+    "connections": 512,
+    "ready": 512,
+    "databases": 32,
+    "repeat": 1,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 0.17786238703411072,
+    "send_elapsed_s": 14.998770701000467,
+    "offered_events": 3000,
+    "expected_deliveries": 48000,
+    "received_deliveries": 48000,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 48000,
+      "mean": 1.0436928685625,
+      "p50": 1.01541,
+      "p95": 1.629832,
+      "p99": 2.019977,
+      "max": 9.801553
+    },
+    "http_ms": {
+      "n": 78,
+      "mean": 5.992244860420051,
+      "p50": 5.928337981458753,
+      "p95": 6.887399998959154,
+      "p99": 7.330905005801469,
+      "max": 7.471734017599374
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3058688,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 43722752,
+        "fds": 96,
+        "cpu_s": 3.96
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 202407936,
+        "pss": 151416832,
+        "fds": 15,
+        "cpu_s": 9.34
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 202244096,
+        "pss": 151248896,
+        "fds": 19,
+        "cpu_s": 9.8
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 202207232,
+        "pss": 151224320,
+        "fds": 23,
+        "cpu_s": 9.2
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 202088448,
+        "pss": 151012352,
+        "fds": 27,
+        "cpu_s": 9.209999999999999
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 203755520,
+        "pss": 151293952,
+        "fds": 31,
+        "cpu_s": 9.14
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 202137600,
+        "pss": 151054336,
+        "fds": 35,
+        "cpu_s": 9.93
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 210341888,
+        "pss": 158434304,
+        "fds": 39,
+        "cpu_s": 16.03
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 202428416,
+        "pss": 151383040,
+        "fds": 43,
+        "cpu_s": 9.27
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151096320,
+        "fds": 47,
+        "cpu_s": 9.93
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 202059776,
+        "pss": 150957056,
+        "fds": 50,
+        "cpu_s": 9.15
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 151003136,
+        "fds": 55,
+        "cpu_s": 9.39
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151055360,
+        "fds": 59,
+        "cpu_s": 9.66
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 204124160,
+        "pss": 151662592,
+        "fds": 63,
+        "cpu_s": 9.319999999999999
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 204656640,
+        "pss": 152645632,
+        "fds": 67,
+        "cpu_s": 9.39
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 204181504,
+        "pss": 151697408,
+        "fds": 71,
+        "cpu_s": 9.450000000000001
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 201768960,
+        "pss": 150674432,
+        "fds": 75,
+        "cpu_s": 9.25
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 201621504,
+        "pss": 150526976,
+        "fds": 79,
+        "cpu_s": 9.399999999999999
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 202182656,
+        "pss": 151137280,
+        "fds": 83,
+        "cpu_s": 9.47
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 202805248,
+        "pss": 152084480,
+        "fds": 86,
+        "cpu_s": 9.709999999999999
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 201863168,
+        "pss": 150788096,
+        "fds": 91,
+        "cpu_s": 9.639999999999999
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 246951936,
+        "pss": 220065792,
+        "fds": 24,
+        "cpu_s": 31.12
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 118075392,
+        "pss": 38811648,
+        "fds": 92,
+        "cpu_s": 3.78
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 128610304,
+        "pss": 76694528,
+        "fds": 613,
+        "cpu_s": 10.36
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 87257088,
+        "pss": 70449152,
+        "fds": 519,
+        "cpu_s": 35.980000000000004
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3058688,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 43722752,
+        "fds": 96,
+        "cpu_s": 4.0200000000000005
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 202412032,
+        "pss": 151420928,
+        "fds": 15,
+        "cpu_s": 9.39
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 202244096,
+        "pss": 151248896,
+        "fds": 19,
+        "cpu_s": 9.85
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 202207232,
+        "pss": 151224320,
+        "fds": 23,
+        "cpu_s": 9.24
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 202088448,
+        "pss": 151012352,
+        "fds": 27,
+        "cpu_s": 9.25
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 203755520,
+        "pss": 151293952,
+        "fds": 31,
+        "cpu_s": 9.18
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 202137600,
+        "pss": 151054336,
+        "fds": 35,
+        "cpu_s": 9.979999999999999
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 210350080,
+        "pss": 158442496,
+        "fds": 39,
+        "cpu_s": 16.06
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 202428416,
+        "pss": 151383040,
+        "fds": 43,
+        "cpu_s": 9.31
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151096320,
+        "fds": 47,
+        "cpu_s": 9.969999999999999
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 202059776,
+        "pss": 150957056,
+        "fds": 50,
+        "cpu_s": 9.19
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 151003136,
+        "fds": 55,
+        "cpu_s": 9.44
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151055360,
+        "fds": 59,
+        "cpu_s": 9.690000000000001
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 204124160,
+        "pss": 151662592,
+        "fds": 63,
+        "cpu_s": 9.340000000000002
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 204656640,
+        "pss": 152645632,
+        "fds": 67,
+        "cpu_s": 9.42
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 204181504,
+        "pss": 151697408,
+        "fds": 71,
+        "cpu_s": 9.5
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 201768960,
+        "pss": 150674432,
+        "fds": 75,
+        "cpu_s": 9.290000000000001
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 201621504,
+        "pss": 150526976,
+        "fds": 79,
+        "cpu_s": 9.450000000000001
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 202182656,
+        "pss": 151137280,
+        "fds": 83,
+        "cpu_s": 9.530000000000001
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 202805248,
+        "pss": 152084480,
+        "fds": 86,
+        "cpu_s": 9.75
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 201863168,
+        "pss": 150788096,
+        "fds": 91,
+        "cpu_s": 9.68
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 246951936,
+        "pss": 220065792,
+        "fds": 24,
+        "cpu_s": 31.12
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 118075392,
+        "pss": 38811648,
+        "fds": 92,
+        "cpu_s": 3.78
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 128659456,
+        "pss": 76743680,
+        "fds": 613,
+        "cpu_s": 14.41
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 103055360,
+        "pss": 86247424,
+        "fds": 519,
+        "cpu_s": 40.03
+      }
+    ]
+  },
+  {
+    "service": "bus",
+    "connections": 512,
+    "ready": 422,
+    "databases": 32,
+    "repeat": 1,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 7.509073390043341,
+    "send_elapsed_s": 15.156582856958266,
+    "offered_events": 3000,
+    "expected_deliveries": 39569,
+    "received_deliveries": 39569,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 39569,
+      "mean": 539.0106754841669,
+      "p50": 495.747967,
+      "p95": 1075.015259,
+      "p99": 1178.979348,
+      "max": 1297.121406
+    },
+    "http_ms": {
+      "n": 68,
+      "mean": 37.56880160482765,
+      "p50": 36.07129800366238,
+      "p95": 81.11799199832603,
+      "p99": 100.845685985405,
+      "max": 109.1665819985792
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [
+      {
+        "kind": "handshake failure",
+        "count": 90
+      }
+    ],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3058688,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 43723776,
+        "fds": 96,
+        "cpu_s": 4.0200000000000005
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 202416128,
+        "pss": 151425024,
+        "fds": 15,
+        "cpu_s": 9.4
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 202244096,
+        "pss": 151248896,
+        "fds": 19,
+        "cpu_s": 9.85
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 202207232,
+        "pss": 151224320,
+        "fds": 23,
+        "cpu_s": 9.25
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 202088448,
+        "pss": 151012352,
+        "fds": 27,
+        "cpu_s": 9.26
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 203755520,
+        "pss": 151293952,
+        "fds": 31,
+        "cpu_s": 9.19
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 202137600,
+        "pss": 151054336,
+        "fds": 35,
+        "cpu_s": 9.979999999999999
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 210350080,
+        "pss": 158442496,
+        "fds": 39,
+        "cpu_s": 16.06
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 202428416,
+        "pss": 151383040,
+        "fds": 43,
+        "cpu_s": 9.31
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151096320,
+        "fds": 47,
+        "cpu_s": 9.98
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 202059776,
+        "pss": 150957056,
+        "fds": 50,
+        "cpu_s": 9.19
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 202067968,
+        "pss": 151003136,
+        "fds": 55,
+        "cpu_s": 9.44
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 202149888,
+        "pss": 151055360,
+        "fds": 59,
+        "cpu_s": 9.700000000000001
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 204124160,
+        "pss": 151663616,
+        "fds": 63,
+        "cpu_s": 9.350000000000001
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 204656640,
+        "pss": 152645632,
+        "fds": 67,
+        "cpu_s": 9.42
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 204181504,
+        "pss": 151697408,
+        "fds": 71,
+        "cpu_s": 9.5
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 201768960,
+        "pss": 150674432,
+        "fds": 75,
+        "cpu_s": 9.290000000000001
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 201621504,
+        "pss": 150526976,
+        "fds": 79,
+        "cpu_s": 9.450000000000001
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 202182656,
+        "pss": 151137280,
+        "fds": 83,
+        "cpu_s": 9.530000000000001
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 202805248,
+        "pss": 152084480,
+        "fds": 86,
+        "cpu_s": 9.760000000000002
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 201863168,
+        "pss": 150788096,
+        "fds": 91,
+        "cpu_s": 9.69
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 250413056,
+        "pss": 223526912,
+        "fds": 1290,
+        "cpu_s": 36.56
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 118075392,
+        "pss": 38811648,
+        "fds": 92,
+        "cpu_s": 3.78
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 128659456,
+        "pss": 76743680,
+        "fds": 101,
+        "cpu_s": 14.490000000000002
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 102924288,
+        "pss": 86116352,
+        "fds": 429,
+        "cpu_s": 40.96
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4874240,
+        "pss": 3059712,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 140271616,
+        "pss": 43713536,
+        "fds": 96,
+        "cpu_s": 4.94
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 202452992,
+        "pss": 151462912,
+        "fds": 14,
+        "cpu_s": 11.059999999999999
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 202461184,
+        "pss": 151467008,
+        "fds": 18,
+        "cpu_s": 11.719999999999999
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 202248192,
+        "pss": 151266304,
+        "fds": 22,
+        "cpu_s": 10.899999999999999
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 202121216,
+        "pss": 151046144,
+        "fds": 26,
+        "cpu_s": 10.92
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 203898880,
+        "pss": 151438336,
+        "fds": 30,
+        "cpu_s": 10.83
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 202321920,
+        "pss": 151239680,
+        "fds": 35,
+        "cpu_s": 11.700000000000001
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 210948096,
+        "pss": 159041536,
+        "fds": 38,
+        "cpu_s": 17.66
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 202465280,
+        "pss": 151420928,
+        "fds": 42,
+        "cpu_s": 10.93
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 202268672,
+        "pss": 151216128,
+        "fds": 46,
+        "cpu_s": 11.59
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 202108928,
+        "pss": 151007232,
+        "fds": 51,
+        "cpu_s": 10.82
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 202100736,
+        "pss": 151036928,
+        "fds": 54,
+        "cpu_s": 11.04
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 202342400,
+        "pss": 151247872,
+        "fds": 59,
+        "cpu_s": 11.520000000000001
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 204197888,
+        "pss": 151738368,
+        "fds": 62,
+        "cpu_s": 10.99
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 204767232,
+        "pss": 152757248,
+        "fds": 67,
+        "cpu_s": 10.99
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 204206080,
+        "pss": 151723008,
+        "fds": 71,
+        "cpu_s": 11.120000000000001
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 201822208,
+        "pss": 150728704,
+        "fds": 74,
+        "cpu_s": 10.850000000000001
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 201900032,
+        "pss": 150806528,
+        "fds": 78,
+        "cpu_s": 11.13
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 202313728,
+        "pss": 151269376,
+        "fds": 82,
+        "cpu_s": 11.09
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 203194368,
+        "pss": 152474624,
+        "fds": 86,
+        "cpu_s": 11.39
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 202072064,
+        "pss": 150998016,
+        "fds": 91,
+        "cpu_s": 11.31
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 250425344,
+        "pss": 223541248,
+        "fds": 1290,
+        "cpu_s": 42.260000000000005
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 118075392,
+        "pss": 38812672,
+        "fds": 92,
+        "cpu_s": 3.93
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 128659456,
+        "pss": 76744704,
+        "fds": 101,
+        "cpu_s": 14.52
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 102924288,
+        "pss": 86117376,
+        "fds": 429,
+        "cpu_s": 49.17
+      }
+    ]
+  },
+  {
+    "service": "bus",
+    "connections": 1024,
+    "ready": 865,
+    "databases": 32,
+    "repeat": 0,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 16.63597625598777,
+    "send_elapsed_s": 15.026912357017864,
+    "offered_events": 3000,
+    "expected_deliveries": 81095,
+    "received_deliveries": 81095,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 81095,
+      "mean": 661.4231221232382,
+      "p50": 613.73029,
+      "p95": 1289.964291,
+      "p99": 1414.103399,
+      "max": 1730.766797
+    },
+    "http_ms": {
+      "n": 52,
+      "mean": 107.71896959004852,
+      "p50": 53.98076999699697,
+      "p95": 262.4920310336165,
+      "p99": 307.2898809914477,
+      "max": 315.3376450063661
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [
+      {
+        "kind": "handshake failure",
+        "count": 159
+      }
+    ],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4718592,
+        "pss": 2903040,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42834944,
+        "fds": 96,
+        "cpu_s": 5.16
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197480448,
+        "pss": 151267328,
+        "fds": 15,
+        "cpu_s": 11.07
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197533696,
+        "pss": 151274496,
+        "fds": 18,
+        "cpu_s": 11.73
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197324800,
+        "pss": 151076864,
+        "fds": 23,
+        "cpu_s": 10.91
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197251072,
+        "pss": 150859776,
+        "fds": 27,
+        "cpu_s": 10.930000000000001
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197083136,
+        "pss": 151067648,
+        "fds": 31,
+        "cpu_s": 10.84
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197451776,
+        "pss": 151052288,
+        "fds": 35,
+        "cpu_s": 11.72
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203841536,
+        "pss": 158608384,
+        "fds": 39,
+        "cpu_s": 17.67
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197492736,
+        "pss": 151226368,
+        "fds": 42,
+        "cpu_s": 10.94
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197410816,
+        "pss": 151042048,
+        "fds": 46,
+        "cpu_s": 11.61
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197238784,
+        "pss": 150820864,
+        "fds": 51,
+        "cpu_s": 10.84
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197230592,
+        "pss": 150850560,
+        "fds": 54,
+        "cpu_s": 11.04
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197472256,
+        "pss": 151061504,
+        "fds": 59,
+        "cpu_s": 11.530000000000001
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197316608,
+        "pss": 151353344,
+        "fds": 62,
+        "cpu_s": 10.99
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197660672,
+        "pss": 152323072,
+        "fds": 67,
+        "cpu_s": 10.99
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197382144,
+        "pss": 151343104,
+        "fds": 71,
+        "cpu_s": 11.13
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 196952064,
+        "pss": 150541312,
+        "fds": 75,
+        "cpu_s": 10.88
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197029888,
+        "pss": 150619136,
+        "fds": 78,
+        "cpu_s": 11.15
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197341184,
+        "pss": 151074816,
+        "fds": 82,
+        "cpu_s": 11.1
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197779456,
+        "pss": 152209408,
+        "fds": 87,
+        "cpu_s": 11.42
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197218304,
+        "pss": 150828032,
+        "fds": 91,
+        "cpu_s": 11.32
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 258441216,
+        "pss": 240408576,
+        "fds": 2619,
+        "cpu_s": 55.26
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114237440,
+        "pss": 38670336,
+        "fds": 92,
+        "cpu_s": 5.45
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 124116992,
+        "pss": 76554240,
+        "fds": 101,
+        "cpu_s": 14.54
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 94887936,
+        "pss": 85408768,
+        "fds": 872,
+        "cpu_s": 50.99
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4718592,
+        "pss": 2904064,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42836992,
+        "fds": 96,
+        "cpu_s": 5.930000000000001
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151518208,
+        "fds": 14,
+        "cpu_s": 12.799999999999999
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197570560,
+        "pss": 151312384,
+        "fds": 19,
+        "cpu_s": 13.41
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151303168,
+        "fds": 23,
+        "cpu_s": 12.66
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151109632,
+        "fds": 26,
+        "cpu_s": 12.719999999999999
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197492736,
+        "pss": 151477248,
+        "fds": 30,
+        "cpu_s": 12.719999999999999
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151090176,
+        "fds": 34,
+        "cpu_s": 13.270000000000001
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203882496,
+        "pss": 158649344,
+        "fds": 38,
+        "cpu_s": 19.159999999999997
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151464960,
+        "fds": 42,
+        "cpu_s": 12.719999999999999
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151136256,
+        "fds": 46,
+        "cpu_s": 13.33
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197480448,
+        "pss": 151062528,
+        "fds": 50,
+        "cpu_s": 12.62
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197464064,
+        "pss": 151084032,
+        "fds": 54,
+        "cpu_s": 12.889999999999999
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151099392,
+        "fds": 59,
+        "cpu_s": 13.14
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151631872,
+        "fds": 63,
+        "cpu_s": 12.88
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197935104,
+        "pss": 152598528,
+        "fds": 66,
+        "cpu_s": 12.82
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197623808,
+        "pss": 151585792,
+        "fds": 70,
+        "cpu_s": 12.93
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197386240,
+        "pss": 150976512,
+        "fds": 75,
+        "cpu_s": 12.57
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197459968,
+        "pss": 151050240,
+        "fds": 78,
+        "cpu_s": 12.87
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197709824,
+        "pss": 151444480,
+        "fds": 82,
+        "cpu_s": 12.879999999999999
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197812224,
+        "pss": 152243200,
+        "fds": 87,
+        "cpu_s": 13.040000000000001
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197414912,
+        "pss": 151025664,
+        "fds": 90,
+        "cpu_s": 13.1
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 259448832,
+        "pss": 241417216,
+        "fds": 2619,
+        "cpu_s": 61.92
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114237440,
+        "pss": 38671360,
+        "fds": 92,
+        "cpu_s": 5.45
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 124116992,
+        "pss": 76554240,
+        "fds": 101,
+        "cpu_s": 14.57
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 94892032,
+        "pss": 85413888,
+        "fds": 872,
+        "cpu_s": 60.14
+      }
+    ]
+  },
+  {
+    "service": "sse",
+    "connections": 1024,
+    "ready": 1024,
+    "databases": 32,
+    "repeat": 0,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 0.43172790901735425,
+    "send_elapsed_s": 14.99825858999975,
+    "offered_events": 3000,
+    "expected_deliveries": 96000,
+    "received_deliveries": 96000,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 96000,
+      "mean": 1.3478956755625,
+      "p50": 1.327483,
+      "p95": 2.070664,
+      "p99": 2.508059,
+      "max": 5.504699
+    },
+    "http_ms": {
+      "n": 78,
+      "mean": 6.0394104952231435,
+      "p50": 5.478599981870502,
+      "p95": 9.98297898331657,
+      "p99": 13.03701096912846,
+      "max": 13.384783989749849
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4718592,
+        "pss": 2904064,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42835968,
+        "fds": 96,
+        "cpu_s": 5.930000000000001
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151518208,
+        "fds": 14,
+        "cpu_s": 12.799999999999999
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197570560,
+        "pss": 151311360,
+        "fds": 19,
+        "cpu_s": 13.41
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151303168,
+        "fds": 23,
+        "cpu_s": 12.66
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151109632,
+        "fds": 26,
+        "cpu_s": 12.73
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197492736,
+        "pss": 151477248,
+        "fds": 30,
+        "cpu_s": 12.719999999999999
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151090176,
+        "fds": 35,
+        "cpu_s": 13.270000000000001
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203882496,
+        "pss": 158649344,
+        "fds": 38,
+        "cpu_s": 19.159999999999997
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151463936,
+        "fds": 42,
+        "cpu_s": 12.719999999999999
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151136256,
+        "fds": 47,
+        "cpu_s": 13.34
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197480448,
+        "pss": 151062528,
+        "fds": 51,
+        "cpu_s": 12.62
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197464064,
+        "pss": 151084032,
+        "fds": 54,
+        "cpu_s": 12.889999999999999
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151098368,
+        "fds": 59,
+        "cpu_s": 13.14
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151631872,
+        "fds": 63,
+        "cpu_s": 12.88
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197935104,
+        "pss": 152597504,
+        "fds": 66,
+        "cpu_s": 12.82
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197623808,
+        "pss": 151584768,
+        "fds": 70,
+        "cpu_s": 12.94
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197386240,
+        "pss": 150975488,
+        "fds": 75,
+        "cpu_s": 12.57
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197459968,
+        "pss": 151049216,
+        "fds": 78,
+        "cpu_s": 12.87
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197709824,
+        "pss": 151443456,
+        "fds": 82,
+        "cpu_s": 12.879999999999999
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197812224,
+        "pss": 152243200,
+        "fds": 87,
+        "cpu_s": 13.040000000000001
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197414912,
+        "pss": 151024640,
+        "fds": 91,
+        "cpu_s": 13.11
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 253059072,
+        "pss": 235026432,
+        "fds": 24,
+        "cpu_s": 63.36
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114237440,
+        "pss": 38671360,
+        "fds": 92,
+        "cpu_s": 5.45
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 131948544,
+        "pss": 84357120,
+        "fds": 1125,
+        "cpu_s": 14.919999999999998
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 94924800,
+        "pss": 85429248,
+        "fds": 1031,
+        "cpu_s": 60.93
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4718592,
+        "pss": 2903040,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42833920,
+        "fds": 96,
+        "cpu_s": 5.97
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151517184,
+        "fds": 15,
+        "cpu_s": 12.82
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197570560,
+        "pss": 151310336,
+        "fds": 19,
+        "cpu_s": 13.46
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151302144,
+        "fds": 23,
+        "cpu_s": 12.700000000000001
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151108608,
+        "fds": 27,
+        "cpu_s": 12.770000000000001
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197492736,
+        "pss": 151476224,
+        "fds": 31,
+        "cpu_s": 12.739999999999998
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151089152,
+        "fds": 35,
+        "cpu_s": 13.31
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203886592,
+        "pss": 158652416,
+        "fds": 39,
+        "cpu_s": 19.21
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151462912,
+        "fds": 43,
+        "cpu_s": 12.77
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151135232,
+        "fds": 47,
+        "cpu_s": 13.39
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197480448,
+        "pss": 151061504,
+        "fds": 51,
+        "cpu_s": 12.66
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197464064,
+        "pss": 151083008,
+        "fds": 55,
+        "cpu_s": 12.94
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151097344,
+        "fds": 59,
+        "cpu_s": 13.17
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151630848,
+        "fds": 63,
+        "cpu_s": 12.92
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197935104,
+        "pss": 152596480,
+        "fds": 67,
+        "cpu_s": 12.84
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197623808,
+        "pss": 151584768,
+        "fds": 71,
+        "cpu_s": 12.950000000000001
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197386240,
+        "pss": 150975488,
+        "fds": 75,
+        "cpu_s": 12.61
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197459968,
+        "pss": 151049216,
+        "fds": 79,
+        "cpu_s": 12.89
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197709824,
+        "pss": 151442432,
+        "fds": 83,
+        "cpu_s": 12.92
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197812224,
+        "pss": 152242176,
+        "fds": 87,
+        "cpu_s": 13.07
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197414912,
+        "pss": 151023616,
+        "fds": 91,
+        "cpu_s": 13.15
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 253059072,
+        "pss": 235025408,
+        "fds": 24,
+        "cpu_s": 63.36
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114237440,
+        "pss": 38670336,
+        "fds": 92,
+        "cpu_s": 5.45
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 133984256,
+        "pss": 86392832,
+        "fds": 1125,
+        "cpu_s": 20.52
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 105025536,
+        "pss": 95528960,
+        "fds": 1031,
+        "cpu_s": 66.33
+      }
+    ]
+  },
+  {
+    "service": "sse",
+    "connections": 1024,
+    "ready": 1024,
+    "databases": 32,
+    "repeat": 1,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 0.3460577470250428,
+    "send_elapsed_s": 14.99899136897875,
+    "offered_events": 3000,
+    "expected_deliveries": 96000,
+    "received_deliveries": 96000,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 96000,
+      "mean": 1.3830777999895834,
+      "p50": 1.358804,
+      "p95": 2.153342,
+      "p99": 2.607218,
+      "max": 6.577979
+    },
+    "http_ms": {
+      "n": 78,
+      "mean": 5.478066872829237,
+      "p50": 5.298624979332089,
+      "p95": 6.804511009249836,
+      "p99": 8.120955026242882,
+      "max": 9.87748900661245
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4718592,
+        "pss": 2903040,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42833920,
+        "fds": 96,
+        "cpu_s": 5.98
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151517184,
+        "fds": 15,
+        "cpu_s": 12.82
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197570560,
+        "pss": 151310336,
+        "fds": 19,
+        "cpu_s": 13.46
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151302144,
+        "fds": 23,
+        "cpu_s": 12.700000000000001
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151108608,
+        "fds": 27,
+        "cpu_s": 12.770000000000001
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197492736,
+        "pss": 151476224,
+        "fds": 31,
+        "cpu_s": 12.739999999999998
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151089152,
+        "fds": 35,
+        "cpu_s": 13.31
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203886592,
+        "pss": 158652416,
+        "fds": 39,
+        "cpu_s": 19.21
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151462912,
+        "fds": 43,
+        "cpu_s": 12.77
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151135232,
+        "fds": 47,
+        "cpu_s": 13.39
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197480448,
+        "pss": 151061504,
+        "fds": 51,
+        "cpu_s": 12.67
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197464064,
+        "pss": 151083008,
+        "fds": 55,
+        "cpu_s": 12.94
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151097344,
+        "fds": 59,
+        "cpu_s": 13.17
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151630848,
+        "fds": 63,
+        "cpu_s": 12.92
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197935104,
+        "pss": 152596480,
+        "fds": 67,
+        "cpu_s": 12.84
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197623808,
+        "pss": 151584768,
+        "fds": 71,
+        "cpu_s": 12.96
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197386240,
+        "pss": 150975488,
+        "fds": 75,
+        "cpu_s": 12.61
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197459968,
+        "pss": 151049216,
+        "fds": 79,
+        "cpu_s": 12.89
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197709824,
+        "pss": 151442432,
+        "fds": 83,
+        "cpu_s": 12.92
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197812224,
+        "pss": 152242176,
+        "fds": 87,
+        "cpu_s": 13.08
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197414912,
+        "pss": 151023616,
+        "fds": 91,
+        "cpu_s": 13.16
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 253059072,
+        "pss": 235025408,
+        "fds": 24,
+        "cpu_s": 63.36
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114237440,
+        "pss": 38670336,
+        "fds": 92,
+        "cpu_s": 5.45
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 134074368,
+        "pss": 86482944,
+        "fds": 1125,
+        "cpu_s": 20.91
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 104620032,
+        "pss": 95123456,
+        "fds": 1031,
+        "cpu_s": 67.04
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4718592,
+        "pss": 2903040,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42833920,
+        "fds": 96,
+        "cpu_s": 6.029999999999999
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151517184,
+        "fds": 15,
+        "cpu_s": 12.85
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197570560,
+        "pss": 151310336,
+        "fds": 19,
+        "cpu_s": 13.49
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151302144,
+        "fds": 23,
+        "cpu_s": 12.74
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151108608,
+        "fds": 27,
+        "cpu_s": 12.83
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197492736,
+        "pss": 151476224,
+        "fds": 31,
+        "cpu_s": 12.77
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151089152,
+        "fds": 35,
+        "cpu_s": 13.35
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203886592,
+        "pss": 158652416,
+        "fds": 39,
+        "cpu_s": 19.26
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151462912,
+        "fds": 43,
+        "cpu_s": 12.81
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151135232,
+        "fds": 47,
+        "cpu_s": 13.42
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197480448,
+        "pss": 151061504,
+        "fds": 51,
+        "cpu_s": 12.71
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197464064,
+        "pss": 151083008,
+        "fds": 55,
+        "cpu_s": 12.969999999999999
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151097344,
+        "fds": 59,
+        "cpu_s": 13.200000000000001
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151630848,
+        "fds": 63,
+        "cpu_s": 12.969999999999999
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197935104,
+        "pss": 152596480,
+        "fds": 67,
+        "cpu_s": 12.88
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197623808,
+        "pss": 151584768,
+        "fds": 71,
+        "cpu_s": 13.0
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197386240,
+        "pss": 150975488,
+        "fds": 75,
+        "cpu_s": 12.65
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197459968,
+        "pss": 151049216,
+        "fds": 79,
+        "cpu_s": 12.94
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197709824,
+        "pss": 151442432,
+        "fds": 83,
+        "cpu_s": 12.96
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197816320,
+        "pss": 152246272,
+        "fds": 87,
+        "cpu_s": 13.12
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197414912,
+        "pss": 151023616,
+        "fds": 91,
+        "cpu_s": 13.19
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 253059072,
+        "pss": 235025408,
+        "fds": 24,
+        "cpu_s": 63.36
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114237440,
+        "pss": 38670336,
+        "fds": 92,
+        "cpu_s": 5.45
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 134156288,
+        "pss": 86564864,
+        "fds": 1125,
+        "cpu_s": 26.64
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 104865792,
+        "pss": 95369216,
+        "fds": 1031,
+        "cpu_s": 72.47999999999999
+      }
+    ]
+  },
+  {
+    "service": "bus",
+    "connections": 1024,
+    "ready": 857,
+    "databases": 32,
+    "repeat": 1,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 15.957078017003369,
+    "send_elapsed_s": 15.02968412003247,
+    "offered_events": 3000,
+    "expected_deliveries": 80345,
+    "received_deliveries": 80345,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 80345,
+      "mean": 710.7714597157633,
+      "p50": 650.042207,
+      "p95": 1367.077927,
+      "p99": 1483.751582,
+      "max": 1641.99866
+    },
+    "http_ms": {
+      "n": 59,
+      "mean": 72.91550451092485,
+      "p50": 86.53453300939873,
+      "p95": 135.96297102048993,
+      "p99": 152.8955299872905,
+      "max": 156.74720297101885
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [
+      {
+        "kind": "handshake failure",
+        "count": 167
+      }
+    ],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2636800,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42840064,
+        "fds": 96,
+        "cpu_s": 6.23
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151517184,
+        "fds": 15,
+        "cpu_s": 12.86
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197570560,
+        "pss": 151310336,
+        "fds": 19,
+        "cpu_s": 13.51
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151302144,
+        "fds": 23,
+        "cpu_s": 12.74
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151108608,
+        "fds": 27,
+        "cpu_s": 12.84
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197492736,
+        "pss": 151476224,
+        "fds": 31,
+        "cpu_s": 12.79
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151089152,
+        "fds": 35,
+        "cpu_s": 13.35
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203886592,
+        "pss": 158652416,
+        "fds": 39,
+        "cpu_s": 19.27
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197730304,
+        "pss": 151462912,
+        "fds": 43,
+        "cpu_s": 12.81
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151135232,
+        "fds": 47,
+        "cpu_s": 13.42
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197480448,
+        "pss": 151061504,
+        "fds": 51,
+        "cpu_s": 12.72
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197464064,
+        "pss": 151083008,
+        "fds": 55,
+        "cpu_s": 13.0
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151097344,
+        "fds": 59,
+        "cpu_s": 13.21
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151630848,
+        "fds": 63,
+        "cpu_s": 12.98
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197935104,
+        "pss": 152596480,
+        "fds": 67,
+        "cpu_s": 12.89
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197623808,
+        "pss": 151583744,
+        "fds": 71,
+        "cpu_s": 13.01
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197386240,
+        "pss": 150975488,
+        "fds": 75,
+        "cpu_s": 12.66
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197459968,
+        "pss": 151049216,
+        "fds": 79,
+        "cpu_s": 12.94
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197709824,
+        "pss": 151442432,
+        "fds": 83,
+        "cpu_s": 12.96
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197816320,
+        "pss": 152246272,
+        "fds": 87,
+        "cpu_s": 13.129999999999999
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197414912,
+        "pss": 151023616,
+        "fds": 91,
+        "cpu_s": 13.2
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 265805824,
+        "pss": 247772160,
+        "fds": 2595,
+        "cpu_s": 75.2
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114323456,
+        "pss": 38762496,
+        "fds": 93,
+        "cpu_s": 6.85
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 134168576,
+        "pss": 86577152,
+        "fds": 101,
+        "cpu_s": 26.78
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 103624704,
+        "pss": 94128128,
+        "fds": 864,
+        "cpu_s": 74.35
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2637824,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42842112,
+        "fds": 96,
+        "cpu_s": 6.98
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197742592,
+        "pss": 151530496,
+        "fds": 15,
+        "cpu_s": 14.46
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151335936,
+        "fds": 19,
+        "cpu_s": 15.110000000000001
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151303168,
+        "fds": 22,
+        "cpu_s": 14.32
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151109632,
+        "fds": 27,
+        "cpu_s": 14.49
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197517312,
+        "pss": 151501824,
+        "fds": 30,
+        "cpu_s": 14.34
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151110656,
+        "fds": 34,
+        "cpu_s": 14.93
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203988992,
+        "pss": 158755840,
+        "fds": 38,
+        "cpu_s": 20.830000000000002
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197750784,
+        "pss": 151484416,
+        "fds": 42,
+        "cpu_s": 14.41
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197537792,
+        "pss": 151169024,
+        "fds": 46,
+        "cpu_s": 15.040000000000001
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197480448,
+        "pss": 151062528,
+        "fds": 50,
+        "cpu_s": 14.34
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197464064,
+        "pss": 151084032,
+        "fds": 54,
+        "cpu_s": 14.64
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151117824,
+        "fds": 58,
+        "cpu_s": 14.76
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197607424,
+        "pss": 151644160,
+        "fds": 63,
+        "cpu_s": 14.59
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197959680,
+        "pss": 152623104,
+        "fds": 67,
+        "cpu_s": 14.5
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197640192,
+        "pss": 151602176,
+        "fds": 71,
+        "cpu_s": 14.6
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197386240,
+        "pss": 150976512,
+        "fds": 74,
+        "cpu_s": 14.24
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151078912,
+        "fds": 78,
+        "cpu_s": 14.55
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197722112,
+        "pss": 151455744,
+        "fds": 82,
+        "cpu_s": 14.559999999999999
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197816320,
+        "pss": 152247296,
+        "fds": 87,
+        "cpu_s": 14.76
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197468160,
+        "pss": 151077888,
+        "fds": 90,
+        "cpu_s": 14.78
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 266743808,
+        "pss": 248712192,
+        "fds": 2595,
+        "cpu_s": 81.33000000000001
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114335744,
+        "pss": 38775808,
+        "fds": 92,
+        "cpu_s": 7.2700000000000005
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 134209536,
+        "pss": 86619136,
+        "fds": 101,
+        "cpu_s": 26.810000000000002
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 103624704,
+        "pss": 94129152,
+        "fds": 864,
+        "cpu_s": 83.49
+      }
+    ]
+  },
+  {
+    "service": "bus",
+    "connections": 2048,
+    "ready": 1616,
+    "databases": 32,
+    "repeat": 0,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 29.203606228984427,
+    "send_elapsed_s": 15.028355071030091,
+    "offered_events": 3000,
+    "expected_deliveries": 151483,
+    "received_deliveries": 151483,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 151483,
+      "mean": 675.8931416936158,
+      "p50": 629.659642,
+      "p95": 1266.165845,
+      "p99": 1396.639867,
+      "max": 1662.274891
+    },
+    "http_ms": {
+      "n": 62,
+      "mean": 55.76009349897504,
+      "p50": 49.34843699447811,
+      "p95": 121.61440803902224,
+      "p99": 133.1239299615845,
+      "max": 133.40533804148436
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [
+      {
+        "kind": "handshake failure",
+        "count": 432
+      }
+    ],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2636800,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42841088,
+        "fds": 96,
+        "cpu_s": 7.010000000000001
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197742592,
+        "pss": 151529472,
+        "fds": 15,
+        "cpu_s": 14.48
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151335936,
+        "fds": 19,
+        "cpu_s": 15.120000000000001
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151302144,
+        "fds": 23,
+        "cpu_s": 14.37
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197525504,
+        "pss": 151133184,
+        "fds": 27,
+        "cpu_s": 14.54
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197517312,
+        "pss": 151500800,
+        "fds": 30,
+        "cpu_s": 14.34
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151109632,
+        "fds": 34,
+        "cpu_s": 14.94
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203988992,
+        "pss": 158754816,
+        "fds": 39,
+        "cpu_s": 20.84
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197750784,
+        "pss": 151484416,
+        "fds": 43,
+        "cpu_s": 14.42
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197537792,
+        "pss": 151168000,
+        "fds": 47,
+        "cpu_s": 15.06
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197480448,
+        "pss": 151062528,
+        "fds": 51,
+        "cpu_s": 14.35
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197464064,
+        "pss": 151083008,
+        "fds": 55,
+        "cpu_s": 14.66
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151117824,
+        "fds": 58,
+        "cpu_s": 14.77
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197607424,
+        "pss": 151643136,
+        "fds": 63,
+        "cpu_s": 14.600000000000001
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197959680,
+        "pss": 152622080,
+        "fds": 67,
+        "cpu_s": 14.53
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197640192,
+        "pss": 151601152,
+        "fds": 71,
+        "cpu_s": 14.61
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197386240,
+        "pss": 150975488,
+        "fds": 75,
+        "cpu_s": 14.25
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151077888,
+        "fds": 79,
+        "cpu_s": 14.58
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197722112,
+        "pss": 151455744,
+        "fds": 83,
+        "cpu_s": 14.579999999999998
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197816320,
+        "pss": 152246272,
+        "fds": 87,
+        "cpu_s": 14.78
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197468160,
+        "pss": 151077888,
+        "fds": 91,
+        "cpu_s": 14.790000000000001
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 308989952,
+        "pss": 290956288,
+        "fds": 4872,
+        "cpu_s": 103.0
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114335744,
+        "pss": 38774784,
+        "fds": 92,
+        "cpu_s": 7.2700000000000005
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 134209536,
+        "pss": 86618112,
+        "fds": 101,
+        "cpu_s": 26.85
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 103641088,
+        "pss": 94144512,
+        "fds": 1623,
+        "cpu_s": 86.72
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2637824,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42843136,
+        "fds": 96,
+        "cpu_s": 7.78
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197754880,
+        "pss": 151542784,
+        "fds": 15,
+        "cpu_s": 16.14
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151336960,
+        "fds": 18,
+        "cpu_s": 16.68
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151303168,
+        "fds": 22,
+        "cpu_s": 15.98
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197533696,
+        "pss": 151143424,
+        "fds": 27,
+        "cpu_s": 16.1
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197517312,
+        "pss": 151501824,
+        "fds": 30,
+        "cpu_s": 15.99
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151110656,
+        "fds": 34,
+        "cpu_s": 16.439999999999998
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203988992,
+        "pss": 158755840,
+        "fds": 38,
+        "cpu_s": 22.36
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197771264,
+        "pss": 151505920,
+        "fds": 43,
+        "cpu_s": 15.940000000000001
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197537792,
+        "pss": 151169024,
+        "fds": 46,
+        "cpu_s": 16.61
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151084032,
+        "fds": 50,
+        "cpu_s": 15.99
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197484544,
+        "pss": 151105536,
+        "fds": 54,
+        "cpu_s": 16.29
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151118848,
+        "fds": 58,
+        "cpu_s": 16.33
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197607424,
+        "pss": 151644160,
+        "fds": 62,
+        "cpu_s": 16.2
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197963776,
+        "pss": 152627200,
+        "fds": 66,
+        "cpu_s": 16.05
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197640192,
+        "pss": 151602176,
+        "fds": 71,
+        "cpu_s": 16.21
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197398528,
+        "pss": 150988800,
+        "fds": 74,
+        "cpu_s": 15.86
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151078912,
+        "fds": 78,
+        "cpu_s": 16.1
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197722112,
+        "pss": 151456768,
+        "fds": 82,
+        "cpu_s": 16.2
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197820416,
+        "pss": 152251392,
+        "fds": 86,
+        "cpu_s": 16.29
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197468160,
+        "pss": 151078912,
+        "fds": 91,
+        "cpu_s": 16.330000000000002
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 310317056,
+        "pss": 292285440,
+        "fds": 4872,
+        "cpu_s": 111.58
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114335744,
+        "pss": 38775808,
+        "fds": 92,
+        "cpu_s": 7.2700000000000005
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 134209536,
+        "pss": 86619136,
+        "fds": 101,
+        "cpu_s": 26.88
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 119975936,
+        "pss": 110481408,
+        "fds": 1623,
+        "cpu_s": 97.71000000000001
+      }
+    ]
+  },
+  {
+    "service": "sse",
+    "connections": 2048,
+    "ready": 2048,
+    "databases": 32,
+    "repeat": 0,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 0.8339049289934337,
+    "send_elapsed_s": 14.999860669951886,
+    "offered_events": 3000,
+    "expected_deliveries": 192000,
+    "received_deliveries": 192000,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 192000,
+      "mean": 2.918511641296875,
+      "p50": 2.151116,
+      "p95": 4.183917,
+      "p99": 35.864703,
+      "max": 113.155697
+    },
+    "http_ms": {
+      "n": 78,
+      "mean": 6.121625934984201,
+      "p50": 5.677119013853371,
+      "p95": 9.740547044202685,
+      "p99": 11.433689040131867,
+      "max": 14.31748497998342
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2636800,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42830848,
+        "fds": 96,
+        "cpu_s": 7.78
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197754880,
+        "pss": 151542784,
+        "fds": 15,
+        "cpu_s": 16.14
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151335936,
+        "fds": 18,
+        "cpu_s": 16.68
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151303168,
+        "fds": 22,
+        "cpu_s": 15.98
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197533696,
+        "pss": 151142400,
+        "fds": 27,
+        "cpu_s": 16.1
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197517312,
+        "pss": 151501824,
+        "fds": 30,
+        "cpu_s": 15.99
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151110656,
+        "fds": 34,
+        "cpu_s": 16.45
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203988992,
+        "pss": 158755840,
+        "fds": 38,
+        "cpu_s": 22.36
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197771264,
+        "pss": 151504896,
+        "fds": 43,
+        "cpu_s": 15.940000000000001
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197537792,
+        "pss": 151169024,
+        "fds": 46,
+        "cpu_s": 16.61
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151083008,
+        "fds": 51,
+        "cpu_s": 16.0
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197484544,
+        "pss": 151104512,
+        "fds": 55,
+        "cpu_s": 16.3
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151117824,
+        "fds": 58,
+        "cpu_s": 16.33
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197607424,
+        "pss": 151644160,
+        "fds": 62,
+        "cpu_s": 16.2
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197963776,
+        "pss": 152626176,
+        "fds": 67,
+        "cpu_s": 16.060000000000002
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197640192,
+        "pss": 151602176,
+        "fds": 71,
+        "cpu_s": 16.220000000000002
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197398528,
+        "pss": 150988800,
+        "fds": 74,
+        "cpu_s": 15.86
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151078912,
+        "fds": 79,
+        "cpu_s": 16.11
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197722112,
+        "pss": 151455744,
+        "fds": 83,
+        "cpu_s": 16.2
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197820416,
+        "pss": 152251392,
+        "fds": 86,
+        "cpu_s": 16.29
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197468160,
+        "pss": 151077888,
+        "fds": 91,
+        "cpu_s": 16.330000000000002
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 300195840,
+        "pss": 282170368,
+        "fds": 24,
+        "cpu_s": 114.0
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114335744,
+        "pss": 38775808,
+        "fds": 92,
+        "cpu_s": 7.2700000000000005
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 149975040,
+        "pss": 102484992,
+        "fds": 2149,
+        "cpu_s": 27.599999999999998
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 119050240,
+        "pss": 109554688,
+        "fds": 2055,
+        "cpu_s": 99.07000000000001
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2636800,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42841088,
+        "fds": 96,
+        "cpu_s": 7.97
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197754880,
+        "pss": 151541760,
+        "fds": 15,
+        "cpu_s": 16.169999999999998
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151335936,
+        "fds": 19,
+        "cpu_s": 16.7
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151302144,
+        "fds": 23,
+        "cpu_s": 16.01
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197533696,
+        "pss": 151141376,
+        "fds": 27,
+        "cpu_s": 16.14
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197517312,
+        "pss": 151500800,
+        "fds": 30,
+        "cpu_s": 16.02
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151109632,
+        "fds": 35,
+        "cpu_s": 16.490000000000002
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203988992,
+        "pss": 158754816,
+        "fds": 39,
+        "cpu_s": 22.419999999999998
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197771264,
+        "pss": 151503872,
+        "fds": 43,
+        "cpu_s": 15.98
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197537792,
+        "pss": 151168000,
+        "fds": 47,
+        "cpu_s": 16.65
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151083008,
+        "fds": 51,
+        "cpu_s": 16.03
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197484544,
+        "pss": 151103488,
+        "fds": 55,
+        "cpu_s": 16.330000000000002
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151117824,
+        "fds": 58,
+        "cpu_s": 16.369999999999997
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197607424,
+        "pss": 151643136,
+        "fds": 63,
+        "cpu_s": 16.24
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197967872,
+        "pss": 152630272,
+        "fds": 67,
+        "cpu_s": 16.1
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197640192,
+        "pss": 151601152,
+        "fds": 71,
+        "cpu_s": 16.240000000000002
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197398528,
+        "pss": 150987776,
+        "fds": 75,
+        "cpu_s": 15.89
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151077888,
+        "fds": 79,
+        "cpu_s": 16.13
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197722112,
+        "pss": 151455744,
+        "fds": 83,
+        "cpu_s": 16.24
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197820416,
+        "pss": 152250368,
+        "fds": 87,
+        "cpu_s": 16.32
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197468160,
+        "pss": 151077888,
+        "fds": 91,
+        "cpu_s": 16.37
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 297975808,
+        "pss": 279942144,
+        "fds": 24,
+        "cpu_s": 114.38
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114348032,
+        "pss": 38788096,
+        "fds": 93,
+        "cpu_s": 8.280000000000001
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 154267648,
+        "pss": 106776576,
+        "fds": 2149,
+        "cpu_s": 37.18
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 140292096,
+        "pss": 130795520,
+        "fds": 2055,
+        "cpu_s": 107.94
+      }
+    ]
+  },
+  {
+    "service": "sse",
+    "connections": 2048,
+    "ready": 2048,
+    "databases": 32,
+    "repeat": 1,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 0.6513572469702922,
+    "send_elapsed_s": 14.998103537014686,
+    "offered_events": 3000,
+    "expected_deliveries": 192000,
+    "received_deliveries": 192000,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 192000,
+      "mean": 1.9122554795833333,
+      "p50": 1.89043,
+      "p95": 3.050956,
+      "p99": 4.073958,
+      "max": 21.86783
+    },
+    "http_ms": {
+      "n": 78,
+      "mean": 5.845919632030507,
+      "p50": 5.417262960691005,
+      "p95": 11.07650698395446,
+      "p99": 12.50366197200492,
+      "max": 17.387706029694527
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2636800,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42842112,
+        "fds": 96,
+        "cpu_s": 8.0
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197754880,
+        "pss": 151541760,
+        "fds": 15,
+        "cpu_s": 16.169999999999998
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151335936,
+        "fds": 19,
+        "cpu_s": 16.7
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151302144,
+        "fds": 23,
+        "cpu_s": 16.01
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197533696,
+        "pss": 151142400,
+        "fds": 27,
+        "cpu_s": 16.14
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197517312,
+        "pss": 151500800,
+        "fds": 30,
+        "cpu_s": 16.02
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151109632,
+        "fds": 35,
+        "cpu_s": 16.490000000000002
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203988992,
+        "pss": 158754816,
+        "fds": 39,
+        "cpu_s": 22.419999999999998
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197771264,
+        "pss": 151504896,
+        "fds": 43,
+        "cpu_s": 15.98
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197537792,
+        "pss": 151169024,
+        "fds": 47,
+        "cpu_s": 16.65
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151083008,
+        "fds": 51,
+        "cpu_s": 16.03
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197484544,
+        "pss": 151104512,
+        "fds": 55,
+        "cpu_s": 16.330000000000002
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151117824,
+        "fds": 58,
+        "cpu_s": 16.369999999999997
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197607424,
+        "pss": 151643136,
+        "fds": 63,
+        "cpu_s": 16.24
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197967872,
+        "pss": 152630272,
+        "fds": 67,
+        "cpu_s": 16.1
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197640192,
+        "pss": 151601152,
+        "fds": 71,
+        "cpu_s": 16.240000000000002
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197398528,
+        "pss": 150987776,
+        "fds": 75,
+        "cpu_s": 15.89
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151077888,
+        "fds": 79,
+        "cpu_s": 16.13
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197722112,
+        "pss": 151455744,
+        "fds": 83,
+        "cpu_s": 16.24
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197820416,
+        "pss": 152250368,
+        "fds": 87,
+        "cpu_s": 16.33
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197468160,
+        "pss": 151077888,
+        "fds": 91,
+        "cpu_s": 16.37
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 297975808,
+        "pss": 279942144,
+        "fds": 24,
+        "cpu_s": 114.38
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114348032,
+        "pss": 38788096,
+        "fds": 92,
+        "cpu_s": 8.44
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 154345472,
+        "pss": 106854400,
+        "fds": 2149,
+        "cpu_s": 37.91
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 138403840,
+        "pss": 128907264,
+        "fds": 2055,
+        "cpu_s": 109.06
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2636800,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42842112,
+        "fds": 96,
+        "cpu_s": 8.04
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197754880,
+        "pss": 151541760,
+        "fds": 15,
+        "cpu_s": 16.22
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151335936,
+        "fds": 19,
+        "cpu_s": 16.75
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151302144,
+        "fds": 23,
+        "cpu_s": 16.05
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197533696,
+        "pss": 151142400,
+        "fds": 27,
+        "cpu_s": 16.169999999999998
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197517312,
+        "pss": 151500800,
+        "fds": 30,
+        "cpu_s": 16.080000000000002
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151109632,
+        "fds": 35,
+        "cpu_s": 16.51
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203988992,
+        "pss": 158754816,
+        "fds": 39,
+        "cpu_s": 22.43
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197771264,
+        "pss": 151504896,
+        "fds": 43,
+        "cpu_s": 15.99
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197537792,
+        "pss": 151169024,
+        "fds": 47,
+        "cpu_s": 16.689999999999998
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151083008,
+        "fds": 51,
+        "cpu_s": 16.07
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197484544,
+        "pss": 151104512,
+        "fds": 55,
+        "cpu_s": 16.37
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151117824,
+        "fds": 58,
+        "cpu_s": 16.400000000000002
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197607424,
+        "pss": 151643136,
+        "fds": 63,
+        "cpu_s": 16.279999999999998
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197967872,
+        "pss": 152630272,
+        "fds": 67,
+        "cpu_s": 16.13
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197640192,
+        "pss": 151601152,
+        "fds": 71,
+        "cpu_s": 16.3
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197398528,
+        "pss": 150987776,
+        "fds": 75,
+        "cpu_s": 15.93
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151077888,
+        "fds": 79,
+        "cpu_s": 16.18
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197722112,
+        "pss": 151455744,
+        "fds": 83,
+        "cpu_s": 16.27
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197820416,
+        "pss": 152250368,
+        "fds": 87,
+        "cpu_s": 16.34
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197468160,
+        "pss": 151077888,
+        "fds": 91,
+        "cpu_s": 16.39
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 297975808,
+        "pss": 279942144,
+        "fds": 24,
+        "cpu_s": 114.38
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114348032,
+        "pss": 38788096,
+        "fds": 92,
+        "cpu_s": 8.44
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 154443776,
+        "pss": 106952704,
+        "fds": 2149,
+        "cpu_s": 46.45
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 138403840,
+        "pss": 128907264,
+        "fds": 2055,
+        "cpu_s": 116.95
+      }
+    ]
+  },
+  {
+    "service": "bus",
+    "connections": 2048,
+    "ready": 1717,
+    "databases": 32,
+    "repeat": 1,
+    "seconds": 15,
+    "rate": 200,
+    "connect_s": 30.054385847004596,
+    "send_elapsed_s": 15.034107293991838,
+    "offered_events": 3000,
+    "expected_deliveries": 160971,
+    "received_deliveries": 160971,
+    "delivery_fraction": 1.0,
+    "latency_ms": {
+      "n": 160971,
+      "mean": 688.1838256235968,
+      "p50": 632.641384,
+      "p95": 1298.230614,
+      "p99": 1441.433609,
+      "max": 1675.015324
+    },
+    "http_ms": {
+      "n": 64,
+      "mean": 49.71060194384336,
+      "p50": 42.90167900035158,
+      "p95": 113.39347099419683,
+      "p99": 172.5370090571232,
+      "max": 174.87453296780586
+    },
+    "http_errors": 0,
+    "renewals": 0,
+    "unexpected_closes": 0,
+    "connection_errors": [
+      {
+        "kind": "handshake failure",
+        "count": 331
+      }
+    ],
+    "publish_errors": [],
+    "resources_before": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2636800,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42842112,
+        "fds": 96,
+        "cpu_s": 8.08
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197754880,
+        "pss": 151541760,
+        "fds": 15,
+        "cpu_s": 16.22
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151335936,
+        "fds": 19,
+        "cpu_s": 16.77
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197550080,
+        "pss": 151302144,
+        "fds": 23,
+        "cpu_s": 16.06
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197533696,
+        "pss": 151142400,
+        "fds": 27,
+        "cpu_s": 16.18
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197517312,
+        "pss": 151500800,
+        "fds": 30,
+        "cpu_s": 16.09
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151109632,
+        "fds": 35,
+        "cpu_s": 16.55
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203988992,
+        "pss": 158754816,
+        "fds": 39,
+        "cpu_s": 22.46
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197771264,
+        "pss": 151504896,
+        "fds": 43,
+        "cpu_s": 16.009999999999998
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197537792,
+        "pss": 151169024,
+        "fds": 47,
+        "cpu_s": 16.7
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151083008,
+        "fds": 51,
+        "cpu_s": 16.080000000000002
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197484544,
+        "pss": 151103488,
+        "fds": 55,
+        "cpu_s": 16.38
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197509120,
+        "pss": 151117824,
+        "fds": 58,
+        "cpu_s": 16.400000000000002
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197607424,
+        "pss": 151643136,
+        "fds": 63,
+        "cpu_s": 16.32
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197967872,
+        "pss": 152630272,
+        "fds": 67,
+        "cpu_s": 16.14
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197640192,
+        "pss": 151601152,
+        "fds": 71,
+        "cpu_s": 16.330000000000002
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197398528,
+        "pss": 150987776,
+        "fds": 75,
+        "cpu_s": 15.94
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197488640,
+        "pss": 151077888,
+        "fds": 79,
+        "cpu_s": 16.19
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197722112,
+        "pss": 151455744,
+        "fds": 83,
+        "cpu_s": 16.29
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197820416,
+        "pss": 152250368,
+        "fds": 87,
+        "cpu_s": 16.36
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197468160,
+        "pss": 151077888,
+        "fds": 91,
+        "cpu_s": 16.43
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 332136448,
+        "pss": 314102784,
+        "fds": 5175,
+        "cpu_s": 136.02
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114348032,
+        "pss": 38788096,
+        "fds": 92,
+        "cpu_s": 8.44
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 154443776,
+        "pss": 106952704,
+        "fds": 101,
+        "cpu_s": 46.65
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 136052736,
+        "pss": 126556160,
+        "fds": 1724,
+        "cpu_s": 120.31
+      }
+    ],
+    "resources_after": [
+      {
+        "pid": 177511,
+        "ppid": 1,
+        "rss": 4452352,
+        "pss": 2637824,
+        "fds": 9,
+        "cpu_s": 0.01
+      },
+      {
+        "pid": 250127,
+        "ppid": 177511,
+        "rss": 130592768,
+        "pss": 42843136,
+        "fds": 96,
+        "cpu_s": 8.96
+      },
+      {
+        "pid": 250149,
+        "ppid": 250127,
+        "rss": 197754880,
+        "pss": 151542784,
+        "fds": 14,
+        "cpu_s": 17.89
+      },
+      {
+        "pid": 250151,
+        "ppid": 250127,
+        "rss": 197595136,
+        "pss": 151336960,
+        "fds": 19,
+        "cpu_s": 18.31
+      },
+      {
+        "pid": 250153,
+        "ppid": 250127,
+        "rss": 197562368,
+        "pss": 151315456,
+        "fds": 23,
+        "cpu_s": 17.7
+      },
+      {
+        "pid": 250155,
+        "ppid": 250127,
+        "rss": 197533696,
+        "pss": 151143424,
+        "fds": 27,
+        "cpu_s": 17.78
+      },
+      {
+        "pid": 250157,
+        "ppid": 250127,
+        "rss": 197529600,
+        "pss": 151514112,
+        "fds": 30,
+        "cpu_s": 17.7
+      },
+      {
+        "pid": 250159,
+        "ppid": 250127,
+        "rss": 197505024,
+        "pss": 151110656,
+        "fds": 34,
+        "cpu_s": 18.23
+      },
+      {
+        "pid": 250161,
+        "ppid": 250127,
+        "rss": 203997184,
+        "pss": 158765056,
+        "fds": 38,
+        "cpu_s": 24.05
+      },
+      {
+        "pid": 250163,
+        "ppid": 250127,
+        "rss": 197775360,
+        "pss": 151510016,
+        "fds": 42,
+        "cpu_s": 17.71
+      },
+      {
+        "pid": 250165,
+        "ppid": 250127,
+        "rss": 197537792,
+        "pss": 151170048,
+        "fds": 46,
+        "cpu_s": 18.240000000000002
+      },
+      {
+        "pid": 250167,
+        "ppid": 250127,
+        "rss": 197500928,
+        "pss": 151084032,
+        "fds": 51,
+        "cpu_s": 17.72
+      },
+      {
+        "pid": 250170,
+        "ppid": 250127,
+        "rss": 197492736,
+        "pss": 151113728,
+        "fds": 54,
+        "cpu_s": 18.02
+      },
+      {
+        "pid": 250172,
+        "ppid": 250127,
+        "rss": 197521408,
+        "pss": 151131136,
+        "fds": 58,
+        "cpu_s": 18.060000000000002
+      },
+      {
+        "pid": 250174,
+        "ppid": 250127,
+        "rss": 197615616,
+        "pss": 151652352,
+        "fds": 63,
+        "cpu_s": 17.92
+      },
+      {
+        "pid": 250176,
+        "ppid": 250127,
+        "rss": 197967872,
+        "pss": 152631296,
+        "fds": 66,
+        "cpu_s": 17.790000000000003
+      },
+      {
+        "pid": 250178,
+        "ppid": 250127,
+        "rss": 197640192,
+        "pss": 151602176,
+        "fds": 70,
+        "cpu_s": 17.93
+      },
+      {
+        "pid": 250180,
+        "ppid": 250127,
+        "rss": 197414912,
+        "pss": 151005184,
+        "fds": 74,
+        "cpu_s": 17.55
+      },
+      {
+        "pid": 250182,
+        "ppid": 250127,
+        "rss": 197496832,
+        "pss": 151087104,
+        "fds": 78,
+        "cpu_s": 17.82
+      },
+      {
+        "pid": 250184,
+        "ppid": 250127,
+        "rss": 197734400,
+        "pss": 151469056,
+        "fds": 83,
+        "cpu_s": 17.919999999999998
+      },
+      {
+        "pid": 250186,
+        "ppid": 250127,
+        "rss": 197820416,
+        "pss": 152251392,
+        "fds": 86,
+        "cpu_s": 17.97
+      },
+      {
+        "pid": 250188,
+        "ppid": 250127,
+        "rss": 197476352,
+        "pss": 151087104,
+        "fds": 90,
+        "cpu_s": 18.0
+      },
+      {
+        "pid": 250189,
+        "ppid": 250127,
+        "rss": 333484032,
+        "pss": 315443200,
+        "fds": 5175,
+        "cpu_s": 144.85999999999999
+      },
+      {
+        "pid": 250191,
+        "ppid": 250127,
+        "rss": 114356224,
+        "pss": 38797312,
+        "fds": 93,
+        "cpu_s": 8.73
+      },
+      {
+        "pid": 250193,
+        "ppid": 250127,
+        "rss": 154443776,
+        "pss": 106953728,
+        "fds": 101,
+        "cpu_s": 46.68000000000001
+      },
+      {
+        "pid": 252100,
+        "ppid": 252099,
+        "rss": 139640832,
+        "pss": 130145280,
+        "fds": 1724,
+        "cpu_s": 131.47
+      }
+    ]
+  }
+]

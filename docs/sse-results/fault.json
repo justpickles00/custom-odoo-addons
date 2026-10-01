@@ -1,0 +1,30 @@
+[
+  {
+    "mode": "bus",
+    "elapsed_ms": 176.98280100012198,
+    "error_type": null,
+    "request_failed": false,
+    "probes": [
+      199,
+      200
+    ],
+    "values": [
+      1,
+      1
+    ]
+  },
+  {
+    "mode": "sse",
+    "elapsed_ms": 1022.2321909968741,
+    "error_type": "builtins.TimeoutError",
+    "request_failed": true,
+    "probes": [
+      201,
+      202
+    ],
+    "values": [
+      0,
+      0
+    ]
+  }
+]

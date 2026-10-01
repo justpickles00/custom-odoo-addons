@@ -27,4 +27,7 @@ The [agent loop utility experiment](docs/sse-utility-experiment.md) describes
 live progress and transaction comparisons using the current server, followed by
 a separate capacity study to select connection limits from measurements.
 [SSE improvement suggestions](docs/sse-improvements.md) are recorded separately
-for later review. Both documents are proposals; the experiment has not run.
+for later review. The [measured results](docs/sse-utility-results.md) demonstrate
+progress before commit, compare the bus alternatives, and record capacity and
+renewal limitations. The administrator-only `sse_agent_loop_experiment` addon and
+[reproduction scripts](scripts/sse_experiment/README.md) are for isolated testing.

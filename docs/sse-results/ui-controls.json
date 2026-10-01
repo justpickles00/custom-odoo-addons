@@ -1,0 +1,38 @@
+[
+  {
+    "mode": "sse",
+    "fail": false,
+    "observed_state": "Tool request committed",
+    "events": 4
+  },
+  {
+    "mode": "sse",
+    "fail": true,
+    "observed_state": "Request failed: Intentional experiment rollback",
+    "events": 4
+  },
+  {
+    "mode": "bus",
+    "fail": false,
+    "observed_state": "Tool request committed",
+    "events": 4
+  },
+  {
+    "mode": "bus",
+    "fail": true,
+    "observed_state": "Request failed: Intentional experiment rollback",
+    "events": 0
+  },
+  {
+    "mode": "bus_separate",
+    "fail": false,
+    "observed_state": "Tool request committed",
+    "events": 4
+  },
+  {
+    "mode": "bus_separate",
+    "fail": true,
+    "observed_state": "Request failed: Intentional experiment rollback",
+    "events": 4
+  }
+]

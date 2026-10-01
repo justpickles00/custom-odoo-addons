@@ -1,0 +1,82 @@
+<!doctype html>
+<html><meta charset="utf-8"><title>Agent loop experiment tracer</title>
+<style>body{font:16px system-ui;max-width:960px;margin:40px auto;background:#f6f8fa;color:#172b4d}li{padding:8px;border-bottom:1px solid #ddd}small{color:#52606d}</style>
+<h1>Live tool progress</h1><p id="state">Ready to subscribe</p>
+<p><select id="mode"><option value="sse">SSE</option><option value="bus">Bus after commit</option><option value="bus_separate">Bus separate transaction</option></select>
+<label>Tool duration <input id="duration" type="number" min="50" max="10000" value="150"> ms</label>
+<label><input id="fail" type="checkbox"> Fail and roll back</label>
+<button id="run">Run tool</button></p>
+<p><small>Experimental progress is provisional until the request commits. A failed attempt rolls back business writes.</small></p>
+<ol id="events"></ol>
+<script>
+window.samples = [];
+window.states = [];
+window.rpc = async (path, params={}) => {
+    const body = await (await fetch(path, {method:'POST', headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({jsonrpc:'2.0',method:'call',id:1,params})})).json();
+    if(body.error) throw new Error(body.error.data?.message || body.error.message);
+    return body.result;
+};
+function receive(payload) {
+    const received = Date.now()*1e6;
+    const row=document.createElement('li');
+    row.textContent=`${payload.kind} · ${payload.run_id.slice(0,8)} · event ${payload.sequence}`;
+    document.querySelector('#events').append(row);
+    // Timestamp after DOM mutation. This measures DOM application, not screen paint.
+    window.samples.push({...payload, received_ns:received, rendered_ns:Date.now()*1e6});
+}
+window.subscribe = async (mode, fixture) => {
+    window.samples=[];
+    document.querySelector('#events').replaceChildren();
+    if(mode==='sse') {
+        const ticket=await rpc('/sse/connect',{stream:fixture.stream});
+        window.transport=new SharedWorker('/sse_server/static/worker/shared_worker.js',
+            {name:`sse:${ticket.scope}:${fixture.stream}`});
+        const port=window.transport.port;
+        port.start();
+        await new Promise(resolve=>{
+            port.onmessage=({data})=>{
+                if(data.kind==='event') receive(data.payload);
+                if(data.kind==='state') {
+                    window.states.push({...data, at_ms:Date.now()});
+                    document.querySelector('#state').textContent=data.state;
+                    if(data.state==='live') resolve();
+                }
+            };
+            port.postMessage({kind:'start',...ticket,stream:fixture.stream});
+        });
+        window.keepalive=setInterval(()=>port.postMessage({kind:'ping'}),30000);
+    } else {
+        const socket=window.transport=new WebSocket(`${location.origin.replace('http','ws')}/websocket?version=${fixture.version}`);
+        await new Promise((resolve,reject)=>{socket.onopen=resolve;socket.onerror=reject});
+        socket.onmessage=({data})=>{
+            for(const item of JSON.parse(data))
+                if(item.message?.type==='sse.experiment') receive(item.message.payload);
+        };
+        socket.send(JSON.stringify({event_name:'subscribe',data:{channels:[fixture.stream],last:0,check_outdated:false}}));
+        await new Promise(resolve=>setTimeout(resolve,250));
+        document.querySelector('#state').textContent='live';
+    }
+};
+window.unsubscribe=()=>{
+    clearInterval(window.keepalive);
+    if(window.transport?.port) window.transport.port.postMessage({kind:'leave'});
+    else window.transport?.close();
+};
+document.querySelector('#run').onclick=async()=>{
+    const button=document.querySelector('#run');
+    button.disabled=true;
+    try {
+        window.unsubscribe();
+        const fixture=await rpc('/sse_experiment/setup');
+        const mode=document.querySelector('#mode').value;
+        await window.subscribe(mode,fixture);
+        await rpc('/sse_experiment/trial',{stream:fixture.stream,probes:fixture.probes,mode,
+            duration_ms:Number(document.querySelector('#duration').value),
+            fail:document.querySelector('#fail').checked});
+        document.querySelector('#state').textContent='Tool request committed';
+    } catch(error) {
+        document.querySelector('#state').textContent=`Request failed: ${error.message}`;
+    } finally {button.disabled=false;}
+};
+</script></html>

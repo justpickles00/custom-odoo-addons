@@ -1,0 +1,43 @@
+{
+  "date_utc": "2026-10-01",
+  "os": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43",
+  "python": "3.14.7",
+  "cpus": 12,
+  "odoo_commit": "5bcf314eb0896bdf7e218341a134901004ba3d4d",
+  "addons_base_commit": "26ccf8108bb04ec5c5c795720412d16d379f29ea",
+  "production_source_sha256": {
+    "sse_server/server.py": "f3155f16d0338c37abfa3ea5b4dbc1a8e208153d68da5ddca0d0544c7c1aac20",
+    "sse_server/api.py": "5bacdda643928c1f7e282981f087a146ab710716aaa6d08801ff0957e8170cdf",
+    "sse_server/static/worker/shared_worker.js": "427264d8d360d8c610bad3b9cf65adf8e7254fd5fbf1c4f778c9edfd7b9cca20"
+  },
+  "original_nofile_soft": 1024,
+  "resource_fit_nofile_soft": 65536,
+  "pg_max_connections": 100,
+  "resource_fit_db_maxconn": 3,
+  "resource_fit_db_maxconn_gevent": 16,
+  "http_workers": 20,
+  "cron_workers": 1,
+  "gevent_workers": 1,
+  "sse_workers": 1,
+  "http_registry_lru": 136,
+  "cron_registry_lru": 1,
+  "active_capacity_tenants": 32,
+  "capacity_payload_padding_bytes": 768,
+  "config": "[options]\naddons_path = /home/coder/worktrees/justpickles00/odoo/master/addons,/home/coder/worktrees/justpickles00/custom-odoo-addons/master-sse-server\ndata_dir = /home/coder/playground/sse-utility-experiment/data\ndb_user = coder\ndb_host = /var/run/postgresql\ndbfilter = ^odoo_sse_exp_[0-9]+$\nhttp_interface = 127.0.0.1\nhttp_port = 8076\ngevent_port = 8077\nworkers = 20\nmax_cron_threads = 1\nproxy_mode = True\nwith_demo = True\nserver_wide_modules = base,web,sse_server,sse_agent_loop_experiment\nlogfile = /home/coder/playground/sse-utility-experiment/odoo.log\nlimit_memory_soft = 2147483648\nlimit_memory_hard = 2684354560\nlimit_time_real = 120\ndb_maxconn = 3\ndb_maxconn_gevent = 16\n",
+  "capacity_test_only_caps": {
+    "global": 32768,
+    "tenant": 32768
+  },
+  "capacity_driver_environment": "/home/coder/playground/sse-utility-experiment/client-env",
+  "capacity_driver_fast_json": "orjson 3.12.0 (client only)",
+  "odoo_fast_json": "standard-library fallback; Odoo environment unchanged",
+  "fleet_cron_exit_request_count": 62000,
+  "soak_publish_paths": "SSE direct IPC; bus real HTTP transaction",
+  "soak_proxy_bypassed": true,
+  "soak_sse_streams": "independent per connection",
+  "soak_bus_streams": "one per active tenant, 32 tenants",
+  "admission_defaults_restored": true,
+  "diagnostic_request_headers_redacted": true,
+  "temporary_fleet_removed": true,
+  "retained_database": "odoo_sse_exp_0000"
+}

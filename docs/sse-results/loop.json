@@ -1,0 +1,925 @@
+[
+  {
+    "mode": "bus",
+    "run_id": "a48f9674a1254c6b86205e3df309644b",
+    "rounds": [
+      {
+        "request_ms": 66.69847102602944,
+        "queued": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "queued": true
+          }
+        },
+        "callback": {
+          "result": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "result": {
+              "run_id": "a48f9674a1254c6b86205e3df309644b",
+              "started_ns": 1790859256221570396,
+              "cost_ms": [
+                0.04628,
+                0.016041,
+                0.012044,
+                0.030177,
+                0.003968
+              ],
+              "end_ns": 1790859256379822944,
+              "pid": 250165
+            }
+          },
+          "started_ns": 1790859256166323388,
+          "end_ns": 1790859256396474355
+        }
+      },
+      {
+        "request_ms": 20.016306021716446,
+        "queued": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "queued": true
+          }
+        },
+        "callback": {
+          "result": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "result": {
+              "run_id": "a48f9674a1254c6b86205e3df309644b",
+              "started_ns": 1790859258461193255,
+              "cost_ms": [
+                0.042782,
+                0.014858,
+                0.033653,
+                0.03093,
+                0.003938
+              ],
+              "end_ns": 1790859258619894950,
+              "pid": 250157
+            }
+          },
+          "started_ns": 1790859258408820053,
+          "end_ns": 1790859258663353210
+        }
+      },
+      {
+        "request_ms": 75.16923296498135,
+        "queued": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "queued": true
+          }
+        },
+        "callback": {
+          "result": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "error": {
+              "code": 0,
+              "message": "Odoo Server Error",
+              "data": {
+                "name": "odoo.exceptions.ValidationError",
+                "message": "Intentional experiment rollback",
+                "arguments": [
+                  "Intentional experiment rollback"
+                ],
+                "timestamp": 1790859260,
+                "context": {},
+                "debug": "Traceback (most recent call last):\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/router.py\", line 446, in serve_db\n    return retrying(serve_func, env=request.env)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/retrying.py\", line 56, in retrying\n    result = func()\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/router.py\", line 593, in serve_ir_http\n    response = request.dispatcher.dispatch(rule.endpoint, args)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/dispatcher.py\", line 371, in dispatch\n    result = self.request.registry['ir.http']._dispatch(endpoint)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/addons/base/models/ir_http.py\", line 473, in _dispatch\n    result = endpoint(**request.params)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/routing_map.py\", line 218, in route_wrapper\n    result = endpoint(self, *args, **params_ok)\n  File \"/home/coder/worktrees/justpickles00/custom-odoo-addons/master-sse-server/sse_agent_loop_experiment/experiment.py\", line 127, in trial\n    raise ValidationError(\"Intentional experiment rollback\")\nodoo.exceptions.ValidationError: Intentional experiment rollback\n"
+              }
+            }
+          },
+          "started_ns": 1790859260727879673,
+          "end_ns": 1790859260942952100
+        }
+      }
+    ],
+    "probes": [
+      [
+        173,
+        1
+      ],
+      [
+        174,
+        1
+      ],
+      [
+        175,
+        1
+      ],
+      [
+        176,
+        1
+      ],
+      [
+        177,
+        0
+      ],
+      [
+        178,
+        0
+      ]
+    ],
+    "events": [
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:0",
+        "sequence": 0,
+        "kind": "model.request_sent",
+        "sent_ns": 1790859254162034944,
+        "duration_ms": 0,
+        "padding": "",
+        "received_ns": 1790859254192999936,
+        "rendered_ns": 1790859254192999936
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:1",
+        "sequence": 1,
+        "kind": "model.response_received",
+        "sent_ns": 1790859256222089216,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859256412000000,
+        "rendered_ns": 1790859256412999936
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:2",
+        "sequence": 2,
+        "kind": "tool.started",
+        "sent_ns": 1790859256222148352,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859256412999936,
+        "rendered_ns": 1790859256412999936
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:3",
+        "sequence": 3,
+        "kind": "tool.progress",
+        "sent_ns": 1790859256227258112,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859256412999936,
+        "rendered_ns": 1790859256412999936
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:4",
+        "sequence": 4,
+        "kind": "tool.progress",
+        "sent_ns": 1790859256379414016,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859256412999936,
+        "rendered_ns": 1790859256412999936
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:5",
+        "sequence": 5,
+        "kind": "tool.returned",
+        "sent_ns": 1790859256379475456,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859256412999936,
+        "rendered_ns": 1790859256412999936
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:6",
+        "sequence": 6,
+        "kind": "model.request_sent",
+        "sent_ns": 1790859256406110976,
+        "duration_ms": 0,
+        "padding": "",
+        "received_ns": 1790859256432000000,
+        "rendered_ns": 1790859256432000000
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:7",
+        "sequence": 7,
+        "kind": "model.response_received",
+        "sent_ns": 1790859258461607936,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859258678000128,
+        "rendered_ns": 1790859258678000128
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:8",
+        "sequence": 8,
+        "kind": "tool.started",
+        "sent_ns": 1790859258461663488,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859258678000128,
+        "rendered_ns": 1790859258678000128
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:9",
+        "sequence": 9,
+        "kind": "tool.progress",
+        "sent_ns": 1790859258466997504,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859258679000064,
+        "rendered_ns": 1790859258679000064
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:10",
+        "sequence": 10,
+        "kind": "tool.progress",
+        "sent_ns": 1790859258619538944,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859258679000064,
+        "rendered_ns": 1790859258679000064
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:11",
+        "sequence": 11,
+        "kind": "tool.returned",
+        "sent_ns": 1790859258619599360,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859258679000064,
+        "rendered_ns": 1790859258679000064
+      },
+      {
+        "run_id": "a48f9674a1254c6b86205e3df309644b",
+        "event_id": "a48f9674a1254c6b86205e3df309644b:12",
+        "sequence": 12,
+        "kind": "model.request_sent",
+        "sent_ns": 1790859258723144960,
+        "duration_ms": 0,
+        "padding": "",
+        "received_ns": 1790859258759000064,
+        "rendered_ns": 1790859258759000064
+      }
+    ]
+  },
+  {
+    "mode": "bus_separate",
+    "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+    "rounds": [
+      {
+        "request_ms": 90.8726149937138,
+        "queued": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "queued": true
+          }
+        },
+        "callback": {
+          "result": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "result": {
+              "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+              "started_ns": 1790859263489373151,
+              "cost_ms": [
+                22.284355,
+                11.092919,
+                11.320583,
+                14.048,
+                12.688204
+              ],
+              "end_ns": 1790859263714960775,
+              "pid": 250149
+            }
+          },
+          "started_ns": 1790859263483811242,
+          "end_ns": 1790859263719005507
+        }
+      },
+      {
+        "request_ms": 29.323213966563344,
+        "queued": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "queued": true
+          }
+        },
+        "callback": {
+          "result": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "result": {
+              "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+              "started_ns": 1790859265804480095,
+              "cost_ms": [
+                55.346738,
+                18.722445,
+                12.814715,
+                11.230802,
+                11.02608
+              ],
+              "end_ns": 1790859266067874541,
+              "pid": 250170
+            }
+          },
+          "started_ns": 1790859265752255397,
+          "end_ns": 1790859266072356446
+        }
+      },
+      {
+        "request_ms": 89.64826702140272,
+        "queued": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "queued": true
+          }
+        },
+        "callback": {
+          "result": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "error": {
+              "code": 0,
+              "message": "Odoo Server Error",
+              "data": {
+                "name": "odoo.exceptions.ValidationError",
+                "message": "Intentional experiment rollback",
+                "arguments": [
+                  "Intentional experiment rollback"
+                ],
+                "timestamp": 1790859268,
+                "context": {},
+                "debug": "Traceback (most recent call last):\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/router.py\", line 446, in serve_db\n    return retrying(serve_func, env=request.env)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/retrying.py\", line 56, in retrying\n    result = func()\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/router.py\", line 593, in serve_ir_http\n    response = request.dispatcher.dispatch(rule.endpoint, args)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/dispatcher.py\", line 371, in dispatch\n    result = self.request.registry['ir.http']._dispatch(endpoint)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/addons/base/models/ir_http.py\", line 473, in _dispatch\n    result = endpoint(**request.params)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/routing_map.py\", line 218, in route_wrapper\n    result = endpoint(self, *args, **params_ok)\n  File \"/home/coder/worktrees/justpickles00/custom-odoo-addons/master-sse-server/sse_agent_loop_experiment/experiment.py\", line 127, in trial\n    raise ValidationError(\"Intentional experiment rollback\")\nodoo.exceptions.ValidationError: Intentional experiment rollback\n"
+              }
+            }
+          },
+          "started_ns": 1790859268160641771,
+          "end_ns": 1790859268388129433
+        }
+      }
+    ],
+    "probes": [
+      [
+        179,
+        1
+      ],
+      [
+        180,
+        1
+      ],
+      [
+        181,
+        1
+      ],
+      [
+        182,
+        1
+      ],
+      [
+        183,
+        0
+      ],
+      [
+        184,
+        0
+      ]
+    ],
+    "events": [
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:0",
+        "sequence": 0,
+        "kind": "model.request_sent",
+        "sent_ns": 1790859261449495808,
+        "duration_ms": 0,
+        "padding": "",
+        "received_ns": 1790859261495000064,
+        "rendered_ns": 1790859261495000064
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:1",
+        "sequence": 1,
+        "kind": "model.response_received",
+        "sent_ns": 1790859263489806080,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859263527000064,
+        "rendered_ns": 1790859263527000064
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:2",
+        "sequence": 2,
+        "kind": "tool.started",
+        "sent_ns": 1790859263512127744,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859263542000128,
+        "rendered_ns": 1790859263542000128
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:3",
+        "sequence": 3,
+        "kind": "tool.progress",
+        "sent_ns": 1790859263524224512,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859263553999872,
+        "rendered_ns": 1790859263553999872
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:4",
+        "sequence": 4,
+        "kind": "tool.progress",
+        "sent_ns": 1790859263687876608,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859263716999936,
+        "rendered_ns": 1790859263716999936
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:5",
+        "sequence": 5,
+        "kind": "tool.returned",
+        "sent_ns": 1790859263701943808,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859263731000064,
+        "rendered_ns": 1790859263731000064
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:6",
+        "sequence": 6,
+        "kind": "model.request_sent",
+        "sent_ns": 1790859263730187008,
+        "duration_ms": 0,
+        "padding": "",
+        "received_ns": 1790859263764999936,
+        "rendered_ns": 1790859263764999936
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:7",
+        "sequence": 7,
+        "kind": "model.response_received",
+        "sent_ns": 1790859265804982528,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859265875000064,
+        "rendered_ns": 1790859265875000064
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:8",
+        "sequence": 8,
+        "kind": "tool.started",
+        "sent_ns": 1790859265860364288,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859265896999936,
+        "rendered_ns": 1790859265896999936
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:9",
+        "sequence": 9,
+        "kind": "tool.progress",
+        "sent_ns": 1790859265880753408,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859265912000000,
+        "rendered_ns": 1790859265912000000
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:10",
+        "sequence": 10,
+        "kind": "tool.progress",
+        "sent_ns": 1790859266045331200,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859266072000000,
+        "rendered_ns": 1790859266072999936
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:11",
+        "sequence": 11,
+        "kind": "tool.returned",
+        "sent_ns": 1790859266056575232,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859266088999936,
+        "rendered_ns": 1790859266088999936
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:12",
+        "sequence": 12,
+        "kind": "model.request_sent",
+        "sent_ns": 1790859266126640384,
+        "duration_ms": 0,
+        "padding": "",
+        "received_ns": 1790859266172999936,
+        "rendered_ns": 1790859266172999936
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:13",
+        "sequence": 13,
+        "kind": "model.response_received",
+        "sent_ns": 1790859268167056640,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859268196999936,
+        "rendered_ns": 1790859268196999936
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:14",
+        "sequence": 14,
+        "kind": "tool.started",
+        "sent_ns": 1790859268179998976,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859268211000064,
+        "rendered_ns": 1790859268211000064
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:15",
+        "sequence": 15,
+        "kind": "tool.progress",
+        "sent_ns": 1790859268192451840,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859268224000000,
+        "rendered_ns": 1790859268224000000
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:16",
+        "sequence": 16,
+        "kind": "tool.progress",
+        "sent_ns": 1790859268356813824,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859268385999872,
+        "rendered_ns": 1790859268385999872
+      },
+      {
+        "run_id": "e2f4e0bd366d49f29f8d87706d55f1e0",
+        "event_id": "e2f4e0bd366d49f29f8d87706d55f1e0:17",
+        "sequence": 17,
+        "kind": "attempt.failed",
+        "sent_ns": 1790859268369410816,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859268400000000,
+        "rendered_ns": 1790859268400000000
+      }
+    ]
+  },
+  {
+    "mode": "sse",
+    "run_id": "b05515903eb34d61bae2f48946aefbbe",
+    "rounds": [
+      {
+        "request_ms": 9.67958103865385,
+        "queued": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "queued": true
+          }
+        },
+        "callback": {
+          "result": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "result": {
+              "run_id": "b05515903eb34d61bae2f48946aefbbe",
+              "started_ns": 1790859270684920527,
+              "cost_ms": [
+                1.041619,
+                0.332133,
+                0.461371,
+                1.057149,
+                0.495215
+              ],
+              "end_ns": 1790859270841585133,
+              "pid": 250157
+            }
+          },
+          "started_ns": 1790859270678752320,
+          "end_ns": 1790859270847250099
+        }
+      },
+      {
+        "request_ms": 11.451762984506786,
+        "queued": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "queued": true
+          }
+        },
+        "callback": {
+          "result": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "result": {
+              "run_id": "b05515903eb34d61bae2f48946aefbbe",
+              "started_ns": 1790859272874479074,
+              "cost_ms": [
+                0.619212,
+                0.552765,
+                0.511977,
+                1.197958,
+                0.446212
+              ],
+              "end_ns": 1790859273031840118,
+              "pid": 250178
+            }
+          },
+          "started_ns": 1790859272868212579,
+          "end_ns": 1790859273037680950
+        }
+      },
+      {
+        "request_ms": 8.565984026063234,
+        "queued": {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "result": {
+            "queued": true
+          }
+        },
+        "callback": {
+          "result": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "error": {
+              "code": 0,
+              "message": "Odoo Server Error",
+              "data": {
+                "name": "odoo.exceptions.ValidationError",
+                "message": "Intentional experiment rollback",
+                "arguments": [
+                  "Intentional experiment rollback"
+                ],
+                "timestamp": 1790859275,
+                "context": {},
+                "debug": "Traceback (most recent call last):\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/router.py\", line 446, in serve_db\n    return retrying(serve_func, env=request.env)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/retrying.py\", line 56, in retrying\n    result = func()\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/router.py\", line 593, in serve_ir_http\n    response = request.dispatcher.dispatch(rule.endpoint, args)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/dispatcher.py\", line 371, in dispatch\n    result = self.request.registry['ir.http']._dispatch(endpoint)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/addons/base/models/ir_http.py\", line 473, in _dispatch\n    result = endpoint(**request.params)\n  File \"/home/coder/worktrees/justpickles00/odoo/master/odoo/http/routing_map.py\", line 218, in route_wrapper\n    result = endpoint(self, *args, **params_ok)\n  File \"/home/coder/worktrees/justpickles00/custom-odoo-addons/master-sse-server/sse_agent_loop_experiment/experiment.py\", line 127, in trial\n    raise ValidationError(\"Intentional experiment rollback\")\nodoo.exceptions.ValidationError: Intentional experiment rollback\n"
+              }
+            }
+          },
+          "started_ns": 1790859275053067335,
+          "end_ns": 1790859275273058383
+        }
+      }
+    ],
+    "probes": [
+      [
+        185,
+        1
+      ],
+      [
+        186,
+        1
+      ],
+      [
+        187,
+        1
+      ],
+      [
+        188,
+        1
+      ],
+      [
+        189,
+        0
+      ],
+      [
+        190,
+        0
+      ]
+    ],
+    "events": [
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:0",
+        "sequence": 0,
+        "kind": "model.request_sent",
+        "sent_ns": 1790859268674999552,
+        "duration_ms": 0,
+        "padding": "",
+        "received_ns": 1790859268676999936,
+        "rendered_ns": 1790859268676999936
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:1",
+        "sequence": 1,
+        "kind": "model.response_received",
+        "sent_ns": 1790859270685244416,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859270687000064,
+        "rendered_ns": 1790859270687000064
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:2",
+        "sequence": 2,
+        "kind": "tool.started",
+        "sent_ns": 1790859270686291200,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859270687000064,
+        "rendered_ns": 1790859270687000064
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:3",
+        "sequence": 3,
+        "kind": "tool.progress",
+        "sent_ns": 1790859270687246592,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859270688000000,
+        "rendered_ns": 1790859270688000000
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:4",
+        "sequence": 4,
+        "kind": "tool.progress",
+        "sent_ns": 1790859270839933440,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859270841999872,
+        "rendered_ns": 1790859270841999872
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:5",
+        "sequence": 5,
+        "kind": "tool.returned",
+        "sent_ns": 1790859270840996864,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859270841999872,
+        "rendered_ns": 1790859270841999872
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:6",
+        "sequence": 6,
+        "kind": "model.request_sent",
+        "sent_ns": 1790859270863190784,
+        "duration_ms": 0,
+        "padding": "",
+        "received_ns": 1790859270864000000,
+        "rendered_ns": 1790859270864000000
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:7",
+        "sequence": 7,
+        "kind": "model.response_received",
+        "sent_ns": 1790859272875068672,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859272876000000,
+        "rendered_ns": 1790859272876000000
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:8",
+        "sequence": 8,
+        "kind": "tool.started",
+        "sent_ns": 1790859272875692800,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859272876000000,
+        "rendered_ns": 1790859272876000000
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:9",
+        "sequence": 9,
+        "kind": "tool.progress",
+        "sent_ns": 1790859272877612032,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859272878000128,
+        "rendered_ns": 1790859272878000128
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:10",
+        "sequence": 10,
+        "kind": "tool.progress",
+        "sent_ns": 1790859273030097920,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859273032000000,
+        "rendered_ns": 1790859273032000000
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:11",
+        "sequence": 11,
+        "kind": "tool.returned",
+        "sent_ns": 1790859273031305728,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859273032000000,
+        "rendered_ns": 1790859273032000000
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:12",
+        "sequence": 12,
+        "kind": "model.request_sent",
+        "sent_ns": 1790859273050229248,
+        "duration_ms": 0,
+        "padding": "",
+        "received_ns": 1790859273051000064,
+        "rendered_ns": 1790859273051000064
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:13",
+        "sequence": 13,
+        "kind": "model.response_received",
+        "sent_ns": 1790859275105442048,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859275107000064,
+        "rendered_ns": 1790859275107000064
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:14",
+        "sequence": 14,
+        "kind": "tool.started",
+        "sent_ns": 1790859275106537472,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859275108000000,
+        "rendered_ns": 1790859275108000000
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:15",
+        "sequence": 15,
+        "kind": "tool.progress",
+        "sent_ns": 1790859275113140480,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859275113999872,
+        "rendered_ns": 1790859275113999872
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:16",
+        "sequence": 16,
+        "kind": "tool.progress",
+        "sent_ns": 1790859275265532160,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859275268000000,
+        "rendered_ns": 1790859275268000000
+      },
+      {
+        "run_id": "b05515903eb34d61bae2f48946aefbbe",
+        "event_id": "b05515903eb34d61bae2f48946aefbbe:17",
+        "sequence": 17,
+        "kind": "attempt.failed",
+        "sent_ns": 1790859275266770944,
+        "duration_ms": 150,
+        "padding": "",
+        "received_ns": 1790859275268000000,
+        "rendered_ns": 1790859275268000000
+      }
+    ]
+  }
+]
