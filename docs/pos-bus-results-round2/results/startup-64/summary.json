@@ -1,0 +1,47 @@
+{
+  "run_id": "19481dbfc6af",
+  "native": true,
+  "elapsed_s": 6.820157424954232,
+  "counts": {
+    "run_start": 1,
+    "rpc_start": 89,
+    "event_loop_samples": 136,
+    "rpc_end": 88,
+    "device_started": 24,
+    "run_error": 1
+  },
+  "histograms": {
+    "event_loop_lag.startup": {
+      "count": 136,
+      "mean_ms": 0.9245733154410332,
+      "max_ms": 3.1534332665614784,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 4.0
+    },
+    "rpc./web/session/authenticate": {
+      "count": 37,
+      "mean_ms": 867.9353635135137,
+      "max_ms": 1188.164752,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 2048.0,
+      "p99_upper_ms": 2048.0
+    },
+    "rpc./web/session/get_session_info": {
+      "count": 36,
+      "mean_ms": 329.3920382777778,
+      "max_ms": 824.164133,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc.register_new_device_identifier": {
+      "count": 16,
+      "mean_ms": 317.47333625,
+      "max_ms": 1476.833545,
+      "p50_upper_ms": 32.0,
+      "p95_upper_ms": 2048.0,
+      "p99_upper_ms": 2048.0
+    }
+  }
+}

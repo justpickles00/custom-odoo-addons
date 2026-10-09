@@ -30,7 +30,7 @@ def analyze(directory, probe):
     clients = list(rows(directory / 'clients.jsonl'))
     summary = json.loads((directory / 'summary.json').read_text())
     operations = {r['operation_id'] for r in clients if r['event'] == 'rpc_start'}
-    lifecycle_ops = {r['operation_id'] for r in clients if r['event'] == 'order_step'}
+    lifecycle_ops = {r['operation_id'] for r in clients if r['event'] in ('order_step', 'table_action_complete')}
     run = next(r for r in clients if r['event'] == 'run_start')
     measurement = next((r for r in clients if r['event'] == 'measurement_start'), {})
     measure_start = measurement.get('scheduled_start_ns', 0)
@@ -61,6 +61,7 @@ def analyze(directory, probe):
             elif kind == 'recorder_stats':
                 recorder_drops[row['pid']] = max(recorder_drops.get(row['pid'], 0), row['dropped_total'])
     latency = defaultdict(list)
+    measurement_latency = defaultdict(list)
     tenants = defaultdict(list)
     delivery_count, duplicate_count, unmatched = Counter(), 0, 0
     actual_recipients = defaultdict(set)
@@ -93,6 +94,8 @@ def analyze(directory, probe):
         if notification_type == 'posbus.synthetic':
             group = 'synthetic'
         latency[group].append(ns)
+        if measure_start <= commit['commit_return_ns'] <= measure_end:
+            measurement_latency[group].append(ns)
         tenants[row['db']].append(ns)
         per_event[key].append(ns)
         event_types[notification_type.split('-')[-1]] += 1
@@ -118,6 +121,7 @@ def analyze(directory, probe):
                                 'missing_devices':sorted(intended-actual_recipients[key]),
                                 'unexpected_devices':sorted(actual_recipients[key]-intended)})
     stream_delivery = defaultdict(lambda: {'expected':0,'received':0,'rows':0,'mismatches':[]})
+    measurement_stream_delivery = defaultdict(lambda: {'expected':0,'received':0,'rows':0,'mismatches':[]})
     for key,meta in metadata.items():
         kind=meta['type']
         if kind=='posbus.canary':
@@ -136,6 +140,14 @@ def analyze(directory, probe):
         if actual_recipients[key]!=intended:
             check['mismatches'].append({'db':key[0],'id':key[1],
                 'missing':sorted(intended-actual_recipients[key]),'unexpected':sorted(actual_recipients[key]-intended)})
+        if measure_start <= commits[key]['commit_return_ns'] <= measure_end:
+            measured = measurement_stream_delivery[category]
+            measured['rows'] += 1
+            measured['expected'] += len(intended)
+            measured['received'] += len(actual_recipients[key])
+            if actual_recipients[key] != intended:
+                measured['mismatches'].append({'db':key[0], 'id':key[1],
+                    'missing':sorted(intended-actual_recipients[key]), 'unexpected':sorted(actual_recipients[key]-intended)})
     warm_keys = {key for key, commit in commits.items()
                  if measure_start <= commit['commit_return_ns'] <= measure_end
                  and ':final:' not in str(commit.get('operation_id'))
@@ -153,6 +165,8 @@ def analyze(directory, probe):
               'order_cursor_commit_ms': stats([r['duration_ns'] for r in cursor_commits], 1e6),
               'notification_types': dict(event_types), 'payload_bytes_delivered': dict(bytes_by_type),
               'stream_delivery':dict(stream_delivery),
+              'measurement_stream_delivery':dict(measurement_stream_delivery),
+              'measurement_commit_to_receipt_ms':{k:stats(v,1e6) for k,v in measurement_latency.items()},
               'commit_rows_matched': len(commits), 'dispatch_batches_matched': len(selected_batches),
               'duplicate_receipts': duplicate_count, 'unmatched_receipts': unmatched,
               'observed_pos_rows_expected_deliveries': expected_pos, 'observed_pos_rows_received_deliveries': received_pos,

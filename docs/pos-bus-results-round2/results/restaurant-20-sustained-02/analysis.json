@@ -1,0 +1,1665 @@
+{
+  "run_id": "0e4d7cc9f47e",
+  "args": {
+    "fixture": "/home/coder/playground/pos-bus-investigation/fixture.json",
+    "http_url": "http://127.0.0.1:8061",
+    "ws_url": "ws://127.0.0.1:8062",
+    "db_prefix": "posbus_",
+    "db_start": 0,
+    "tenants": 20,
+    "restaurant_fraction": 0.2,
+    "tills": 4,
+    "tables_per_till": 2,
+    "background": 2,
+    "duration": 180.0,
+    "think_time": 2.0,
+    "prepare_every": 4,
+    "cancel_fraction": 0.2,
+    "queue_size": 128,
+    "follower_concurrency": 8,
+    "startup_concurrency": 2,
+    "cache_limit": 10000,
+    "closed_cache": 64,
+    "rpc_timeout": 60,
+    "barrier_timeout": 60,
+    "drain_timeout": 120,
+    "canary_interval": 15.0,
+    "output": "/home/coder/playground/pos-bus-investigation/round2/results/restaurant-20-sustained-02",
+    "mode": "follower",
+    "coalesce_equal_sync": false,
+    "run_id": "0e4d7cc9f47e"
+  },
+  "counts": {
+    "run_start": 1,
+    "rpc_start": 7965,
+    "rpc_end": 7859,
+    "device_started": 56,
+    "ws_raw": 4942,
+    "notification": 13662,
+    "barrier_passed": 20,
+    "setup_start": 1,
+    "table_action_start": 1094,
+    "table_action_complete": 1078,
+    "follower_skipped": 2156,
+    "follower_complete": 6378,
+    "setup_complete": 1,
+    "measurement_start": 1,
+    "event_loop_samples": 5976,
+    "table_action_scheduled": 2880,
+    "monitor_canary_publish": 239,
+    "load_sample": 302,
+    "follower_saturation": 306,
+    "ws_heartbeat": 392,
+    "event_loop_stall": 46,
+    "table_schedule_dropped": 227,
+    "measurement_end": 1,
+    "run_error": 1
+  },
+  "commit_to_receipt_ms": {
+    "canary_startup": {
+      "n": 56,
+      "mean": 35.821624303571426,
+      "p50": 24.406181,
+      "p95": 137.914945,
+      "p99": 159.453091,
+      "max": 159.648624
+    },
+    "canary_startup_commit_to_claim": {
+      "n": 56,
+      "mean": 13.398485500000001,
+      "p50": 7.703238,
+      "p95": 25.67301,
+      "p99": 93.189366,
+      "max": 93.189366
+    },
+    "canary_startup_after_dispatch": {
+      "n": 56,
+      "mean": 0.993765375,
+      "p50": 0.75948,
+      "p95": 1.987846,
+      "p99": 3.646423,
+      "max": 3.781993
+    },
+    "pos": {
+      "n": 8624,
+      "mean": 33.37383311479592,
+      "p50": 30.299003,
+      "p95": 51.813904,
+      "p99": 86.25207,
+      "max": 362.322139
+    },
+    "pos_commit_to_claim": {
+      "n": 8624,
+      "mean": 16.182199099257886,
+      "p50": 15.364738,
+      "p95": 25.428182,
+      "p99": 29.603595,
+      "max": 44.677859
+    },
+    "pos_after_dispatch": {
+      "n": 8624,
+      "mean": 7.864767508116883,
+      "p50": 4.715483,
+      "p95": 20.818571,
+      "p99": 50.526576,
+      "max": 341.824511
+    },
+    "other": {
+      "n": 4312,
+      "mean": 33.37383311479592,
+      "p50": 30.299003,
+      "p95": 51.813904,
+      "p99": 79.369809,
+      "max": 362.322139
+    },
+    "other_commit_to_claim": {
+      "n": 4312,
+      "mean": 16.182199099257886,
+      "p50": 15.364738,
+      "p95": 25.428182,
+      "p99": 29.026763,
+      "max": 44.677859
+    },
+    "other_after_dispatch": {
+      "n": 4312,
+      "mean": 7.864767508116883,
+      "p50": 4.715483,
+      "p95": 20.818571,
+      "p99": 50.292419,
+      "max": 341.824511
+    },
+    "canary": {
+      "n": 670,
+      "mean": 31.85560686119403,
+      "p50": 27.646107,
+      "p95": 51.312837,
+      "p99": 150.472933,
+      "max": 163.069575
+    },
+    "canary_commit_to_claim": {
+      "n": 670,
+      "mean": 15.681928531343281,
+      "p50": 15.027835,
+      "p95": 24.237059,
+      "p99": 27.697546,
+      "max": 47.938514
+    },
+    "canary_after_dispatch": {
+      "n": 670,
+      "mean": 6.189154398507462,
+      "p50": 2.113215,
+      "p95": 14.433881,
+      "p99": 118.504283,
+      "max": 139.717748
+    }
+  },
+  "by_tenant_ms": {
+    "posbus_0018": {
+      "n": 26,
+      "mean": 37.38426711538462,
+      "p50": 26.235734,
+      "p95": 39.815493,
+      "p99": 159.453091,
+      "max": 159.648624
+    },
+    "posbus_0011": {
+      "n": 26,
+      "mean": 38.76093046153846,
+      "p50": 31.573126,
+      "p95": 52.40407,
+      "p99": 123.145946,
+      "max": 123.317372
+    },
+    "posbus_0013": {
+      "n": 26,
+      "mean": 33.13379207692307,
+      "p50": 24.970448,
+      "p95": 31.977097,
+      "p99": 137.914945,
+      "max": 138.129203
+    },
+    "posbus_0017": {
+      "n": 26,
+      "mean": 27.140990115384618,
+      "p50": 24.524287,
+      "p95": 33.200262,
+      "p99": 47.064735,
+      "max": 52.423597
+    },
+    "posbus_0000": {
+      "n": 3366,
+      "mean": 34.00948384105764,
+      "p50": 30.839216,
+      "p95": 55.620502,
+      "p99": 115.54382,
+      "max": 192.021617
+    },
+    "posbus_0019": {
+      "n": 24,
+      "mean": 34.670433083333336,
+      "p50": 29.664401,
+      "p95": 52.376809,
+      "p99": 72.018111,
+      "max": 72.15348
+    },
+    "posbus_0008": {
+      "n": 26,
+      "mean": 33.43817296153846,
+      "p50": 26.885014,
+      "p95": 70.027371,
+      "p99": 93.915092,
+      "max": 94.002859
+    },
+    "posbus_0007": {
+      "n": 26,
+      "mean": 28.93161169230769,
+      "p50": 26.506501,
+      "p95": 41.484661,
+      "p99": 42.642091,
+      "max": 42.810243
+    },
+    "posbus_0016": {
+      "n": 26,
+      "mean": 29.361513038461542,
+      "p50": 26.010244,
+      "p95": 39.328003,
+      "p99": 45.688248,
+      "max": 45.829298
+    },
+    "posbus_0005": {
+      "n": 26,
+      "mean": 27.281596615384615,
+      "p50": 22.187955,
+      "p95": 42.826573,
+      "p99": 45.023458,
+      "max": 45.190367
+    },
+    "posbus_0014": {
+      "n": 26,
+      "mean": 30.15642623076923,
+      "p50": 26.93509,
+      "p95": 37.890687,
+      "p99": 76.991016,
+      "max": 77.101618
+    },
+    "posbus_0012": {
+      "n": 26,
+      "mean": 21.704529846153847,
+      "p50": 22.094958,
+      "p95": 27.441396,
+      "p99": 33.96835,
+      "max": 34.041199
+    },
+    "posbus_0010": {
+      "n": 26,
+      "mean": 35.386529653846154,
+      "p50": 26.183805,
+      "p95": 66.586349,
+      "p99": 122.876201,
+      "max": 122.974398
+    },
+    "posbus_0001": {
+      "n": 3294,
+      "mean": 34.646789935336976,
+      "p50": 31.059465,
+      "p95": 54.444356,
+      "p99": 71.227963,
+      "max": 362.322139
+    },
+    "posbus_0003": {
+      "n": 3294,
+      "mean": 33.34886452276867,
+      "p50": 29.837171,
+      "p95": 55.838458,
+      "p99": 114.058564,
+      "max": 269.415212
+    },
+    "posbus_0006": {
+      "n": 26,
+      "mean": 35.65768842307693,
+      "p50": 25.132529,
+      "p95": 37.737426,
+      "p99": 150.472933,
+      "max": 150.604043
+    },
+    "posbus_0002": {
+      "n": 3294,
+      "mean": 31.53186321007893,
+      "p50": 29.550944,
+      "p95": 46.715859,
+      "p99": 58.252619,
+      "max": 104.330658
+    },
+    "posbus_0004": {
+      "n": 26,
+      "mean": 25.452572576923078,
+      "p50": 23.643254,
+      "p95": 34.283942,
+      "p99": 37.122141,
+      "max": 37.315069
+    },
+    "posbus_0015": {
+      "n": 26,
+      "mean": 29.72395776923077,
+      "p50": 29.138247,
+      "p95": 39.252388,
+      "p99": 69.524199,
+      "max": 69.575748
+    },
+    "posbus_0009": {
+      "n": 26,
+      "mean": 25.00528792307692,
+      "p50": 25.096539,
+      "p95": 35.594615,
+      "p99": 36.371307,
+      "max": 36.55618
+    }
+  },
+  "event_max_receipt_ms": {
+    "n": 3493,
+    "mean": 34.766956479530485,
+    "p50": 31.674049,
+    "p95": 55.077636,
+    "p99": 96.289927,
+    "max": 362.322139
+  },
+  "batch_stage_wall_ms": {
+    "queue_wait_max_ns": {
+      "n": 804,
+      "mean": 0.21763745895522388,
+      "p50": 0.18884,
+      "p95": 0.260437,
+      "p99": 0.455629,
+      "max": 6.753957
+    },
+    "cursor_acquire_ns": {
+      "n": 804,
+      "mean": 0.2957558980099503,
+      "p50": 0.244166,
+      "p95": 0.390706,
+      "p99": 0.587092,
+      "max": 10.826893
+    },
+    "session_validation_ns": {
+      "n": 804,
+      "mean": 4.495956528606965,
+      "p50": 4.080511,
+      "p95": 9.829919,
+      "p99": 12.472465,
+      "max": 19.518139
+    },
+    "fetch_ns": {
+      "n": 804,
+      "mean": 1.8858988980099503,
+      "p50": 0.935267,
+      "p95": 4.812398,
+      "p99": 7.53659,
+      "max": 71.345116
+    },
+    "dispatch_ns": {
+      "n": 804,
+      "mean": 0.4668947251243781,
+      "p50": 0.257502,
+      "p95": 1.369094,
+      "p99": 4.471026,
+      "max": 16.365989
+    },
+    "serialize_ns": {
+      "n": 804,
+      "mean": 0.07952282960199004,
+      "p50": 0.044144,
+      "p95": 0.074041,
+      "p99": 0.11008,
+      "max": 4.097825
+    },
+    "enqueue_ns": {
+      "n": 804,
+      "mean": 0.2824418631840796,
+      "p50": 0.142632,
+      "p95": 0.259766,
+      "p99": 3.905978,
+      "max": 16.221502
+    },
+    "duration_ns": {
+      "n": 804,
+      "mean": 9.19868520522388,
+      "p50": 8.120645,
+      "p95": 16.764651,
+      "p99": 21.15376,
+      "max": 77.42192
+    }
+  },
+  "batch_stage_total_wall_ms": {
+    "queue_wait_max_ns": 174.980517,
+    "cursor_acquire_ns": 237.787742,
+    "session_validation_ns": 3614.749049,
+    "fetch_ns": 1516.262714,
+    "dispatch_ns": 375.383359,
+    "serialize_ns": 63.936355,
+    "enqueue_ns": 227.083258,
+    "duration_ns": 7395.742905
+  },
+  "order_rpc_method_ms": {
+    "n": 1078,
+    "mean": 317.1157149805195,
+    "p50": 276.49994,
+    "p95": 653.368303,
+    "p99": 1081.66277,
+    "max": 1485.286842
+  },
+  "order_cursor_commit_ms": {
+    "n": 1078,
+    "mean": 23.575592126159556,
+    "p50": 22.758505,
+    "p95": 32.942721,
+    "p99": 36.422346,
+    "max": 50.496698
+  },
+  "notification_types": {
+    "posbus.canary": 726,
+    "SYNCHRONISATION": 8624,
+    "ORDER_STATE_CHANGED": 4312
+  },
+  "payload_bytes_delivered": {
+    "canary_startup": 2352,
+    "pos": 638176,
+    "other": 8624,
+    "canary": 51810
+  },
+  "stream_delivery": {
+    "SYNCHRONISATION": {
+      "expected": 8752,
+      "received": 8624,
+      "rows": 2188,
+      "mismatches": [
+        {
+          "db": "posbus_0001",
+          "id": 84156,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84157,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85934,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85935,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84153,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84154,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84162,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84163,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84144,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84145,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84159,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84160,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84147,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84148,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84153,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84154,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84147,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84148,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85940,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85941,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85943,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85944,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84150,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84151,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84150,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84151,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84144,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84145,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84165,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84166,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85937,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85938,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        }
+      ]
+    },
+    "ORDER_STATE_CHANGED": {
+      "expected": 4376,
+      "received": 4312,
+      "rows": 1094,
+      "mismatches": [
+        {
+          "db": "posbus_0001",
+          "id": 84158,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85936,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84155,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84164,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84146,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84161,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84149,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84155,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84149,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85942,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85945,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84152,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0002",
+          "id": 84152,
+          "missing": [
+            "posbus_0002:till:0",
+            "posbus_0002:till:1",
+            "posbus_0002:till:2",
+            "posbus_0002:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0003",
+          "id": 84146,
+          "missing": [
+            "posbus_0003:till:0",
+            "posbus_0003:till:1",
+            "posbus_0003:till:2",
+            "posbus_0003:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0001",
+          "id": 84167,
+          "missing": [
+            "posbus_0001:till:0",
+            "posbus_0001:till:1",
+            "posbus_0001:till:2",
+            "posbus_0001:till:3"
+          ],
+          "unexpected": []
+        },
+        {
+          "db": "posbus_0000",
+          "id": 85939,
+          "missing": [
+            "posbus_0000:till:0",
+            "posbus_0000:till:1",
+            "posbus_0000:till:2",
+            "posbus_0000:till:3"
+          ],
+          "unexpected": []
+        }
+      ]
+    },
+    "canary": {
+      "expected": 726,
+      "received": 726,
+      "rows": 259,
+      "mismatches": []
+    }
+  },
+  "measurement_stream_delivery": {
+    "SYNCHRONISATION": {
+      "expected": 4712,
+      "received": 4712,
+      "rows": 1178,
+      "mismatches": []
+    },
+    "ORDER_STATE_CHANGED": {
+      "expected": 2356,
+      "received": 2356,
+      "rows": 589,
+      "mismatches": []
+    },
+    "canary": {
+      "expected": 658,
+      "received": 658,
+      "rows": 233,
+      "mismatches": []
+    }
+  },
+  "measurement_commit_to_receipt_ms": {
+    "pos": {
+      "n": 4712,
+      "mean": 32.24000382597623,
+      "p50": 30.189584,
+      "p95": 49.616688,
+      "p99": 76.203452,
+      "max": 192.021617
+    },
+    "other": {
+      "n": 2356,
+      "mean": 32.24000382597623,
+      "p50": 30.189584,
+      "p95": 49.616688,
+      "p99": 76.203452,
+      "max": 192.021617
+    },
+    "canary": {
+      "n": 658,
+      "mean": 31.972892718844985,
+      "p50": 27.646107,
+      "p95": 51.772195,
+      "p99": 150.472933,
+      "max": 163.069575
+    }
+  },
+  "commit_rows_matched": 3541,
+  "dispatch_batches_matched": 804,
+  "duplicate_receipts": 0,
+  "unmatched_receipts": 0,
+  "observed_pos_rows_expected_deliveries": 8752,
+  "observed_pos_rows_received_deliveries": 8624,
+  "incomplete_pos_rows": [
+    {
+      "db": "posbus_0002",
+      "id": 84147,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0002:till:0",
+        "posbus_0002:till:1",
+        "posbus_0002:till:2",
+        "posbus_0002:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0000",
+      "id": 85937,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0000:till:0",
+        "posbus_0000:till:1",
+        "posbus_0000:till:2",
+        "posbus_0000:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0003",
+      "id": 84151,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0003:till:0",
+        "posbus_0003:till:1",
+        "posbus_0003:till:2",
+        "posbus_0003:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0001",
+      "id": 84157,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0001:till:0",
+        "posbus_0001:till:1",
+        "posbus_0001:till:2",
+        "posbus_0001:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0003",
+      "id": 84154,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0003:till:0",
+        "posbus_0003:till:1",
+        "posbus_0003:till:2",
+        "posbus_0003:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0001",
+      "id": 84160,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0001:till:0",
+        "posbus_0001:till:1",
+        "posbus_0001:till:2",
+        "posbus_0001:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0003",
+      "id": 84144,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0003:till:0",
+        "posbus_0003:till:1",
+        "posbus_0003:till:2",
+        "posbus_0003:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0003",
+      "id": 84153,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0003:till:0",
+        "posbus_0003:till:1",
+        "posbus_0003:till:2",
+        "posbus_0003:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0001",
+      "id": 84159,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0001:till:0",
+        "posbus_0001:till:1",
+        "posbus_0001:till:2",
+        "posbus_0001:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0002",
+      "id": 84151,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0002:till:0",
+        "posbus_0002:till:1",
+        "posbus_0002:till:2",
+        "posbus_0002:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0000",
+      "id": 85938,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0000:till:0",
+        "posbus_0000:till:1",
+        "posbus_0000:till:2",
+        "posbus_0000:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0002",
+      "id": 84150,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0002:till:0",
+        "posbus_0002:till:1",
+        "posbus_0002:till:2",
+        "posbus_0002:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0003",
+      "id": 84145,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0003:till:0",
+        "posbus_0003:till:1",
+        "posbus_0003:till:2",
+        "posbus_0003:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0002",
+      "id": 84153,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0002:till:0",
+        "posbus_0002:till:1",
+        "posbus_0002:till:2",
+        "posbus_0002:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0000",
+      "id": 85940,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0000:till:0",
+        "posbus_0000:till:1",
+        "posbus_0000:till:2",
+        "posbus_0000:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0001",
+      "id": 84163,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0001:till:0",
+        "posbus_0001:till:1",
+        "posbus_0001:till:2",
+        "posbus_0001:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0003",
+      "id": 84147,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0003:till:0",
+        "posbus_0003:till:1",
+        "posbus_0003:till:2",
+        "posbus_0003:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0001",
+      "id": 84162,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0001:till:0",
+        "posbus_0001:till:1",
+        "posbus_0001:till:2",
+        "posbus_0001:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0002",
+      "id": 84154,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0002:till:0",
+        "posbus_0002:till:1",
+        "posbus_0002:till:2",
+        "posbus_0002:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0001",
+      "id": 84165,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0001:till:0",
+        "posbus_0001:till:1",
+        "posbus_0001:till:2",
+        "posbus_0001:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0002",
+      "id": 84144,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0002:till:0",
+        "posbus_0002:till:1",
+        "posbus_0002:till:2",
+        "posbus_0002:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0000",
+      "id": 85941,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0000:till:0",
+        "posbus_0000:till:1",
+        "posbus_0000:till:2",
+        "posbus_0000:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0000",
+      "id": 85944,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0000:till:0",
+        "posbus_0000:till:1",
+        "posbus_0000:till:2",
+        "posbus_0000:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0000",
+      "id": 85934,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0000:till:0",
+        "posbus_0000:till:1",
+        "posbus_0000:till:2",
+        "posbus_0000:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0003",
+      "id": 84148,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0003:till:0",
+        "posbus_0003:till:1",
+        "posbus_0003:till:2",
+        "posbus_0003:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0000",
+      "id": 85943,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0000:till:0",
+        "posbus_0000:till:1",
+        "posbus_0000:till:2",
+        "posbus_0000:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0001",
+      "id": 84166,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0001:till:0",
+        "posbus_0001:till:1",
+        "posbus_0001:till:2",
+        "posbus_0001:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0002",
+      "id": 84145,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0002:till:0",
+        "posbus_0002:till:1",
+        "posbus_0002:till:2",
+        "posbus_0002:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0003",
+      "id": 84150,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0003:till:0",
+        "posbus_0003:till:1",
+        "posbus_0003:till:2",
+        "posbus_0003:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0001",
+      "id": 84156,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0001:till:0",
+        "posbus_0001:till:1",
+        "posbus_0001:till:2",
+        "posbus_0001:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0002",
+      "id": 84148,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0002:till:0",
+        "posbus_0002:till:1",
+        "posbus_0002:till:2",
+        "posbus_0002:till:3"
+      ],
+      "unexpected_devices": []
+    },
+    {
+      "db": "posbus_0000",
+      "id": 85935,
+      "expected": 4,
+      "received": 0,
+      "missing_devices": [
+        "posbus_0000:till:0",
+        "posbus_0000:till:1",
+        "posbus_0000:till:2",
+        "posbus_0000:till:3"
+      ],
+      "unexpected_devices": []
+    }
+  ],
+  "recorder_drops": {
+    "207378": 0,
+    "206551": 0,
+    "253077": 0,
+    "250957": 0,
+    "257844": 0,
+    "252192": 0,
+    "206567": 0,
+    "253062": 0,
+    "258273": 0,
+    "255144": 0,
+    "255454": 0,
+    "206530": 0,
+    "255083": 0,
+    "255377": 0,
+    "252369": 0,
+    "251956": 0,
+    "254380": 0,
+    "206532": 0,
+    "253992": 0,
+    "207343": 0,
+    "256157": 0,
+    "256039": 0,
+    "252401": 0,
+    "252958": 0,
+    "253071": 0,
+    "207370": 0,
+    "258402": 0,
+    "207397": 0,
+    "252106": 0,
+    "254743": 0,
+    "252063": 0,
+    "250698": 0,
+    "256088": 0,
+    "258193": 0,
+    "206545": 0,
+    "207366": 0,
+    "258381": 0,
+    "206547": 0,
+    "255814": 0,
+    "258003": 0,
+    "206514": 0,
+    "207372": 0,
+    "207388": 0,
+    "255781": 0,
+    "254166": 0,
+    "206528": 0,
+    "254702": 0,
+    "253410": 0,
+    "255500": 0,
+    "255216": 0,
+    "251640": 0,
+    "252055": 0,
+    "257982": 0,
+    "252183": 0,
+    "257418": 0,
+    "207392": 0,
+    "206565": 0,
+    "257400": 0,
+    "258329": 0,
+    "206557": 0,
+    "256764": 0,
+    "251202": 0,
+    "256845": 0,
+    "257322": 0,
+    "207368": 0,
+    "251624": 0,
+    "255946": 0,
+    "254139": 0,
+    "207382": 0,
+    "257997": 0,
+    "252986": 0,
+    "206570": 0,
+    "240799": 0,
+    "254389": 0,
+    "252495": 0,
+    "254652": 0,
+    "252280": 0,
+    "206534": 0,
+    "256917": 0,
+    "206536": 0,
+    "206559": 0,
+    "258453": 0,
+    "253044": 0,
+    "258943": 0,
+    "258961": 0,
+    "207380": 0,
+    "258320": 0,
+    "253136": 0,
+    "257328": 0,
+    "258946": 0,
+    "206538": 0,
+    "241312": 0,
+    "258298": 0,
+    "258767": 0,
+    "254055": 0,
+    "258755": 0,
+    "251885": 0,
+    "240572": 0,
+    "256544": 0,
+    "251972": 0,
+    "252658": 0,
+    "253751": 0,
+    "206549": 0,
+    "251508": 0,
+    "257237": 0,
+    "207361": 0,
+    "254033": 0,
+    "240825": 0,
+    "257135": 0,
+    "258645": 0,
+    "206568": 0,
+    "251668": 0,
+    "256272": 0,
+    "255873": 0,
+    "257753": 0,
+    "256120": 0,
+    "207363": 0,
+    "207355": 0,
+    "258397": 0,
+    "254761": 0,
+    "206563": 0,
+    "250705": 0,
+    "256126": 0,
+    "252781": 0,
+    "254199": 0,
+    "207359": 0,
+    "257369": 0,
+    "255129": 0,
+    "253142": 0,
+    "256145": 0,
+    "255003": 0,
+    "207374": 0,
+    "254094": 0,
+    "255175": 0,
+    "253677": 0,
+    "256665": 0,
+    "253832": 0,
+    "254326": 0,
+    "207376": 0,
+    "257730": 0,
+    "255664": 0,
+    "255719": 0,
+    "257283": 0,
+    "253040": 0,
+    "256134": 0,
+    "254017": 0,
+    "258872": 0,
+    "257069": 0,
+    "210595": 0,
+    "206553": 0,
+    "254803": 0,
+    "207395": 0,
+    "255069": 0,
+    "240598": 0,
+    "254083": 0,
+    "206540": 0,
+    "253347": 0,
+    "256365": 0,
+    "206542": 0,
+    "252211": 0,
+    "258951": 0,
+    "252683": 0,
+    "252071": 0,
+    "240791": 0,
+    "256435": 0,
+    "253737": 0,
+    "254116": 0,
+    "206561": 0,
+    "207390": 0,
+    "255235": 0,
+    "257505": 0,
+    "241307": 0,
+    "258277": 0,
+    "254660": 0,
+    "253381": 0,
+    "207394": 0,
+    "256965": 0,
+    "206555": 0,
+    "252834": 0,
+    "258050": 0,
+    "257203": 0,
+    "251818": 0,
+    "256829": 0,
+    "256045": 0,
+    "207384": 0,
+    "257378": 0,
+    "253104": 0,
+    "257815": 0,
+    "257075": 0,
+    "255138": 0,
+    "252668": 0,
+    "251195": 0,
+    "251994": 0,
+    "251184": 0,
+    "253550": 0,
+    "258153": 0,
+    "255151": 0,
+    "254046": 0,
+    "258347": 0,
+    "255768": 0,
+    "257349": 0,
+    "240883": 0,
+    "251427": 0,
+    "255031": 0,
+    "240355": 0,
+    "207386": 0,
+    "240816": 0,
+    "253211": 0,
+    "253697": 0,
+    "207357": 0,
+    "252000": 0
+  },
+  "delivery_limit": "Server commit metadata includes wholly missing POS rows.",
+  "delivery_window": "All operations scheduled by this run, including drain; stage_wall uses commits inside scheduled measurement window.",
+  "stage_warning": "Stage spans are overlapping wall time, not CPU time. Commit-to-claim and receipt-minus-batch-end may be negative during overlapping fetch/send."
+}

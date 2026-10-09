@@ -1,0 +1,683 @@
+{
+  "run_id": "139f30b820c4",
+  "args": {
+    "fixture": "/home/coder/playground/pos-bus-investigation/fixture.json",
+    "config": "/home/coder/playground/pos-bus-investigation/odoo.conf",
+    "odoo_bin": "/home/coder/worktrees/justpickles00/odoo/master/odoo-bin",
+    "python": "/home/coder/venvs/odoo/master/bin/python",
+    "http_url": "http://127.0.0.1:8061",
+    "ws_url": "http://127.0.0.1:8062",
+    "db_prefix": "posbus_",
+    "db_start": 10,
+    "tenants": 5,
+    "tills": 4,
+    "rates": [
+      10000.0
+    ],
+    "duration": 60.0,
+    "producer_count": 1,
+    "batch_period": 0.5,
+    "batch_size": 1000,
+    "global_go": "/home/coder/playground/pos-bus-investigation/round2/results/cohorts-40k-02/GLOBAL_GO",
+    "pause_readers": 0,
+    "compact_receipts": true,
+    "queue_batches": 16,
+    "startup_concurrency": 1,
+    "startup_timeout": 300.0,
+    "barrier_timeout": 30,
+    "drain_timeout": 90.0,
+    "output": "/home/coder/playground/pos-bus-investigation/round2/results/cohorts-40k-02/cohort-2",
+    "run_id": "139f30b820c4",
+    "mode": "passive",
+    "queue_size": 32,
+    "cache_limit": 10000,
+    "closed_cache": 32,
+    "follower_concurrency": 1,
+    "coalesce_equal_sync": false,
+    "rpc_timeout": 90,
+    "ws_max_msg_size": 0,
+    "background": 0,
+    "restaurant_fraction": 0.2
+  },
+  "cases": [
+    {
+      "event": "case_start",
+      "mono_ns": 335202308504700,
+      "case": 0,
+      "rate": 10000.0,
+      "start_ns": 335202408489482,
+      "end_ns": 335262408489482,
+      "transactions": 527,
+      "transactions_during_window": 510,
+      "committed_rows": 527000,
+      "committed_during_window": 510000,
+      "receipts": 2108000,
+      "paused_receipts": 0,
+      "healthy_receipts": 2108000,
+      "expected_paused_receipts": 0,
+      "duplicates": 0,
+      "last_receipt_ns": 335269611378283,
+      "buckets": [
+        {
+          "second": 0,
+          "offered": 5000,
+          "missed": 0,
+          "committed": 4000,
+          "receipts": 12000,
+          "outstanding_receipts": 4000
+        },
+        {
+          "second": 1,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 10000,
+          "receipts": 41000,
+          "outstanding_receipts": 3000
+        },
+        {
+          "second": 2,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 10000,
+          "receipts": 38000,
+          "outstanding_receipts": 5000
+        },
+        {
+          "second": 3,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 9000,
+          "receipts": 37000,
+          "outstanding_receipts": 4000
+        },
+        {
+          "second": 4,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 9000,
+          "receipts": 36000,
+          "outstanding_receipts": 4000
+        },
+        {
+          "second": 5,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 9000,
+          "receipts": 36000,
+          "outstanding_receipts": 4000
+        },
+        {
+          "second": 6,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 9000,
+          "receipts": 35000,
+          "outstanding_receipts": 5000
+        },
+        {
+          "second": 7,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 8000,
+          "receipts": 29000,
+          "outstanding_receipts": 8000
+        },
+        {
+          "second": 8,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 8000,
+          "receipts": 31000,
+          "outstanding_receipts": 9000
+        },
+        {
+          "second": 9,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 9000,
+          "receipts": 29000,
+          "outstanding_receipts": 16000
+        },
+        {
+          "second": 10,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 8000,
+          "receipts": 28000,
+          "outstanding_receipts": 20000
+        },
+        {
+          "second": 11,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 8000,
+          "receipts": 28000,
+          "outstanding_receipts": 24000
+        },
+        {
+          "second": 12,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 9000,
+          "receipts": 32000,
+          "outstanding_receipts": 28000
+        },
+        {
+          "second": 13,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 29000,
+          "outstanding_receipts": 31000
+        },
+        {
+          "second": 14,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 8000,
+          "receipts": 27000,
+          "outstanding_receipts": 36000
+        },
+        {
+          "second": 15,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 9000,
+          "receipts": 28000,
+          "outstanding_receipts": 44000
+        },
+        {
+          "second": 16,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 36000,
+          "outstanding_receipts": 40000
+        },
+        {
+          "second": 17,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 8000,
+          "receipts": 32000,
+          "outstanding_receipts": 40000
+        },
+        {
+          "second": 18,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 28000,
+          "outstanding_receipts": 44000
+        },
+        {
+          "second": 19,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 36000,
+          "outstanding_receipts": 40000
+        },
+        {
+          "second": 20,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 9000,
+          "receipts": 28000,
+          "outstanding_receipts": 48000
+        },
+        {
+          "second": 21,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 12000,
+          "outstanding_receipts": 96000
+        },
+        {
+          "second": 22,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 11000,
+          "outstanding_receipts": 140000
+        },
+        {
+          "second": 23,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 11000,
+          "outstanding_receipts": 184000
+        },
+        {
+          "second": 24,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 12000,
+          "outstanding_receipts": 232000
+        },
+        {
+          "second": 25,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 10000,
+          "receipts": 6000,
+          "outstanding_receipts": 266000
+        },
+        {
+          "second": 26,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 9000,
+          "receipts": 18000,
+          "outstanding_receipts": 284000
+        },
+        {
+          "second": 27,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 9000,
+          "receipts": 48000,
+          "outstanding_receipts": 272000
+        },
+        {
+          "second": 28,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 9000,
+          "receipts": 12000,
+          "outstanding_receipts": 296000
+        },
+        {
+          "second": 29,
+          "offered": 10000,
+          "missed": 0,
+          "committed": 8000,
+          "receipts": 62000,
+          "outstanding_receipts": 266000
+        },
+        {
+          "second": 30,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 7000,
+          "receipts": 38000,
+          "outstanding_receipts": 256000
+        },
+        {
+          "second": 31,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 7000,
+          "receipts": 36000,
+          "outstanding_receipts": 248000
+        },
+        {
+          "second": 32,
+          "offered": 10000,
+          "missed": 3000,
+          "committed": 8000,
+          "receipts": 25000,
+          "outstanding_receipts": 255000
+        },
+        {
+          "second": 33,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 39000,
+          "outstanding_receipts": 248000
+        },
+        {
+          "second": 34,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 38000,
+          "outstanding_receipts": 242000
+        },
+        {
+          "second": 35,
+          "offered": 10000,
+          "missed": 3000,
+          "committed": 7000,
+          "receipts": 14000,
+          "outstanding_receipts": 256000
+        },
+        {
+          "second": 36,
+          "offered": 10000,
+          "missed": 3000,
+          "committed": 7000,
+          "receipts": 48000,
+          "outstanding_receipts": 236000
+        },
+        {
+          "second": 37,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 9000,
+          "receipts": 16000,
+          "outstanding_receipts": 256000
+        },
+        {
+          "second": 38,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 9000,
+          "receipts": 72000,
+          "outstanding_receipts": 220000
+        },
+        {
+          "second": 39,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 8000,
+          "receipts": 16000,
+          "outstanding_receipts": 236000
+        },
+        {
+          "second": 40,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 44000,
+          "outstanding_receipts": 224000
+        },
+        {
+          "second": 41,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 9000,
+          "receipts": 44000,
+          "outstanding_receipts": 216000
+        },
+        {
+          "second": 42,
+          "offered": 10000,
+          "missed": 3000,
+          "committed": 7000,
+          "outstanding_receipts": 244000
+        },
+        {
+          "second": 43,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 9000,
+          "outstanding_receipts": 280000
+        },
+        {
+          "second": 44,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 9000,
+          "receipts": 25000,
+          "outstanding_receipts": 291000
+        },
+        {
+          "second": 45,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 9000,
+          "receipts": 91000,
+          "outstanding_receipts": 236000
+        },
+        {
+          "second": 46,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 40000,
+          "outstanding_receipts": 228000
+        },
+        {
+          "second": 47,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 9000,
+          "receipts": 20000,
+          "outstanding_receipts": 244000
+        },
+        {
+          "second": 48,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 9000,
+          "receipts": 24000,
+          "outstanding_receipts": 256000
+        },
+        {
+          "second": 49,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 40000,
+          "outstanding_receipts": 248000
+        },
+        {
+          "second": 50,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 7000,
+          "receipts": 24000,
+          "outstanding_receipts": 252000
+        },
+        {
+          "second": 51,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 9000,
+          "receipts": 68000,
+          "outstanding_receipts": 220000
+        },
+        {
+          "second": 52,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 8000,
+          "outstanding_receipts": 252000
+        },
+        {
+          "second": 53,
+          "offered": 10000,
+          "missed": 3000,
+          "committed": 7000,
+          "receipts": 32000,
+          "outstanding_receipts": 248000
+        },
+        {
+          "second": 54,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 80000,
+          "outstanding_receipts": 200000
+        },
+        {
+          "second": 55,
+          "offered": 10000,
+          "missed": 1000,
+          "committed": 10000,
+          "receipts": 8000,
+          "outstanding_receipts": 232000
+        },
+        {
+          "second": 56,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 7000,
+          "receipts": 46000,
+          "outstanding_receipts": 214000
+        },
+        {
+          "second": 57,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 8000,
+          "receipts": 24000,
+          "outstanding_receipts": 222000
+        },
+        {
+          "second": 58,
+          "offered": 10000,
+          "missed": 2000,
+          "committed": 7000,
+          "receipts": 46000,
+          "outstanding_receipts": 204000
+        },
+        {
+          "second": 59,
+          "offered": 10000,
+          "missed": 3000,
+          "committed": 9000,
+          "outstanding_receipts": 240000
+        },
+        {
+          "second": 60,
+          "offered": 5000,
+          "missed": 0,
+          "committed": 7000,
+          "receipts": 32000,
+          "outstanding_receipts": 236000
+        },
+        {
+          "second": 61,
+          "committed": 9000,
+          "receipts": 48000,
+          "outstanding_receipts": 224000
+        },
+        {
+          "second": 62,
+          "committed": 1000,
+          "receipts": 14000,
+          "outstanding_receipts": 214000
+        },
+        {
+          "second": 63,
+          "receipts": 22000,
+          "outstanding_receipts": 192000
+        },
+        {
+          "second": 64,
+          "receipts": 68000,
+          "outstanding_receipts": 124000
+        },
+        {
+          "second": 65,
+          "receipts": 48000,
+          "outstanding_receipts": 76000
+        },
+        {
+          "second": 66,
+          "receipts": 52000,
+          "outstanding_receipts": 24000
+        },
+        {
+          "second": 67,
+          "receipts": 24000,
+          "outstanding_receipts": 0
+        }
+      ],
+      "scheduler_lag_max_ms": 7.604993,
+      "producer_queue_wait_max_ms": 2225.395874,
+      "commit_to_cursor_return_max_ms": 25.838255,
+      "postcommit_errors": 0,
+      "last_commit_ns": 335264473527545,
+      "offered": 600000,
+      "accepted": 527000,
+      "missed": 73000,
+      "actual_transaction_rate": 8.5,
+      "mean_rows_per_transaction": 1000.0,
+      "actual_committed_rate": 8500.0,
+      "actual_total_rate_including_producer_drain": 8491.09283498805,
+      "expected_receipts": 2108000,
+      "missing_receipts": 0,
+      "expected_healthy_receipts": 2108000,
+      "missing_paused_receipts": 0,
+      "missing_healthy_receipts": 0,
+      "wholly_missing_rows": 0,
+      "fully_received_rows": 527000,
+      "last_receipt_after_offer_end_s": 7.202888801,
+      "lag": {
+        "count": 2108000,
+        "mean_ms": 5103.949179242043,
+        "max_ms": 12802.200371,
+        "p50_upper_ms": 8192.0,
+        "p95_upper_ms": 16384.0,
+        "p99_upper_ms": 16384.0
+      }
+    }
+  ],
+  "unmatched_receipts": 0,
+  "paused_devices": [],
+  "client_counts": {
+    "event_loop_samples": 2318,
+    "rpc_start": 70,
+    "rpc_end": 70,
+    "device_started": 20,
+    "ws_heartbeat": 33,
+    "barrier_passed": 10,
+    "global_gate_wait": 1,
+    "global_gate_passed": 1,
+    "receipt_frame": 804,
+    "event_loop_stall": 95,
+    "case_receipt_drain": 1
+  },
+  "client_histograms": {
+    "event_loop_lag.startup": {
+      "count": 1367,
+      "mean_ms": 0.7439443417729424,
+      "max_ms": 2.062389103230089,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 2.0
+    },
+    "rpc./web/session/authenticate": {
+      "count": 20,
+      "mean_ms": 533.6349236500001,
+      "max_ms": 678.767401,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc./web/session/get_session_info": {
+      "count": 20,
+      "mean_ms": 113.63164370000001,
+      "max_ms": 259.205048,
+      "p50_upper_ms": 64.0,
+      "p95_upper_ms": 256.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc.register_new_device_identifier": {
+      "count": 20,
+      "mean_ms": 12.62593895,
+      "max_ms": 15.35628,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 16.0,
+      "p99_upper_ms": 16.0
+    },
+    "rpc./pos_bus_probe/publish": {
+      "count": 10,
+      "mean_ms": 385.6986402,
+      "max_ms": 695.173557,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "event_loop_lag.case-0": {
+      "count": 860,
+      "mean_ms": 25.04570426305669,
+      "max_ms": 1081.4176219864748,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 256.0,
+      "p99_upper_ms": 512.0
+    },
+    "event_loop_lag.drain-0": {
+      "count": 91,
+      "mean_ms": 29.95785498533623,
+      "max_ms": 869.669801031705,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 256.0,
+      "p99_upper_ms": 1024.0
+    }
+  },
+  "clock": "same-host monotonic_ns; lag starts at native PsycoConnection.commit return before postcommit NOTIFY; payload trace marker added; transactions batch native _sendone rows; offered rate is global events/sec"
+}

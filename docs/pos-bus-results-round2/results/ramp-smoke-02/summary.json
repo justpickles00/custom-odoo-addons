@@ -1,0 +1,308 @@
+{
+  "run_id": "29a6ab756453",
+  "args": {
+    "fixture": "/home/coder/playground/pos-bus-investigation/fixture.json",
+    "config": "/home/coder/playground/pos-bus-investigation/odoo.conf",
+    "odoo_bin": "/home/coder/worktrees/justpickles00/odoo/master/odoo-bin",
+    "python": "/home/coder/venvs/odoo/master/bin/python",
+    "http_url": "http://127.0.0.1:8061",
+    "ws_url": "http://127.0.0.1:8062",
+    "db_prefix": "posbus_",
+    "db_start": 0,
+    "tenants": 1,
+    "tills": 2,
+    "rates": [
+      20.0,
+      100.0
+    ],
+    "duration": 5.0,
+    "producer_count": 1,
+    "batch_period": 0.1,
+    "batch_size": 1,
+    "compact_receipts": true,
+    "queue_batches": 16,
+    "startup_concurrency": 2,
+    "startup_timeout": 180,
+    "barrier_timeout": 30,
+    "drain_timeout": 30,
+    "output": "/home/coder/playground/pos-bus-investigation/round2/results/ramp-smoke-02",
+    "run_id": "29a6ab756453",
+    "mode": "passive",
+    "queue_size": 32,
+    "cache_limit": 10000,
+    "closed_cache": 32,
+    "follower_concurrency": 1,
+    "coalesce_equal_sync": false,
+    "rpc_timeout": 90,
+    "ws_max_msg_size": 0,
+    "background": 0,
+    "restaurant_fraction": 0.2
+  },
+  "cases": [
+    {
+      "event": "case_start",
+      "mono_ns": 334210882640357,
+      "case": 0,
+      "rate": 20.0,
+      "start_ns": 334210982617804,
+      "end_ns": 334215982617804,
+      "transactions": 100,
+      "transactions_during_window": 98,
+      "committed_rows": 100,
+      "committed_during_window": 98,
+      "receipts": 200,
+      "duplicates": 0,
+      "last_receipt_ns": 334216010711334,
+      "buckets": [
+        {
+          "second": 0,
+          "offered": 18,
+          "missed": 0,
+          "committed": 18,
+          "receipts": 36,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 1,
+          "offered": 20,
+          "missed": 0,
+          "committed": 20,
+          "receipts": 40,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 2,
+          "offered": 20,
+          "missed": 0,
+          "committed": 20,
+          "receipts": 40,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 3,
+          "offered": 20,
+          "missed": 0,
+          "committed": 20,
+          "receipts": 40,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 4,
+          "offered": 20,
+          "missed": 0,
+          "committed": 20,
+          "receipts": 40,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 5,
+          "offered": 2,
+          "missed": 0,
+          "committed": 2,
+          "receipts": 4,
+          "outstanding_receipts": 0
+        }
+      ],
+      "scheduler_lag_max_ms": 0.997202,
+      "producer_queue_wait_max_ms": 38.397163,
+      "commit_to_cursor_return_max_ms": 8.059309,
+      "postcommit_errors": 0,
+      "last_commit_ns": 334216001709636,
+      "offered": 100,
+      "accepted": 100,
+      "missed": 0,
+      "actual_transaction_rate": 19.6,
+      "mean_rows_per_transaction": 1.0,
+      "actual_committed_rate": 19.6,
+      "actual_total_rate_including_producer_drain": 19.92392316124492,
+      "expected_receipts": 200,
+      "missing_receipts": 0,
+      "wholly_missing_rows": 0,
+      "fully_received_rows": 100,
+      "last_receipt_after_offer_end_s": 0.02809353,
+      "lag": {
+        "count": 200,
+        "mean_ms": 9.811342095000002,
+        "max_ms": 12.728734,
+        "p50_upper_ms": 16.0,
+        "p95_upper_ms": 16.0,
+        "p99_upper_ms": 16.0
+      }
+    },
+    {
+      "event": "case_start",
+      "mono_ns": 334216159610722,
+      "case": 1,
+      "rate": 100.0,
+      "start_ns": 334216259595203,
+      "end_ns": 334221259595203,
+      "transactions": 500,
+      "transactions_during_window": 490,
+      "committed_rows": 500,
+      "committed_during_window": 490,
+      "receipts": 1000,
+      "duplicates": 0,
+      "last_receipt_ns": 334221343871909,
+      "buckets": [
+        {
+          "second": 0,
+          "offered": 90,
+          "missed": 0,
+          "committed": 90,
+          "receipts": 180,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 1,
+          "offered": 100,
+          "missed": 0,
+          "committed": 100,
+          "receipts": 200,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 2,
+          "offered": 100,
+          "missed": 0,
+          "committed": 100,
+          "receipts": 200,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 3,
+          "offered": 100,
+          "missed": 0,
+          "committed": 100,
+          "receipts": 200,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 4,
+          "offered": 100,
+          "missed": 0,
+          "committed": 100,
+          "receipts": 200,
+          "outstanding_receipts": 0
+        },
+        {
+          "second": 5,
+          "offered": 10,
+          "missed": 0,
+          "committed": 10,
+          "receipts": 20,
+          "outstanding_receipts": 0
+        }
+      ],
+      "scheduler_lag_max_ms": 0.716366,
+      "producer_queue_wait_max_ms": 121.349247,
+      "commit_to_cursor_return_max_ms": 6.454524,
+      "postcommit_errors": 0,
+      "last_commit_ns": 334221336498220,
+      "offered": 500,
+      "accepted": 500,
+      "missed": 0,
+      "actual_transaction_rate": 98.0,
+      "mean_rows_per_transaction": 1.0,
+      "actual_committed_rate": 98.0,
+      "actual_total_rate_including_producer_drain": 98.48523761942093,
+      "expected_receipts": 1000,
+      "missing_receipts": 0,
+      "wholly_missing_rows": 0,
+      "fully_received_rows": 500,
+      "last_receipt_after_offer_end_s": 0.084276706,
+      "lag": {
+        "count": 1000,
+        "mean_ms": 7.935286124000004,
+        "max_ms": 11.483217,
+        "p50_upper_ms": 8.0,
+        "p95_upper_ms": 16.0,
+        "p99_upper_ms": 16.0
+      }
+    }
+  ],
+  "unmatched_receipts": 0,
+  "client_counts": {
+    "event_loop_samples": 261,
+    "rpc_start": 8,
+    "rpc_end": 8,
+    "device_started": 2,
+    "barrier_passed": 2,
+    "receipt_frame": 1200,
+    "case_receipt_drain": 2
+  },
+  "client_histograms": {
+    "event_loop_lag.startup": {
+      "count": 40,
+      "mean_ms": 0.8290908779599704,
+      "max_ms": 1.977422391064465,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 2.0
+    },
+    "rpc./web/session/authenticate": {
+      "count": 2,
+      "mean_ms": 532.8834085000001,
+      "max_ms": 575.740975,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc./web/session/get_session_info": {
+      "count": 2,
+      "mean_ms": 47.37918500000001,
+      "max_ms": 47.69042,
+      "p50_upper_ms": 64.0,
+      "p95_upper_ms": 64.0,
+      "p99_upper_ms": 64.0
+    },
+    "rpc.register_new_device_identifier": {
+      "count": 2,
+      "mean_ms": 12.654347000000001,
+      "max_ms": 12.681133,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 16.0,
+      "p99_upper_ms": 16.0
+    },
+    "rpc./pos_bus_probe/publish": {
+      "count": 2,
+      "mean_ms": 16.461492,
+      "max_ms": 16.559639,
+      "p50_upper_ms": 32.0,
+      "p95_upper_ms": 32.0,
+      "p99_upper_ms": 32.0
+    },
+    "event_loop_lag.case-0": {
+      "count": 102,
+      "mean_ms": 0.8928765355627618,
+      "max_ms": 1.9411088433116674,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 2.0
+    },
+    "event_loop_lag.drain-0": {
+      "count": 3,
+      "mean_ms": 0.9053406538441777,
+      "max_ms": 1.0640776599757373,
+      "p50_upper_ms": 2.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 2.0
+    },
+    "event_loop_lag.case-1": {
+      "count": 104,
+      "mean_ms": 0.6306190110850506,
+      "max_ms": 1.2776546645909548,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 2.0
+    },
+    "event_loop_lag.drain-1": {
+      "count": 12,
+      "mean_ms": 0.907659205646875,
+      "max_ms": 1.8771040486171842,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 2.0
+    }
+  },
+  "clock": "same-host monotonic_ns; lag starts at native PsycoConnection.commit return before postcommit NOTIFY; payload trace marker added; transactions batch native _sendone rows; offered rate is global events/sec"
+}

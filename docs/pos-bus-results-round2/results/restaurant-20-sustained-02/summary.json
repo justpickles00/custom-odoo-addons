@@ -1,0 +1,148 @@
+{
+  "run_id": "0e4d7cc9f47e",
+  "profile": "sustained-long-lived-restaurant",
+  "native": true,
+  "elapsed_s": 343.5260858690017,
+  "verification": null,
+  "limitations": "Protocol/cache emulator; no OWL, IndexedDB, DOM, kitchen display or printer I/O. Offered schedule is controlled; one serial writer per till, bounded queue, no retries.",
+  "counts": {
+    "run_start": 1,
+    "rpc_start": 7965,
+    "rpc_end": 7859,
+    "device_started": 56,
+    "ws_raw": 4942,
+    "notification": 13662,
+    "barrier_passed": 20,
+    "setup_start": 1,
+    "table_action_start": 1094,
+    "table_action_complete": 1078,
+    "follower_skipped": 2156,
+    "follower_complete": 6378,
+    "setup_complete": 1,
+    "measurement_start": 1,
+    "event_loop_samples": 5976,
+    "table_action_scheduled": 2880,
+    "monitor_canary_publish": 239,
+    "load_sample": 302,
+    "follower_saturation": 306,
+    "ws_heartbeat": 392,
+    "event_loop_stall": 46,
+    "table_schedule_dropped": 227,
+    "measurement_end": 1,
+    "run_error": 1
+  },
+  "histograms": {
+    "rpc./web/session/authenticate": {
+      "count": 56,
+      "mean_ms": 504.74077919642843,
+      "max_ms": 799.230242,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc./web/session/get_session_info": {
+      "count": 56,
+      "mean_ms": 100.01375207142857,
+      "max_ms": 385.159656,
+      "p50_upper_ms": 64.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc.register_new_device_identifier": {
+      "count": 16,
+      "mean_ms": 36.07552937499999,
+      "max_ms": 375.329946,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc.load_data": {
+      "count": 16,
+      "mean_ms": 280.70063043749997,
+      "max_ms": 490.800736,
+      "p50_upper_ms": 256.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc./pos_bus_probe/publish": {
+      "count": 259,
+      "mean_ms": 4799.208806042473,
+      "max_ms": 7369.300917,
+      "p50_upper_ms": 8192.0,
+      "p95_upper_ms": 8192.0,
+      "p99_upper_ms": 8192.0
+    },
+    "table_action_queue_lag": {
+      "count": 1094,
+      "mean_ms": 110140.86818547084,
+      "max_ms": 240304.233351,
+      "p50_upper_ms": 131072.0,
+      "p95_upper_ms": 262144.0,
+      "p99_upper_ms": 262144.0
+    },
+    "rpc.sync_from_ui": {
+      "count": 1094,
+      "mean_ms": 4488.363409857405,
+      "max_ms": 7933.816023,
+      "p50_upper_ms": 8192.0,
+      "p95_upper_ms": 8192.0,
+      "p99_upper_ms": 8192.0
+    },
+    "table_action.create": {
+      "count": 32,
+      "mean_ms": 832.38192359375,
+      "max_ms": 1826.898175,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 2048.0,
+      "p99_upper_ms": 2048.0
+    },
+    "follower_queue_lag": {
+      "count": 6468,
+      "mean_ms": 14.986277476345082,
+      "max_ms": 874.746122,
+      "p50_upper_ms": 8.0,
+      "p95_upper_ms": 32.0,
+      "p99_upper_ms": 512.0
+    },
+    "table_action.prepare": {
+      "count": 275,
+      "mean_ms": 4511.14884458909,
+      "max_ms": 7161.42167,
+      "p50_upper_ms": 8192.0,
+      "p95_upper_ms": 8192.0,
+      "p99_upper_ms": 8192.0
+    },
+    "rpc.read_config_open_orders": {
+      "count": 6468,
+      "mean_ms": 4422.116752444956,
+      "max_ms": 8042.400335,
+      "p50_upper_ms": 8192.0,
+      "p95_upper_ms": 8192.0,
+      "p99_upper_ms": 8192.0
+    },
+    "event_loop_lag.load": {
+      "count": 3634,
+      "mean_ms": 3.623653174017007,
+      "max_ms": 266.2356074433774,
+      "p50_upper_ms": 2.0,
+      "p95_upper_ms": 16.0,
+      "p99_upper_ms": 64.0
+    },
+    "table_action.edit": {
+      "count": 771,
+      "mean_ms": 4682.979802712065,
+      "max_ms": 7934.242055,
+      "p50_upper_ms": 8192.0,
+      "p95_upper_ms": 8192.0,
+      "p99_upper_ms": 8192.0
+    },
+    "event_loop_lag.drain": {
+      "count": 2342,
+      "mean_ms": 4.644255284391969,
+      "max_ms": 517.4362436519004,
+      "p50_upper_ms": 2.0,
+      "p95_upper_ms": 16.0,
+      "p99_upper_ms": 64.0
+    }
+  }
+}

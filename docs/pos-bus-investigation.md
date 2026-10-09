@@ -1,5 +1,10 @@
 # Odoo POS Bus investigation
 
+**Follow-up:** the [expanded load investigation](pos-bus-load-followup.md)
+reproduced multi-second Bus delivery congestion with independent producer and
+receiver processes, including a dispatcher-tracing-disabled control. This page
+records the initial experiment and its narrower workload.
+
 **The strongest finding is POS-generated read amplification, not a demonstrated failure of WebSocket delivery.** In the 100-database native run, all 1,920 expected POS synchronization deliveries arrived (p99 **82.76 ms after commit**), but 13 follower HTTP reads failed and average follower-request time reached **8.55 seconds**. A diagnostic emulator variant that suppressed equal duplicate refresh callbacks halved the reads, while leaving the server and all Bus messages unchanged; its mean follower-request time was **0.52 seconds**, with no HTTP errors.
 
 There are two concrete POS code issues:

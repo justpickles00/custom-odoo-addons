@@ -8,6 +8,7 @@ directory. Hooks are absent when that variable is unset, and only databases
 whose names start with `posbus_` are measured. Restart processes after changing
 probe settings. `POS_BUS_PROBE_STAGES=0` retains commit/RPC recording and
 disables all dispatch-stage wrappers for an overhead control.
+Socket-close observations remain enabled in that control.
 
 The authenticated JSON-RPC endpoint `/pos_bus_probe/publish` accepts
 `channel`, `notification_type`, `payload`, and `operation_id`. All three string
@@ -21,6 +22,9 @@ Records are buffered in memory and written to `probe-PID.jsonl` by a background
 thread every 0.5 seconds. There are no per-event synchronous disk writes and no
 fsync. The bounded queue holds 100,000 records; `recorder_stats.dropped_total`
 must remain zero. Hard process termination can lose the unflushed tail.
+In the gevent process the patched thread runs cooperatively: JSON encoding and
+file writes still occupy the shared hub. Buffered recording is not zero-cost
+instrumentation. High-rate conclusions require a stages-disabled comparison.
 `recorder_stats` reports foreground recording time and asynchronous JSON/write
 time. Logging errors are caught so they cannot turn a successful native commit
 into a failed application operation. Records contain no business payloads.
@@ -35,6 +39,11 @@ Native precommit bus creation supplies the row IDs; full rollback and savepoint
 rollback discard corresponding pending IDs.
 
 Record kinds:
+
+- `websocket_close`: database, process-local socket identity, native close code,
+  reason and pending command count. Records the call before invoking native
+  close unchanged; a saturated socket may shut down without transmitting its
+  close reason to the client.
 
 - `commit_return`: `db`, `operation_id`, `bus_ids`, `bus_rows`, `commit_start_ns`,
   `commit_return_ns`, `commit_duration_ns`.

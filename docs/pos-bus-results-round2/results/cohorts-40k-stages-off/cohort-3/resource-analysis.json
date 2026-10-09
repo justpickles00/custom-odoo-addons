@@ -1,0 +1,72 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "cpu_percent_one_core": {
+        "postgres": {
+          "n": 58,
+          "mean": 60.92763547471185,
+          "p50": 62.489574066151874,
+          "p95": 104.84605409293468,
+          "p99": 108.4718364774591,
+          "max": 126.2671433952814
+        },
+        "odoo_other": {
+          "n": 58,
+          "mean": 0.7258224186804089,
+          "p50": 0.0,
+          "p95": 1.9747831507161009,
+          "p99": 2.9409677166630845,
+          "max": 2.952001018416736
+        },
+        "gevent": {
+          "n": 58,
+          "mean": 96.30199653035297,
+          "p50": 98.07120910880313,
+          "p95": 99.89018200701165,
+          "p99": 99.97921040140419,
+          "max": 100.50253296238229
+        },
+        "client": {
+          "n": 58,
+          "mean": 178.69760002607197,
+          "p50": 170.67707643740772,
+          "p95": 299.27002143537504,
+          "p99": 330.03315012186346,
+          "max": 339.99780021423265
+        },
+        "producer": {
+          "n": 58,
+          "mean": 210.74629003009474,
+          "p50": 212.81724454562718,
+          "p95": 220.71144493699643,
+          "p99": 221.14690876126883,
+          "max": 221.64270801588242
+        }
+      },
+      "pg_activity_rows_peak_including_background": 91,
+      "stage_wall_ms": {
+        "queue_wait_max_ns": {
+          "n": 0
+        },
+        "cursor_acquire_ns": {
+          "n": 0
+        },
+        "session_validation_ns": {
+          "n": 0
+        },
+        "fetch_ns": {
+          "n": 0
+        },
+        "dispatch_ns": {
+          "n": 0
+        },
+        "duration_ns": {
+          "n": 0
+        }
+      },
+      "matched_dispatch_batches": 0
+    }
+  ],
+  "limits": "CPU samples omit short-lived processes between samples; stages are overlapping elapsed wall time, not CPU. All processes share one VM. PostgreSQL activity count includes background workers."
+}

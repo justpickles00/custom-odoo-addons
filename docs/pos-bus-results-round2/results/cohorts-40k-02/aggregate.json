@@ -1,0 +1,13 @@
+{
+  "offered": 2400000,
+  "committed_rows": 2104000,
+  "committed_during_window": 2036000,
+  "receipts": 8416000,
+  "missing_receipts": 0,
+  "missed": 296000,
+  "committed_rate_in_window": 33933.333333333336,
+  "mean_lag_ms": 5069.486171947505,
+  "max_lag_ms": 13038.724671,
+  "max_drain_s": 7.83440019,
+  "peak_bucket_backlog": 1180000
+}

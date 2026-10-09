@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "checked_orders": 4,
+  "paid": 2,
+  "cancelled": 2,
+  "databases": 1
+}

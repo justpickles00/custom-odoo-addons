@@ -1,0 +1,43 @@
+{
+  "odoo_commit": "5bcf314eb0896bdf7e218341a134901004ba3d4d",
+  "base_investigation_commit": "bf68bd8",
+  "browsers": 0,
+  "archives": [
+    {
+      "archive": "cohorts-traced-raw.tar.gz",
+      "files": 48,
+      "bytes": 33840300,
+      "sha256": "1d72aa03706a5b260451ea8a91e132b112200b2afe67fefa36aa2f5f9bf24c3b",
+      "decompressed_file_hashes_verified": true
+    },
+    {
+      "archive": "cohorts-control-raw.tar.gz",
+      "files": 47,
+      "bytes": 35240226,
+      "sha256": "e92ab70549e6c311ba9e72bca3ddd3280d1d2081779f13f1459e8a0a63c29a1e",
+      "decompressed_file_hashes_verified": true
+    },
+    {
+      "archive": "ramps-raw.tar.gz",
+      "files": 24,
+      "bytes": 9353790,
+      "sha256": "92c2abcf6035a405926f661dcd281d3c6c8974fe9e55b9bcd0270efcd5a99175",
+      "decompressed_file_hashes_verified": true
+    },
+    {
+      "archive": "server-raw.tar.gz",
+      "files": 261,
+      "bytes": 15246123,
+      "sha256": "6f723b752bd71fd810baee492b0103a055cd0332deec861084a5f55b32f33079",
+      "decompressed_file_hashes_verified": true
+    },
+    {
+      "archive": "other-runs-raw.tar.gz",
+      "files": 86,
+      "bytes": 1990773,
+      "sha256": "3fda35ffd1cd918df62c79a6fc965b6c5589623c3068e9396d7593dd29e8a59c",
+      "decompressed_file_hashes_verified": true
+    }
+  ],
+  "note": "Includes failed setup runs and admission misses; classifications are in report. All archive files checked against stopped runtime sources."
+}

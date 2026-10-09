@@ -1,0 +1,874 @@
+{
+  "checked_orders": 32,
+  "states": {
+    "draft": 32
+  },
+  "line_total_tax_identity_checks_passed": true,
+  "orders": [
+    {
+      "db": "posbus_0001",
+      "id": 51,
+      "uuid": "279dd562-2b42-50e1-8c65-26257bf14035",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 99,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 100,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "99": 4.0,
+        "100": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0001",
+      "id": 52,
+      "uuid": "8c6423a8-d5e2-5f61-8ab5-48eabc5d86db",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 101,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 102,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "101": 4.0,
+        "102": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0001",
+      "id": 53,
+      "uuid": "de9b6869-964d-5076-9c85-8a95fc29f696",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 103,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 104,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "104": 1.0,
+        "103": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0001",
+      "id": 54,
+      "uuid": "1e683b1b-c5ec-5e0e-b3fb-29333afdd049",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 105,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 106,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "105": 4.0,
+        "106": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0001",
+      "id": 55,
+      "uuid": "35c162ad-395e-56ca-890c-79a173af55d1",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 107,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 108,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "107": 4.0,
+        "108": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0001",
+      "id": 56,
+      "uuid": "2fdbc3d0-bb03-58b6-94da-3e7e28daa5bf",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 109,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 110,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "110": 1.0,
+        "109": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0001",
+      "id": 57,
+      "uuid": "f38dae23-d875-5f31-be1a-fabe30ccf176",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 111,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 112,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "111": 4.0,
+        "112": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0001",
+      "id": 58,
+      "uuid": "c2e55423-ab8e-5cb6-b3a6-a13f17983e1a",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 113,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 114,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "114": 1.0,
+        "113": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0003",
+      "id": 49,
+      "uuid": "b5703f6f-f2aa-54ae-9319-4b513f18d4d1",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 95,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 96,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "96": 1.0,
+        "95": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0003",
+      "id": 50,
+      "uuid": "75344cae-165d-556d-803b-7a9aff66bcee",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 97,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 98,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "97": 4.0,
+        "98": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0003",
+      "id": 51,
+      "uuid": "3c237e29-14ee-5050-ae59-544c7509ff7a",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 99,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 100,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "99": 4.0,
+        "100": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0003",
+      "id": 52,
+      "uuid": "40305695-1862-5c32-90a0-5cdd446b4bd0",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 101,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 102,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "101": 4.0,
+        "102": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0003",
+      "id": 53,
+      "uuid": "8a127905-8885-567d-bbb1-1ddbf94dd0c2",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 103,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 104,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "104": 1.0,
+        "103": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0003",
+      "id": 54,
+      "uuid": "a0a40097-9de4-5917-a82e-85f41565caba",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 105,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 106,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "105": 4.0,
+        "106": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0003",
+      "id": 55,
+      "uuid": "9fb992b4-6299-50a1-a789-ea60c5083778",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 107,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 108,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "107": 4.0,
+        "108": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0003",
+      "id": 56,
+      "uuid": "27a89b16-338f-5904-b94a-e79de12d9a38",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 109,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 110,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "110": 1.0,
+        "109": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0000",
+      "id": 73,
+      "uuid": "e1aa1be7-e490-553c-bf1f-87afa27128b2",
+      "state": "draft",
+      "total": 22.0,
+      "tax": 2.0,
+      "lines": [
+        {
+          "id": 143,
+          "qty": 1.0,
+          "price": 10.0
+        },
+        {
+          "id": 144,
+          "qty": 2.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "144": 1.0,
+        "143": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": false
+    },
+    {
+      "db": "posbus_0000",
+      "id": 74,
+      "uuid": "5149ffe6-57a4-5606-8541-6dec44eab7ec",
+      "state": "draft",
+      "total": 16.5,
+      "tax": 1.5,
+      "lines": [
+        {
+          "id": 145,
+          "qty": 1.0,
+          "price": 10.0
+        },
+        {
+          "id": 146,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "145": 4.0,
+        "146": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0000",
+      "id": 75,
+      "uuid": "5981459f-ed84-5164-927d-61c8fccaa77d",
+      "state": "draft",
+      "total": 16.5,
+      "tax": 1.5,
+      "lines": [
+        {
+          "id": 147,
+          "qty": 1.0,
+          "price": 10.0
+        },
+        {
+          "id": 148,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "148": 1.0,
+        "147": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": false
+    },
+    {
+      "db": "posbus_0000",
+      "id": 76,
+      "uuid": "d4f73f60-0218-52c2-8c99-a858d4b8cd3c",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 149,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 150,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "150": 1.0,
+        "149": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0000",
+      "id": 77,
+      "uuid": "d1be43c4-07df-55f6-b94c-6ee55a0bef4d",
+      "state": "draft",
+      "total": 16.5,
+      "tax": 1.5,
+      "lines": [
+        {
+          "id": 151,
+          "qty": 1.0,
+          "price": 10.0
+        },
+        {
+          "id": 152,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "152": 1.0,
+        "151": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0000",
+      "id": 78,
+      "uuid": "424e1a49-bcee-5bbd-be6d-1e543490857a",
+      "state": "draft",
+      "total": 16.5,
+      "tax": 1.5,
+      "lines": [
+        {
+          "id": 153,
+          "qty": 1.0,
+          "price": 10.0
+        },
+        {
+          "id": 154,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "154": 1.0,
+        "153": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": false
+    },
+    {
+      "db": "posbus_0000",
+      "id": 79,
+      "uuid": "3b4e79d2-a1f2-5e2d-a3e6-0e26cc30a898",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 155,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 156,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "155": 4.0,
+        "156": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0000",
+      "id": 80,
+      "uuid": "307ea886-6dcd-5cf3-9413-b255c358d9c0",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 157,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 158,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "158": 1.0,
+        "157": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0002",
+      "id": 49,
+      "uuid": "6ce9f3be-56f1-5e9e-8063-eaa49ff3bc55",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 95,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 96,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "96": 1.0,
+        "95": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0002",
+      "id": 50,
+      "uuid": "b4e0738b-6f01-52a0-92cd-f86a62a12cfe",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 97,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 98,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "97": 4.0,
+        "98": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0002",
+      "id": 51,
+      "uuid": "7a4157ad-e38a-57cd-9da2-eaf0aef8c1f0",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 99,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 100,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "99": 4.0,
+        "100": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0002",
+      "id": 52,
+      "uuid": "fddd5804-da79-5973-9358-d6071fb48691",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 101,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 102,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "101": 4.0,
+        "102": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0002",
+      "id": 53,
+      "uuid": "61f1a9e9-85ff-5128-aadb-97773781a1d2",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 103,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 104,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "104": 1.0,
+        "103": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0002",
+      "id": 54,
+      "uuid": "a1b6271e-ee05-5db4-97f8-bd5b3285028d",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 105,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 106,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "105": 4.0,
+        "106": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0002",
+      "id": 55,
+      "uuid": "ab4d5680-d3fa-54e1-a4f3-b860170d3598",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 107,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 108,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "107": 4.0,
+        "108": 1.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    },
+    {
+      "db": "posbus_0002",
+      "id": 56,
+      "uuid": "3bd170a1-6792-577d-ac95-af5e7c6eed05",
+      "state": "draft",
+      "total": 49.5,
+      "tax": 4.5,
+      "lines": [
+        {
+          "id": 109,
+          "qty": 4.0,
+          "price": 10.0
+        },
+        {
+          "id": 110,
+          "qty": 1.0,
+          "price": 5.0
+        }
+      ],
+      "prepared_net": {
+        "110": 1.0,
+        "109": 4.0
+      },
+      "payments": 0,
+      "paid": 0.0,
+      "matches_last_acknowledged_total": true
+    }
+  ],
+  "scope": "Reconciles persisted state after interrupted drain; does not claim all scheduled actions ran, finalization, or peer-cache convergence."
+}

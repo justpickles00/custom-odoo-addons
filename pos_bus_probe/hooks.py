@@ -162,6 +162,19 @@ def post_load():
                  path=req.httprequest.path, start_ns=start, end_ns=end, duration_ns=end - start)
 
     JsonRPCDispatcher.dispatch = rpc
+    from odoo.addons.bus.websocket import Websocket
+    original_close = Websocket.close
+
+    @functools.wraps(original_close)
+    def close(self, code, reason=None):
+        if enabled(getattr(self, "_db", None)):
+            pending = getattr(self, "_Websocket__cmd_queue", None)
+            emit("websocket_close", db=self._db, socket_id=id(self),
+                 code=int(code), reason=reason,
+                 pending_commands=pending.qsize() if pending is not None else None)
+        return original_close(self, code, reason)
+
+    Websocket.close = close
     if os.getenv("POS_BUS_PROBE_STAGES", "1") == "0":
         return
     cls = dispatcher.BusDispatcher

@@ -1,6 +1,7 @@
 # Browser-free POS/Bus laboratory
 
 Results and limitations: [investigation](../../docs/pos-bus-investigation.md).
+Expanded load results: [follow-up](../../docs/pos-bus-load-followup.md).
 Pinned Odoo: `5bcf314eb0896bdf7e218341a134901004ba3d4d`.
 Python used: `/home/coder/venvs/odoo/master/bin/python`, with aiohttp and psycopg2.
 
@@ -47,7 +48,23 @@ cache assertions; it was used in correctness smokes, not the fleet load runs.
 
 `--coalesce-equal-sync` is a diagnostic client counterfactual, not native frontend
 behavior. `--mode passive` suppresses follower reads. A stages-disabled probe
-control is supported but was not run; no instrumentation-overhead claim is made.
+control was not run in the initial experiment; the follow-up runs it explicitly.
+
+The follow-up adds `bus_ramp.py` (native independently paced Bus transactions),
+`cohort_ramp.py` (four warmed producer/receiver processes), and
+`restaurant_load.py` (repeated edits to long-lived table orders). Their CLI
+help describes transaction batching, queue limits and admission failures.
+`--pause-readers` is an available diagnostic, but no slow-reader result is
+claimed in the recorded follow-up. The cohort recipe uses20 databases and80
+sockets, with one global readiness gate and a single offered-rate window.
+
+`analyze_ramp_dispatch.py` independently joins producer commits to native
+dispatcher completion, excluding the receiver. `analyze_round.py` adds sampled
+resource/stage evidence. `audit_table_orders.py` reconciles persisted state after
+an interrupted drain without asserting finalization. `query_history_probe.py`
+performs read-only SQL diagnostics; run it after load, never concurrently with a
+capacity measurement. Its advanced-bound query is a diagnostic counterfactual,
+not a correctness-preserving Bus replacement.
 
 Probe checks:
 

@@ -137,7 +137,8 @@ class Device:
         bus_info = info["bus_info"]
         self.last_id = bus_info.get("last_id") or 0
         ws_url = self.args.ws_url + "/websocket?version=" + str(bus_info["worker_version"])
-        self.ws = await self.http.ws_connect(ws_url, autoping=True, origin=self.args.http_url)
+        self.ws = await self.http.ws_connect(ws_url, autoping=True, origin=self.args.http_url,
+                                          max_msg_size=getattr(self.args, "ws_max_msg_size", 4 * 1024**2))
         channels = [self.canary_channel]
         if self.role == "till":
             channels.append(self.fixture["access_token"])

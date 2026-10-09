@@ -1,0 +1,328 @@
+{
+  "posbus_0000": [
+    {
+      "id": 63,
+      "uuid": "2ba9118f-2895-58ff-b3ab-86097b1703fb",
+      "state": "cancel",
+      "table_id": 28,
+      "totals": {
+        "untaxed": 15.0,
+        "tax": 1.5,
+        "total": 16.5
+      },
+      "lines": [
+        {
+          "id": 123,
+          "uuid": "2cf46189-9500-50cf-94c6-9a9b3b9ed0f2",
+          "qty": 1,
+          "price": 10.0
+        },
+        {
+          "id": 124,
+          "uuid": "8c265073-9445-5556-9909-018eff3f2e06",
+          "qty": 1,
+          "price": 5.0
+        }
+      ],
+      "prep_batches": [
+        {
+          "uuid": "ab19385c-2292-5605-b819-a2a042e25f04",
+          "id": 54,
+          "lines": [
+            {
+              "uuid": "1d2f0fc7-0dd7-5211-ad54-f05077c61475",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 0,
+              "id": 103
+            },
+            {
+              "uuid": "41ff0cbe-1d62-58da-aff5-c9001380265a",
+              "line_index": 1,
+              "qty": 2,
+              "cancelled": 1,
+              "id": 104
+            }
+          ]
+        },
+        {
+          "uuid": "82eb0f69-e036-5559-8ce7-491bf725c48a",
+          "id": 56,
+          "lines": [
+            {
+              "uuid": "00448848-68c6-5994-9267-5749c227f0dd",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 1,
+              "id": 107
+            }
+          ]
+        },
+        {
+          "uuid": "42c7ac92-d6d3-5155-9b13-c8609f9215ee",
+          "id": 60,
+          "lines": [
+            {
+              "uuid": "f8d37269-a943-5f91-97ac-a8c8fcfe910e",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 1,
+              "id": 111
+            },
+            {
+              "uuid": "57481c33-6b66-5758-b150-923a7866ae1b",
+              "line_index": 1,
+              "qty": 2,
+              "cancelled": 2,
+              "id": 112
+            }
+          ]
+        }
+      ],
+      "payment_id": null
+    },
+    {
+      "id": 64,
+      "uuid": "adccdd3f-2500-5f04-ba5f-eaf778a931eb",
+      "state": "paid",
+      "table_id": 29,
+      "totals": {
+        "untaxed": 15.0,
+        "tax": 1.5,
+        "total": 16.5
+      },
+      "lines": [
+        {
+          "id": 125,
+          "uuid": "c5a8f578-ac44-5dd7-9bb8-4c74cb7a7594",
+          "qty": 1,
+          "price": 10.0
+        },
+        {
+          "id": 126,
+          "uuid": "de4d831f-06df-570a-9e0b-4e90caa52479",
+          "qty": 1,
+          "price": 5.0
+        }
+      ],
+      "prep_batches": [
+        {
+          "uuid": "d2458190-5d73-51ea-a869-62cede577c70",
+          "id": 55,
+          "lines": [
+            {
+              "uuid": "4010ca0e-99e4-5246-b51d-ab62f2ca60f6",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 0,
+              "id": 105
+            },
+            {
+              "uuid": "fbadc7ac-db84-54c0-b2d9-cc07ac415d64",
+              "line_index": 1,
+              "qty": 2,
+              "cancelled": 1,
+              "id": 106
+            }
+          ]
+        },
+        {
+          "uuid": "564c52bc-5a7d-5a3e-8887-42bbebcdf5e2",
+          "id": 58,
+          "lines": [
+            {
+              "uuid": "7c6a9c4a-1d87-5b08-89bd-1f718edea633",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 1,
+              "id": 109
+            }
+          ]
+        },
+        {
+          "uuid": "61191a0e-23a6-5c34-bc93-0c647627119a",
+          "id": 62,
+          "lines": [
+            {
+              "uuid": "72662905-c0cf-53d3-bffd-b70a63c3b1d9",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 1,
+              "id": 115
+            },
+            {
+              "uuid": "8b0c5d43-1c3f-5e02-b6df-b0d3f248c1fd",
+              "line_index": 1,
+              "qty": 2,
+              "cancelled": 2,
+              "id": 116
+            }
+          ]
+        }
+      ],
+      "payment_id": 33
+    },
+    {
+      "id": 61,
+      "uuid": "8e618b8f-d8ab-5a19-8209-7fdab8cb3db0",
+      "state": "cancel",
+      "table_id": 30,
+      "totals": {
+        "untaxed": 15.0,
+        "tax": 1.5,
+        "total": 16.5
+      },
+      "lines": [
+        {
+          "id": 119,
+          "uuid": "8cd15c05-2dc6-57ec-9340-346459859095",
+          "qty": 1,
+          "price": 10.0
+        },
+        {
+          "id": 120,
+          "uuid": "cb619a94-3ae2-5164-9fb1-205c0dd3daf6",
+          "qty": 1,
+          "price": 5.0
+        }
+      ],
+      "prep_batches": [
+        {
+          "uuid": "3c8df895-bca5-55c4-a42f-29e77cb2e540",
+          "id": 52,
+          "lines": [
+            {
+              "uuid": "96d203d6-fb9e-5645-8f30-e51d5f824420",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 0,
+              "id": 99
+            },
+            {
+              "uuid": "a463de53-571f-50af-b555-3ca69051e4c1",
+              "line_index": 1,
+              "qty": 2,
+              "cancelled": 1,
+              "id": 100
+            }
+          ]
+        },
+        {
+          "uuid": "95b5b670-b24d-5973-a0bb-9ccc2c55c508",
+          "id": 57,
+          "lines": [
+            {
+              "uuid": "9ff7a204-a8c1-55cc-9b1b-b8d848d5f3a0",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 1,
+              "id": 108
+            }
+          ]
+        },
+        {
+          "uuid": "3f4071bb-b39b-5c67-9018-579356b3b796",
+          "id": 61,
+          "lines": [
+            {
+              "uuid": "1537f467-ab0a-59d5-9da9-4d429d9eb73b",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 1,
+              "id": 113
+            },
+            {
+              "uuid": "269f8f8f-0366-5ecf-b06c-25ca357bca83",
+              "line_index": 1,
+              "qty": 2,
+              "cancelled": 2,
+              "id": 114
+            }
+          ]
+        }
+      ],
+      "payment_id": null
+    },
+    {
+      "id": 62,
+      "uuid": "56ca10c2-1ba0-5e39-af5f-c9738c53770b",
+      "state": "paid",
+      "table_id": 31,
+      "totals": {
+        "untaxed": 15.0,
+        "tax": 1.5,
+        "total": 16.5
+      },
+      "lines": [
+        {
+          "id": 121,
+          "uuid": "3d466e2b-fe68-5df7-a478-44014d7d4d69",
+          "qty": 1,
+          "price": 10.0
+        },
+        {
+          "id": 122,
+          "uuid": "d14041e7-94bf-54bc-8ace-3c168b0191c4",
+          "qty": 1,
+          "price": 5.0
+        }
+      ],
+      "prep_batches": [
+        {
+          "uuid": "52123bb7-4d5d-5b70-8966-6f3f4d4605b3",
+          "id": 53,
+          "lines": [
+            {
+              "uuid": "cdc960b6-db8f-5fc8-9ab4-53e29f5f2dde",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 0,
+              "id": 101
+            },
+            {
+              "uuid": "7f7835c7-73d9-5fa4-a8be-b0cc4d439c97",
+              "line_index": 1,
+              "qty": 2,
+              "cancelled": 1,
+              "id": 102
+            }
+          ]
+        },
+        {
+          "uuid": "bb3671fb-6fe8-54e8-81ce-fb1ff938f4b3",
+          "id": 59,
+          "lines": [
+            {
+              "uuid": "b6917993-2953-5244-8dc3-54c0fa0173e6",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 1,
+              "id": 110
+            }
+          ]
+        },
+        {
+          "uuid": "482faf77-f47c-5e30-adcc-467b3b2c7aa6",
+          "id": 63,
+          "lines": [
+            {
+              "uuid": "9c4c5028-9899-5dc4-bfac-c87e7132c107",
+              "line_index": 0,
+              "qty": 1,
+              "cancelled": 1,
+              "id": 117
+            },
+            {
+              "uuid": "6bff4ff7-3a77-5ea5-904a-191fd69bcf02",
+              "line_index": 1,
+              "qty": 2,
+              "cancelled": 2,
+              "id": 118
+            }
+          ]
+        }
+      ],
+      "payment_id": 32
+    }
+  ]
+}

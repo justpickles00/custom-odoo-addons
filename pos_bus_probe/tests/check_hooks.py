@@ -98,6 +98,17 @@ class HookChecks(unittest.TestCase):
         self.assertIsNone(hooks._batch.get())
         self.assertFalse(hasattr(other, "_posbus_queued_ns"))
 
+    def test_close_preserves_native_enqueue(self):
+        frames = []
+        websocket = object.__new__(Websocket)
+        websocket.state = ConnectionState.OPEN
+        websocket._db = "posbus_test"
+        websocket._enqueue_control_command = lambda command, frame: frames.append(frame)
+        websocket.close(1013, "OUTGOING_QUEUE_SATURATED")
+        self.assertEqual(websocket.state, ConnectionState.CLOSING)
+        self.assertEqual(frames, [{"code": 1013, "reason": "OUTGOING_QUEUE_SATURATED"}])
+        self.assertEqual(events[-1]["reason"], "OUTGOING_QUEUE_SATURATED")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,87 @@
+{
+  "run_id": "e2656e570b82",
+  "args": {
+    "fixture": "/home/coder/playground/pos-bus-investigation/fixture.json",
+    "config": "/home/coder/playground/pos-bus-investigation/odoo.conf",
+    "odoo_bin": "/home/coder/worktrees/justpickles00/odoo/master/odoo-bin",
+    "python": "/home/coder/venvs/odoo/master/bin/python",
+    "http_url": "http://127.0.0.1:8061",
+    "ws_url": "http://127.0.0.1:8062",
+    "db_prefix": "posbus_",
+    "db_start": 0,
+    "tenants": 5,
+    "tills": 4,
+    "rates": [
+      10000.0
+    ],
+    "duration": 60.0,
+    "producer_count": 1,
+    "batch_period": 0.5,
+    "batch_size": 1000,
+    "global_go": "/home/coder/playground/pos-bus-investigation/round2/results/cohorts-40k/GLOBAL_GO",
+    "pause_readers": 0,
+    "compact_receipts": true,
+    "queue_batches": 16,
+    "startup_concurrency": 1,
+    "startup_timeout": 300.0,
+    "barrier_timeout": 30,
+    "drain_timeout": 90.0,
+    "output": "/home/coder/playground/pos-bus-investigation/round2/results/cohorts-40k/cohort-0",
+    "run_id": "e2656e570b82",
+    "mode": "passive",
+    "queue_size": 32,
+    "cache_limit": 10000,
+    "closed_cache": 32,
+    "follower_concurrency": 1,
+    "coalesce_equal_sync": false,
+    "rpc_timeout": 90,
+    "ws_max_msg_size": 0,
+    "background": 0,
+    "restaurant_fraction": 0.2
+  },
+  "cases": [],
+  "unmatched_receipts": 0,
+  "paused_devices": [],
+  "client_counts": {
+    "event_loop_samples": 1210,
+    "rpc_start": 37,
+    "rpc_end": 36,
+    "device_started": 11,
+    "ws_disconnect": 11
+  },
+  "client_histograms": {
+    "event_loop_lag.startup": {
+      "count": 1210,
+      "mean_ms": 0.807100854869855,
+      "max_ms": 4.966174019500613,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 2.0
+    },
+    "rpc./web/session/authenticate": {
+      "count": 13,
+      "mean_ms": 471.6687093076923,
+      "max_ms": 712.610842,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc./web/session/get_session_info": {
+      "count": 12,
+      "mean_ms": 77.76619050000001,
+      "max_ms": 241.931174,
+      "p50_upper_ms": 64.0,
+      "p95_upper_ms": 256.0,
+      "p99_upper_ms": 256.0
+    },
+    "rpc.register_new_device_identifier": {
+      "count": 12,
+      "mean_ms": 13.772662583333334,
+      "max_ms": 14.87351,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 16.0,
+      "p99_upper_ms": 16.0
+    }
+  },
+  "clock": "same-host monotonic_ns; lag starts at native PsycoConnection.commit return before postcommit NOTIFY; payload trace marker added; transactions batch native _sendone rows; offered rate is global events/sec"
+}
