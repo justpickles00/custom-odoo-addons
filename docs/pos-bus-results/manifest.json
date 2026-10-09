@@ -1,0 +1,16 @@
+{
+  "odoo_commit": "5bcf314eb0896bdf7e218341a134901004ba3d4d",
+  "addon_base_commit": "57c6185744b98b408fe80c8e2564c9019c712c58",
+  "raw_archive_sha256": "07b8050b79d047f4eaa50f30259b9bacba1a181571015a52077a89a5f335cc4a",
+  "archive_members": 305,
+  "completed_fleet_runs": [
+    "fleet-20-paced",
+    "fleet-50-bounded",
+    "fleet-100-bounded",
+    "fleet-100-coalesced",
+    "fleet-20-passive",
+    "fleet-20-native-repeat"
+  ],
+  "native_100_follower_http_failures": 13,
+  "browsers": 0
+}

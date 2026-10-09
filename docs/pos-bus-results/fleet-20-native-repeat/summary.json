@@ -1,0 +1,141 @@
+{
+  "run_id": "e821fa76e754",
+  "native": true,
+  "elapsed_s": 95.14361156104133,
+  "counts": {
+    "run_start": 1,
+    "rpc_start": 560,
+    "event_loop_samples": 1902,
+    "rpc_end": 560,
+    "device_started": 56,
+    "ws_raw": 414,
+    "notification": 798,
+    "barrier_passed": 40,
+    "measurement_start": 1,
+    "lifecycle_scheduled": 12,
+    "lifecycle_start": 12,
+    "order_step": 48,
+    "follower_skipped": 96,
+    "follower_complete": 288,
+    "monitor_canary_publish": 39,
+    "lifecycle_complete": 12,
+    "ws_heartbeat": 56,
+    "measurement_end": 1,
+    "cache_snapshot": 56,
+    "run_complete": 1
+  },
+  "histograms": {
+    "event_loop_lag.startup": {
+      "count": 674,
+      "mean_ms": 0.7664366418499919,
+      "max_ms": 2.4984926567412913,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 2.0
+    },
+    "rpc./web/session/authenticate": {
+      "count": 56,
+      "mean_ms": 462.5508494285714,
+      "max_ms": 643.084959,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc./web/session/get_session_info": {
+      "count": 56,
+      "mean_ms": 91.76730208928575,
+      "max_ms": 466.912359,
+      "p50_upper_ms": 64.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc.register_new_device_identifier": {
+      "count": 16,
+      "mean_ms": 36.12795468750001,
+      "max_ms": 211.674326,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 256.0,
+      "p99_upper_ms": 256.0
+    },
+    "rpc.load_data": {
+      "count": 16,
+      "mean_ms": 261.4210973125,
+      "max_ms": 342.411301,
+      "p50_upper_ms": 256.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc./pos_bus_probe/publish": {
+      "count": 79,
+      "mean_ms": 438.8588871772155,
+      "max_ms": 1012.881479,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "event_loop_lag.load": {
+      "count": 1202,
+      "mean_ms": 0.9221967917746134,
+      "max_ms": 3.677809552755207,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 4.0
+    },
+    "scheduling_lag": {
+      "count": 12,
+      "mean_ms": 1.9809674166666669,
+      "max_ms": 3.755627,
+      "p50_upper_ms": 2.0,
+      "p95_upper_ms": 4.0,
+      "p99_upper_ms": 4.0
+    },
+    "rpc.sync_from_ui": {
+      "count": 40,
+      "mean_ms": 247.13376827500002,
+      "max_ms": 459.680862,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    },
+    "follower_queue_lag": {
+      "count": 288,
+      "mean_ms": 0.752691055555555,
+      "max_ms": 2.624873,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 4.0
+    },
+    "rpc.read_config_open_orders": {
+      "count": 288,
+      "mean_ms": 189.96036187152785,
+      "max_ms": 580.627745,
+      "p50_upper_ms": 128.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc.cancel_order_from_pos": {
+      "count": 8,
+      "mean_ms": 103.65102850000001,
+      "max_ms": 331.404274,
+      "p50_upper_ms": 128.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    },
+    "event_loop_lag.drain": {
+      "count": 26,
+      "mean_ms": 1.2861509390999204,
+      "max_ms": 6.231627892702818,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 4.0,
+      "p99_upper_ms": 8.0
+    },
+    "rpc./pos_bus_probe/flush": {
+      "count": 1,
+      "mean_ms": 267.086287,
+      "max_ms": 267.086287,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    }
+  }
+}
