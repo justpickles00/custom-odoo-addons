@@ -1,0 +1,582 @@
+{
+  "run_id": "6658884657f2",
+  "args": {
+    "fixture": "/home/coder/playground/pos-bus-investigation/fixture.json",
+    "http_url": "http://127.0.0.1:8061",
+    "ws_url": "ws://127.0.0.1:8062",
+    "db_prefix": "posbus_",
+    "db_start": 4,
+    "tenants": 20,
+    "restaurant_fraction": 1.0,
+    "tills": 4,
+    "tables_per_till": 2,
+    "background": 0,
+    "duration": 90.0,
+    "think_time": 10.0,
+    "prepare_every": 4,
+    "cancel_fraction": 0.2,
+    "queue_size": 128,
+    "follower_concurrency": 8,
+    "coalesce_equal_sync": true,
+    "startup_concurrency": 2,
+    "cache_limit": 10000,
+    "closed_cache": 64,
+    "rpc_timeout": 60,
+    "barrier_timeout": 60,
+    "drain_timeout": 120,
+    "canary_interval": 30,
+    "output": "/home/coder/playground/pos-bus-investigation/round3/results/restaurants-20-medium-coalesced",
+    "mode": "follower",
+    "run_id": "6658884657f2"
+  },
+  "counts": {
+    "run_start": 1,
+    "rpc_start": 9500,
+    "rpc_end": 9500,
+    "table_occupancy_preflight": 20,
+    "device_started": 80,
+    "ws_raw": 8712,
+    "notification": 25356,
+    "barrier_passed": 40,
+    "setup_start": 2,
+    "table_action_start": 2200,
+    "table_action_complete": 2200,
+    "coalesced_follower_callback": 8320,
+    "follower_skipped": 2080,
+    "follower_complete": 6240,
+    "setup_complete": 2,
+    "measurement_start": 1,
+    "event_loop_samples": 2139,
+    "table_action_scheduled": 1440,
+    "load_sample": 106,
+    "monitor_canary_publish": 59,
+    "ws_heartbeat": 196,
+    "event_loop_stall": 2,
+    "measurement_end": 1,
+    "table_finalized": 160,
+    "preparation_noop": 120,
+    "final_cache_assertion": 640,
+    "final_cache_snapshot": 80,
+    "run_complete": 1
+  },
+  "commit_to_receipt_ms": {
+    "canary_startup": {
+      "n": 80,
+      "mean": 58.8793990375,
+      "p50": 50.8565,
+      "p95": 92.973984,
+      "p99": 93.047555,
+      "max": 93.08082
+    },
+    "canary_startup_commit_to_claim": {
+      "n": 80,
+      "mean": 23.60956265,
+      "p50": 21.410328,
+      "p95": 42.891993,
+      "p99": 45.853378,
+      "max": 45.853378
+    },
+    "canary_startup_after_dispatch": {
+      "n": 80,
+      "mean": 0.5715885875,
+      "p50": 0.446623,
+      "p95": 1.175264,
+      "p99": 1.957408,
+      "max": 2.015389
+    },
+    "pos": {
+      "n": 16640,
+      "mean": 20.66198602079327,
+      "p50": 10.661006,
+      "p95": 58.21017,
+      "p99": 80.996386,
+      "max": 125.070006
+    },
+    "pos_commit_to_claim": {
+      "n": 16640,
+      "mean": 12.302145761057693,
+      "p50": 6.372777,
+      "p95": 35.341188,
+      "p99": 48.020766,
+      "max": 71.131421
+    },
+    "pos_after_dispatch": {
+      "n": 16640,
+      "mean": 2.470281345793269,
+      "p50": 1.605366,
+      "p95": 6.664324,
+      "p99": 28.059313,
+      "max": 74.90665
+    },
+    "other": {
+      "n": 8320,
+      "mean": 20.66198602079327,
+      "p50": 10.661006,
+      "p95": 58.21017,
+      "p99": 80.848203,
+      "max": 125.070006
+    },
+    "other_commit_to_claim": {
+      "n": 8320,
+      "mean": 12.302145761057693,
+      "p50": 6.372777,
+      "p95": 35.341188,
+      "p99": 47.811886,
+      "max": 71.131421
+    },
+    "other_after_dispatch": {
+      "n": 8320,
+      "mean": 2.470281345793269,
+      "p50": 1.605366,
+      "p95": 6.664324,
+      "p99": 27.967798,
+      "max": 74.90665
+    },
+    "canary": {
+      "n": 236,
+      "mean": 11.623069754237287,
+      "p50": 10.984784,
+      "p95": 13.46593,
+      "p99": 43.779257,
+      "max": 46.058439
+    },
+    "canary_commit_to_claim": {
+      "n": 236,
+      "mean": 6.29373306779661,
+      "p50": 6.251816,
+      "p95": 7.090358,
+      "p99": 7.878473,
+      "max": 7.878473
+    },
+    "canary_after_dispatch": {
+      "n": 236,
+      "mean": 1.0191131101694915,
+      "p50": 0.747768,
+      "p95": 2.786491,
+      "p99": 3.295121,
+      "max": 3.485615
+    },
+    "canary_final": {
+      "n": 80,
+      "mean": 41.507028975000004,
+      "p50": 38.105203,
+      "p95": 64.4275,
+      "p99": 72.506677,
+      "max": 72.579526
+    },
+    "canary_final_commit_to_claim": {
+      "n": 80,
+      "mean": 20.702506149999998,
+      "p50": 15.253594,
+      "p95": 36.438262,
+      "p99": 38.696053,
+      "max": 38.696053
+    },
+    "canary_final_after_dispatch": {
+      "n": 80,
+      "mean": 1.572352975,
+      "p50": 1.496788,
+      "p95": 3.364724,
+      "p99": 4.168529,
+      "max": 4.826817
+    }
+  },
+  "by_tenant_ms": {
+    "posbus_0017": {
+      "n": 1268,
+      "mean": 20.787280651419557,
+      "p50": 10.839697,
+      "p95": 57.66559,
+      "p99": 74.101542,
+      "max": 85.55469
+    },
+    "posbus_0012": {
+      "n": 1268,
+      "mean": 20.92943071451104,
+      "p50": 10.605038,
+      "p95": 52.584059,
+      "p99": 80.21289,
+      "max": 94.877129
+    },
+    "posbus_0015": {
+      "n": 1268,
+      "mean": 19.890463052839117,
+      "p50": 10.733112,
+      "p95": 50.4486,
+      "p99": 78.215516,
+      "max": 125.070006
+    },
+    "posbus_0021": {
+      "n": 1268,
+      "mean": 21.296470626971608,
+      "p50": 10.305016,
+      "p95": 70.803445,
+      "p99": 91.542221,
+      "max": 92.084496
+    },
+    "posbus_0010": {
+      "n": 1268,
+      "mean": 20.651349084384858,
+      "p50": 10.644303,
+      "p95": 54.165928,
+      "p99": 87.360196,
+      "max": 93.012217
+    },
+    "posbus_0004": {
+      "n": 1268,
+      "mean": 19.110415437697164,
+      "p50": 10.695411,
+      "p95": 47.885136,
+      "p99": 66.346856,
+      "max": 75.350416
+    },
+    "posbus_0006": {
+      "n": 1268,
+      "mean": 21.252133313880126,
+      "p50": 10.892768,
+      "p95": 67.273786,
+      "p99": 83.425745,
+      "max": 88.654206
+    },
+    "posbus_0022": {
+      "n": 1268,
+      "mean": 20.568640811514197,
+      "p50": 10.662989,
+      "p95": 54.912915,
+      "p99": 69.363285,
+      "max": 98.285906
+    },
+    "posbus_0011": {
+      "n": 1268,
+      "mean": 22.13025426340694,
+      "p50": 10.847051,
+      "p95": 65.383157,
+      "p99": 85.606597,
+      "max": 94.067202
+    },
+    "posbus_0023": {
+      "n": 1264,
+      "mean": 19.474954450158226,
+      "p50": 10.414473,
+      "p95": 54.272432,
+      "p99": 63.18105,
+      "max": 67.958593
+    },
+    "posbus_0016": {
+      "n": 1268,
+      "mean": 21.487200615930597,
+      "p50": 10.604197,
+      "p95": 62.802139,
+      "p99": 82.484257,
+      "max": 83.185315
+    },
+    "posbus_0005": {
+      "n": 1268,
+      "mean": 21.04203977681388,
+      "p50": 10.561434,
+      "p95": 60.134374,
+      "p99": 76.568953,
+      "max": 115.960323
+    },
+    "posbus_0008": {
+      "n": 1268,
+      "mean": 21.09821609542587,
+      "p50": 10.688227,
+      "p95": 54.228688,
+      "p99": 75.710834,
+      "max": 88.36234
+    },
+    "posbus_0013": {
+      "n": 1268,
+      "mean": 20.451628619873816,
+      "p50": 10.654342,
+      "p95": 56.023585,
+      "p99": 78.508486,
+      "max": 79.647481
+    },
+    "posbus_0020": {
+      "n": 1268,
+      "mean": 20.053384093848578,
+      "p50": 10.497403,
+      "p95": 54.670062,
+      "p99": 60.810986,
+      "max": 64.010425
+    },
+    "posbus_0007": {
+      "n": 1268,
+      "mean": 20.13172873895899,
+      "p50": 10.959624,
+      "p95": 56.510174,
+      "p99": 72.761342,
+      "max": 79.408705
+    },
+    "posbus_0018": {
+      "n": 1268,
+      "mean": 22.500872849369085,
+      "p50": 10.782518,
+      "p95": 63.018039,
+      "p99": 105.121317,
+      "max": 114.43529
+    },
+    "posbus_0019": {
+      "n": 1268,
+      "mean": 20.127161122239748,
+      "p50": 10.698446,
+      "p95": 49.320688,
+      "p99": 65.391813,
+      "max": 94.042986
+    },
+    "posbus_0009": {
+      "n": 1268,
+      "mean": 21.35439751104101,
+      "p50": 10.860998,
+      "p95": 61.047368,
+      "p99": 87.814584,
+      "max": 88.535531
+    },
+    "posbus_0014": {
+      "n": 1268,
+      "mean": 20.941969967665614,
+      "p50": 10.551335,
+      "p95": 60.228553,
+      "p99": 76.188106,
+      "max": 82.427879
+    }
+  },
+  "event_max_receipt_ms": {
+    "n": 6339,
+    "mean": 21.371521347215648,
+    "p50": 11.204062,
+    "p95": 58.846234,
+    "p99": 82.484257,
+    "max": 125.070006
+  },
+  "batch_stage_wall_ms": {
+    "queue_wait_max_ns": {
+      "n": 1496,
+      "mean": 0.16203375802139036,
+      "p50": 0.158954,
+      "p95": 0.219398,
+      "p99": 0.257131,
+      "max": 0.76453
+    },
+    "cursor_acquire_ns": {
+      "n": 1496,
+      "mean": 0.20588872459893046,
+      "p50": 0.18845,
+      "p95": 0.32524,
+      "p99": 0.392289,
+      "max": 0.569256
+    },
+    "session_validation_ns": {
+      "n": 1496,
+      "mean": 1.3652815220588235,
+      "p50": 1.345649,
+      "p95": 1.621175,
+      "p99": 1.923244,
+      "max": 2.523348
+    },
+    "fetch_ns": {
+      "n": 1496,
+      "mean": 0.5679539331550802,
+      "p50": 0.498321,
+      "p95": 0.780841,
+      "p99": 1.600527,
+      "max": 35.500231
+    },
+    "dispatch_ns": {
+      "n": 1496,
+      "mean": 0.15306423596256685,
+      "p50": 0.141139,
+      "p95": 0.212957,
+      "p99": 0.253435,
+      "max": 0.426515
+    },
+    "serialize_ns": {
+      "n": 1496,
+      "mean": 0.024948431818181818,
+      "p50": 0.023305,
+      "p95": 0.035968,
+      "p99": 0.051258,
+      "max": 0.103027
+    },
+    "enqueue_ns": {
+      "n": 1496,
+      "mean": 0.08942116911764705,
+      "p50": 0.080185,
+      "p95": 0.131311,
+      "p99": 0.169212,
+      "max": 0.383021
+    },
+    "duration_ns": {
+      "n": 1496,
+      "mean": 2.7234261096256684,
+      "p50": 2.638788,
+      "p95": 3.35215,
+      "p99": 4.148852,
+      "max": 37.932193
+    }
+  },
+  "batch_stage_total_wall_ms": {
+    "queue_wait_max_ns": 242.402502,
+    "cursor_acquire_ns": 308.009532,
+    "session_validation_ns": 2042.461157,
+    "fetch_ns": 849.659084,
+    "dispatch_ns": 228.984097,
+    "serialize_ns": 37.322854,
+    "enqueue_ns": 133.774069,
+    "duration_ns": 4074.24546
+  },
+  "order_rpc_method_ms": {
+    "n": 2080,
+    "mean": 111.65364331538463,
+    "p50": 68.990935,
+    "p95": 300.759939,
+    "p99": 401.167006,
+    "max": 482.439419
+  },
+  "order_cursor_commit_ms": {
+    "n": 2080,
+    "mean": 15.116365177884616,
+    "p50": 8.00255,
+    "p95": 42.00513,
+    "p99": 55.943863,
+    "max": 72.726917
+  },
+  "notification_types": {
+    "posbus.canary": 396,
+    "SYNCHRONISATION": 16640,
+    "ORDER_STATE_CHANGED": 8320
+  },
+  "payload_bytes_delivered": {
+    "canary_startup": 3360,
+    "pos": 1231360,
+    "other": 16640,
+    "canary": 18172,
+    "canary_final": 3360
+  },
+  "stream_delivery": {
+    "canary": {
+      "expected": 396,
+      "received": 396,
+      "rows": 99,
+      "mismatches": []
+    },
+    "SYNCHRONISATION": {
+      "expected": 16640,
+      "received": 16640,
+      "rows": 4160,
+      "mismatches": []
+    },
+    "ORDER_STATE_CHANGED": {
+      "expected": 8320,
+      "received": 8320,
+      "rows": 2080,
+      "mismatches": []
+    }
+  },
+  "measurement_stream_delivery": {
+    "SYNCHRONISATION": {
+      "expected": 11512,
+      "received": 11512,
+      "rows": 2878,
+      "mismatches": []
+    },
+    "ORDER_STATE_CHANGED": {
+      "expected": 5756,
+      "received": 5756,
+      "rows": 1439,
+      "mismatches": []
+    },
+    "canary": {
+      "expected": 236,
+      "received": 236,
+      "rows": 59,
+      "mismatches": []
+    }
+  },
+  "measurement_commit_to_receipt_ms": {
+    "pos": {
+      "n": 11512,
+      "mean": 10.137375688151494,
+      "p50": 10.069376,
+      "p95": 11.777747,
+      "p99": 12.525093,
+      "max": 47.560386
+    },
+    "other": {
+      "n": 5756,
+      "mean": 10.137375688151494,
+      "p50": 10.069376,
+      "p95": 11.777747,
+      "p99": 12.525093,
+      "max": 47.560386
+    },
+    "canary": {
+      "n": 236,
+      "mean": 11.623069754237287,
+      "p50": 10.984784,
+      "p95": 13.46593,
+      "p99": 43.779257,
+      "max": 46.058439
+    }
+  },
+  "commit_rows_matched": 6339,
+  "dispatch_batches_matched": 1496,
+  "duplicate_receipts": 0,
+  "unmatched_receipts": 0,
+  "observed_pos_rows_expected_deliveries": 16640,
+  "observed_pos_rows_received_deliveries": 16640,
+  "incomplete_pos_rows": [],
+  "recorder_drops": {
+    "279731": 0,
+    "279745": 0,
+    "279751": 0,
+    "284060": 0,
+    "279735": 0,
+    "284036": 0,
+    "284032": 0,
+    "284062": 0,
+    "279753": 0,
+    "284065": 0,
+    "284016": 0,
+    "279715": 0,
+    "279756": 0,
+    "279749": 0,
+    "279743": 0,
+    "284052": 0,
+    "284058": 0,
+    "284067": 0,
+    "279727": 0,
+    "279721": 0,
+    "284038": 0,
+    "279723": 0,
+    "284042": 0,
+    "279729": 0,
+    "279737": 0,
+    "284028": 0,
+    "279739": 0,
+    "279754": 0,
+    "279704": 0,
+    "279733": 0,
+    "284048": 0,
+    "284030": 0,
+    "279717": 0,
+    "284050": 0,
+    "284026": 0,
+    "284064": 0,
+    "284034": 0,
+    "284054": 0,
+    "279741": 0,
+    "284056": 0,
+    "279747": 0,
+    "284046": 0,
+    "279719": 0,
+    "284040": 0,
+    "284044": 0,
+    "279725": 0
+  },
+  "delivery_limit": "Server commit metadata includes wholly missing POS rows.",
+  "delivery_window": "All operations scheduled by this run, including drain; stage_wall uses commits inside scheduled measurement window.",
+  "stage_warning": "Stage spans are overlapping wall time, not CPU time. Commit-to-claim and receipt-minus-batch-end may be negative during overlapping fetch/send."
+}

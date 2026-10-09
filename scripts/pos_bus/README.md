@@ -72,3 +72,19 @@ Probe checks:
 PYTHONPATH=/home/coder/worktrees/justpickles00/odoo/master \
   /home/coder/venvs/odoo/master/bin/python pos_bus_probe/tests/check_hooks.py
 ```
+
+The [real restaurant round](../../docs/pos-bus-realistic-load.md) includes
+preparation/cancellation fidelity corrections, occupied-table preflight and
+per-till fail-stop after a writer error. `--coalesce-equal-sync` is explicitly
+a diagnostic counterfactual, not native browser behavior.
+
+`restaurant_report.py DIR --probe PROBE --telemetry TELEMETRY` emits a read-only
+JSON audit, including admission versus abandonment and eligible suppressed
+refresh requests. `observe_host.py` samples host CPU and cumulative PostgreSQL
+connection counters; `analyze_host.py DIR --counters COUNTERS` reports their
+window deltas. Counters recorded late in a round cannot describe earlier runs.
+
+`cleanup_owned_orders.py RUN/owned-orders.json --fixture FIXTURE --output NEWDIR`
+preflights exact identities and saves authoritative snapshots. It defaults to
+dry-run; `--apply` cancels only verified owned drafts through native RPCs. Stop
+all writers before using it. Cleanup does not turn a failed run into a pass.

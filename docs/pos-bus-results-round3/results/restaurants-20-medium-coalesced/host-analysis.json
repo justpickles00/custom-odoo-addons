@@ -1,0 +1,160 @@
+{
+  "sample_count": 90,
+  "sample_start_ns": 341175429906920,
+  "sample_end_ns": 341264555187959,
+  "sample_span_s": 89.125281039,
+  "cpu_percent_whole_host": {
+    "user": {
+      "n": 89,
+      "mean": 35.43909571320034,
+      "p50": 35.130581297388375,
+      "p95": 38.70696893366918,
+      "p99": 40.55415617128463,
+      "max": 40.625
+    },
+    "nice": {
+      "n": 89,
+      "mean": 0.0009418235587744993,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.08382229673093043
+    },
+    "system": {
+      "n": 89,
+      "mean": 9.335339020437493,
+      "p50": 9.220452640402348,
+      "p95": 10.428931875525652,
+      "p99": 11.14864864864865,
+      "max": 11.335012594458437
+    },
+    "idle": {
+      "n": 89,
+      "mean": 54.222071557676124,
+      "p50": 54.83599663582843,
+      "p95": 57.05882352941176,
+      "p99": 57.57575757575758,
+      "max": 58.22784810126582
+    },
+    "iowait": {
+      "n": 89,
+      "mean": 0.25937409355788843,
+      "p50": 0.2518891687657431,
+      "p95": 0.4191114836546521,
+      "p99": 0.5050505050505051,
+      "max": 0.5912162162162162
+    },
+    "irq": {
+      "n": 89,
+      "mean": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "softirq": {
+      "n": 89,
+      "mean": 0.6752616809419574,
+      "p50": 0.6717044500419815,
+      "p95": 0.8382229673093042,
+      "p99": 0.8438818565400843,
+      "max": 0.9212730318257957
+    },
+    "steal": {
+      "n": 89,
+      "mean": 0.0679161106274326,
+      "p50": 0.08382229673093043,
+      "p95": 0.16792611251049538,
+      "p99": 0.16835016835016833,
+      "max": 0.16891891891891891
+    }
+  },
+  "database_sessions": {
+    "posbus_0004": {
+      "new_sessions": 193,
+      "new_sessions_per_s": 2.1654910677425616
+    },
+    "posbus_0005": {
+      "new_sessions": 198,
+      "new_sessions_per_s": 2.221591872606359
+    },
+    "posbus_0006": {
+      "new_sessions": 211,
+      "new_sessions_per_s": 2.367453965252231
+    },
+    "posbus_0007": {
+      "new_sessions": 208,
+      "new_sessions_per_s": 2.3337934823339523
+    },
+    "posbus_0008": {
+      "new_sessions": 218,
+      "new_sessions_per_s": 2.4459950920615463
+    },
+    "posbus_0009": {
+      "new_sessions": 212,
+      "new_sessions_per_s": 2.37867412622499
+    },
+    "posbus_0010": {
+      "new_sessions": 203,
+      "new_sessions_per_s": 2.2776926774701556
+    },
+    "posbus_0011": {
+      "new_sessions": 212,
+      "new_sessions_per_s": 2.37867412622499
+    },
+    "posbus_0012": {
+      "new_sessions": 221,
+      "new_sessions_per_s": 2.4796555749798244
+    },
+    "posbus_0013": {
+      "new_sessions": 213,
+      "new_sessions_per_s": 2.3898942871977495
+    },
+    "posbus_0014": {
+      "new_sessions": 213,
+      "new_sessions_per_s": 2.3898942871977495
+    },
+    "posbus_0015": {
+      "new_sessions": 207,
+      "new_sessions_per_s": 2.322573321361193
+    },
+    "posbus_0016": {
+      "new_sessions": 207,
+      "new_sessions_per_s": 2.322573321361193
+    },
+    "posbus_0017": {
+      "new_sessions": 214,
+      "new_sessions_per_s": 2.401114448170509
+    },
+    "posbus_0018": {
+      "new_sessions": 220,
+      "new_sessions_per_s": 2.468435414007065
+    },
+    "posbus_0019": {
+      "new_sessions": 212,
+      "new_sessions_per_s": 2.37867412622499
+    },
+    "posbus_0020": {
+      "new_sessions": 201,
+      "new_sessions_per_s": 2.255252355524637
+    },
+    "posbus_0021": {
+      "new_sessions": 217,
+      "new_sessions_per_s": 2.434774931088787
+    },
+    "posbus_0022": {
+      "new_sessions": 214,
+      "new_sessions_per_s": 2.401114448170509
+    },
+    "posbus_0023": {
+      "new_sessions": 203,
+      "new_sessions_per_s": 2.2776926774701556
+    },
+    "postgres": {
+      "new_sessions": 1485,
+      "new_sessions_per_s": 16.66193904454769
+    }
+  },
+  "active_tenant_new_sessions_per_s": 47.09101560267115,
+  "limits": "Whole shared-host CPU, not Odoo-only CPU. Database cumulative statistics have publication lag; postgres includes other system-DB clients. These samples began late in round3 and cannot be extrapolated to earlier cases."
+}

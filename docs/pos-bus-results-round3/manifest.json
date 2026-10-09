@@ -1,0 +1,33 @@
+{
+  "source": "/home/coder/playground/pos-bus-investigation/round3",
+  "archives": [
+    {
+      "archive": "workloads-raw.tar.gz",
+      "files": 58,
+      "bytes": 21191308,
+      "sha256": "c699615e7dd26a21491e061385e49a4039cd039d2716bfdbe543ebe336688cbc",
+      "decompressed_file_hashes_verified": true
+    },
+    {
+      "archive": "cleanup-raw.tar.gz",
+      "files": 16,
+      "bytes": 3997738,
+      "sha256": "b9fe665cf30f892406a12e2cead243b1a795eb7526b819be7cb5f2b2252f8b3c",
+      "decompressed_file_hashes_verified": true
+    },
+    {
+      "archive": "probe-raw.tar.gz",
+      "files": 46,
+      "bytes": 15342781,
+      "sha256": "a721ff26acde9233b3d2baf2960e21cbb54d907f55a81e1d179d83a6088011ee",
+      "decompressed_file_hashes_verified": true
+    },
+    {
+      "archive": "runtime-raw.tar.gz",
+      "files": 51,
+      "bytes": 5493022,
+      "sha256": "e402df7b80ae6b5cb649595734f3031b6afd14e138ee383bd0aa32ce327ce90a",
+      "decompressed_file_hashes_verified": true
+    }
+  ]
+}

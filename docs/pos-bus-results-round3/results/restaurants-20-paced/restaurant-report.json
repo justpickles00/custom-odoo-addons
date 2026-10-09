@@ -1,0 +1,699 @@
+{
+  "run_id": "d643c7fbfa76",
+  "directory": "/home/coder/playground/pos-bus-investigation/round3/results/restaurants-20-paced",
+  "args": {
+    "fixture": "/home/coder/playground/pos-bus-investigation/fixture.json",
+    "http_url": "http://127.0.0.1:8061",
+    "ws_url": "ws://127.0.0.1:8062",
+    "db_prefix": "posbus_",
+    "db_start": 4,
+    "tenants": 20,
+    "restaurant_fraction": 1.0,
+    "tills": 4,
+    "tables_per_till": 2,
+    "background": 0,
+    "duration": 180.0,
+    "think_time": 20.0,
+    "prepare_every": 4,
+    "cancel_fraction": 0.2,
+    "queue_size": 128,
+    "follower_concurrency": 8,
+    "coalesce_equal_sync": false,
+    "startup_concurrency": 2,
+    "cache_limit": 10000,
+    "closed_cache": 64,
+    "rpc_timeout": 60,
+    "barrier_timeout": 60,
+    "drain_timeout": 120,
+    "canary_interval": 30,
+    "output": "/home/coder/playground/pos-bus-investigation/round3/results/restaurants-20-paced",
+    "mode": "follower",
+    "run_id": "d643c7fbfa76"
+  },
+  "audit": {
+    "successful_run": true,
+    "blockers": [],
+    "failure_counts": {},
+    "verification": {
+      "passed": true,
+      "checked_orders": 160,
+      "paid": 120,
+      "cancelled": 40,
+      "databases": 20
+    },
+    "final_cache_assertions": 640,
+    "expected_final_cache_assertions_from_finalized_orders": 640,
+    "unfinished_rpcs": 0,
+    "probe_metadata_missing_rows": 0,
+    "recorder_pids_observed_in_run": 22,
+    "recorder_nonzero_dropped_total_by_pid_in_run": {}
+  },
+  "windows": [
+    {
+      "window": 1,
+      "start_ns": 339838279994616,
+      "end_ns": 340018279994616,
+      "duration_s": 180.0,
+      "actions": {
+        "offered": 1440,
+        "admitted": 1440,
+        "dropped": 0,
+        "future_scheduled_abandoned_before_admission": 0,
+        "queued_abandoned_after_admission": 0,
+        "started": 1440,
+        "completed": 1440,
+        "offered_per_s": 8.0,
+        "completed_per_s": 8.0,
+        "errors": 0,
+        "preparation_noops": 0,
+        "queue_lag_ms": {
+          "n": 1440,
+          "mean": 0.9825810937499999,
+          "p50": 0.935474,
+          "p95": 1.909676,
+          "p99": 2.255564,
+          "max": 28.195782
+        },
+        "by_step": {
+          "edit": {
+            "started": 1120,
+            "completed_in_window": 1120,
+            "completed_by_run_end": 1120,
+            "operations_with_commit_evidence": 1120,
+            "bus_rows_per_started_action": {
+              "n": 1120,
+              "mean": 3.0,
+              "p50": 3.0,
+              "p95": 3.0,
+              "p99": 3.0,
+              "max": 3.0
+            },
+            "committed_rows_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": 2240,
+              "e174727c26f14bba-ORDER_STATE_CHANGED": 1120
+            },
+            "row_payload_bytes_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": {
+                "n": 2240,
+                "mean": 73.8,
+                "p50": 74.0,
+                "p95": 74.0,
+                "p99": 74.0,
+                "max": 74.0
+              },
+              "e174727c26f14bba-ORDER_STATE_CHANGED": {
+                "n": 1120,
+                "mean": 2.0,
+                "p50": 2.0,
+                "p95": 2.0,
+                "p99": 2.0,
+                "max": 2.0
+              }
+            },
+            "bus_rows_per_started_action_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": {
+                "n": 1120,
+                "mean": 2.0,
+                "p50": 2.0,
+                "p95": 2.0,
+                "p99": 2.0,
+                "max": 2.0
+              },
+              "e174727c26f14bba-ORDER_STATE_CHANGED": {
+                "n": 1120,
+                "mean": 1.0,
+                "p50": 1.0,
+                "p95": 1.0,
+                "p99": 1.0,
+                "max": 1.0
+              }
+            },
+            "total_payload_bytes_per_started_action": {
+              "n": 1120,
+              "mean": 149.6,
+              "p50": 150.0,
+              "p95": 150.0,
+              "p99": 150.0,
+              "max": 150.0
+            }
+          },
+          "prepare": {
+            "started": 320,
+            "completed_in_window": 320,
+            "completed_by_run_end": 320,
+            "operations_with_commit_evidence": 320,
+            "bus_rows_per_started_action": {
+              "n": 320,
+              "mean": 3.0,
+              "p50": 3.0,
+              "p95": 3.0,
+              "p99": 3.0,
+              "max": 3.0
+            },
+            "committed_rows_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": 640,
+              "e174727c26f14bba-ORDER_STATE_CHANGED": 320
+            },
+            "row_payload_bytes_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": {
+                "n": 640,
+                "mean": 73.8,
+                "p50": 74.0,
+                "p95": 74.0,
+                "p99": 74.0,
+                "max": 74.0
+              },
+              "e174727c26f14bba-ORDER_STATE_CHANGED": {
+                "n": 320,
+                "mean": 2.0,
+                "p50": 2.0,
+                "p95": 2.0,
+                "p99": 2.0,
+                "max": 2.0
+              }
+            },
+            "bus_rows_per_started_action_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": {
+                "n": 320,
+                "mean": 2.0,
+                "p50": 2.0,
+                "p95": 2.0,
+                "p99": 2.0,
+                "max": 2.0
+              },
+              "e174727c26f14bba-ORDER_STATE_CHANGED": {
+                "n": 320,
+                "mean": 1.0,
+                "p50": 1.0,
+                "p95": 1.0,
+                "p99": 1.0,
+                "max": 1.0
+              }
+            },
+            "total_payload_bytes_per_started_action": {
+              "n": 320,
+              "mean": 149.6,
+              "p50": 150.0,
+              "p95": 150.0,
+              "p99": 150.0,
+              "max": 150.0
+            }
+          }
+        }
+      },
+      "queue": {
+        "start_backlog": 0,
+        "end_backlog": 0,
+        "growth": 0,
+        "first_sample_backlog": 1,
+        "peak_sample_backlog": 1,
+        "peak_follower_backlog": 6
+      },
+      "http_rpc_completion_latency_ms": {
+        "pos.order.sync_from_ui": {
+          "n": 1440,
+          "mean": 69.31973170833334,
+          "p50": 70.945244,
+          "p95": 95.698457,
+          "p99": 108.127939,
+          "max": 131.947547
+        },
+        "pos.config.read_config_open_orders": {
+          "n": 8640,
+          "mean": 63.13631744236111,
+          "p50": 66.569191,
+          "p95": 79.669492,
+          "p99": 87.922069,
+          "max": 142.548287
+        },
+        "/pos_bus_probe/publish": {
+          "n": 119,
+          "mean": 23.683699092436974,
+          "p50": 22.463239,
+          "p95": 37.577627,
+          "p99": 43.765841,
+          "max": 51.512894
+        },
+        "pos.order.read": {
+          "n": 320,
+          "mean": 12.4681415,
+          "p50": 13.500897,
+          "p95": 16.600184,
+          "p99": 19.995858,
+          "max": 65.742863
+        }
+      },
+      "client_loop_stall_ms": {
+        "n": 0
+      },
+      "follower_capacity": {
+        "concurrency_per_device": 8,
+        "queue_capacity_per_device": 128,
+        "saturation_events": 0,
+        "queue_full_events": 0,
+        "completed_callbacks": 8640
+      },
+      "follower_refreshes": {
+        "coalesced_callbacks": 0,
+        "coalesced_classification": {},
+        "eligible_read_config_open_orders_requests_suppressed": 0,
+        "coalesced_sender_skips_without_read_request": 0,
+        "potential_equal_sync_repeats_in_frames": {
+          "same_session_other_sender_refresh": 4320,
+          "same_sender_skip": 1440
+        },
+        "potential_eligible_read_requests_suppressible": 4320,
+        "notification_recipient_classification": {
+          "same_session_other_sender_refresh": 8640,
+          "non_synchronisation": 6236,
+          "same_sender_skip": 2880
+        },
+        "tills_with_unambiguous_session_evidence": 80,
+        "tills_without_unambiguous_session_evidence": 0
+      },
+      "measured_cold_load_data": {
+        "rpc_starts": 0,
+        "rpc_completions": 0,
+        "rpc_errors": 0
+      },
+      "recipient_exact_sets": {
+        "SYNCHRONISATION": {
+          "rows": 2880,
+          "expected": 11520,
+          "received": 11520,
+          "mismatch_rows": 0,
+          "mismatch_examples": []
+        },
+        "ORDER_STATE_CHANGED": {
+          "rows": 1440,
+          "expected": 5760,
+          "received": 5760,
+          "mismatch_rows": 0,
+          "mismatch_examples": []
+        },
+        "canary": {
+          "rows": 119,
+          "expected": 476,
+          "received": 476,
+          "mismatch_rows": 0,
+          "mismatch_examples": []
+        }
+      },
+      "saved_delivery_analysis_agrees": true,
+      "resources": {
+        "samples": 177,
+        "sample_start_ns": 339839196725674,
+        "sample_end_ns": 340017459353270,
+        "host_memory_minima": {
+          "MemAvailable_bytes": 2603139072,
+          "MemFree_bytes": 149094400,
+          "SwapFree_bytes": 0
+        },
+        "cpu_percent_one_core": {
+          "postgres": {
+            "n": 176,
+            "mean": 6.02416668013985,
+            "p50": 4.949139401820584,
+            "p95": 13.854919636087432,
+            "p99": 15.832355917068579,
+            "max": 20.71509220355604
+          },
+          "odoo_master": {
+            "n": 176,
+            "mean": 1.6883755360641408,
+            "p50": 1.9693479848228261,
+            "p95": 2.9568144272485015,
+            "p99": 2.969480963412781,
+            "max": 2.9698931918601086
+          },
+          "odoo_worker_http_or_cron": {
+            "n": 176,
+            "mean": 223.6832927103639,
+            "p50": 223.58953997359373,
+            "p95": 237.24857966929324,
+            "p99": 258.12533123549895,
+            "max": 263.4775304435113
+          },
+          "gevent": {
+            "n": 176,
+            "mean": 1.9913233239684294,
+            "p50": 1.9762416505445368,
+            "p95": 2.9669937257695755,
+            "p99": 2.9702756231324146,
+            "max": 3.9396466578779257
+          },
+          "client": {
+            "n": 176,
+            "mean": 9.974049612901588,
+            "p50": 9.877490805127769,
+            "p95": 11.873839035388315,
+            "p99": 13.80343450983963,
+            "max": 16.830214340521525
+          }
+        },
+        "role_rss_bytes": {
+          "postgres": {
+            "min": 4586299392,
+            "max": 5465198592
+          },
+          "odoo_master": {
+            "min": 157315072,
+            "max": 157315072
+          },
+          "odoo_worker_http_or_cron": {
+            "min": 6600822784,
+            "max": 6807392256
+          },
+          "gevent": {
+            "min": 325840896,
+            "max": 325840896
+          },
+          "client": {
+            "min": 215642112,
+            "max": 225210368
+          }
+        },
+        "pid_churn": {
+          "postgres": {
+            "unique_pids": 4856,
+            "appeared_after_first_sample": 4770,
+            "disappeared_before_last_sample": 4768,
+            "sampled_counts_are_lower_bounds": true
+          },
+          "odoo_master": {
+            "unique_pids": 1,
+            "appeared_after_first_sample": 0,
+            "disappeared_before_last_sample": 0,
+            "sampled_counts_are_lower_bounds": true
+          },
+          "odoo_worker_http_or_cron": {
+            "unique_pids": 21,
+            "appeared_after_first_sample": 0,
+            "disappeared_before_last_sample": 0,
+            "sampled_counts_are_lower_bounds": true
+          },
+          "gevent": {
+            "unique_pids": 1,
+            "appeared_after_first_sample": 0,
+            "disappeared_before_last_sample": 0,
+            "sampled_counts_are_lower_bounds": true
+          },
+          "client": {
+            "unique_pids": 1,
+            "appeared_after_first_sample": 0,
+            "disappeared_before_last_sample": 0,
+            "sampled_counts_are_lower_bounds": true
+          }
+        }
+      },
+      "sustained_admission_without_growth": true,
+      "commit_to_receipt_ms": {
+        "pos": {
+          "n": 11520,
+          "mean": 9.733680447222222,
+          "p50": 9.798188,
+          "p95": 11.577675,
+          "p99": 12.310364,
+          "max": 19.915586
+        },
+        "other": {
+          "n": 5760,
+          "mean": 9.733680447222222,
+          "p50": 9.798188,
+          "p95": 11.577675,
+          "p99": 12.310364,
+          "max": 19.915586
+        },
+        "canary": {
+          "n": 476,
+          "mean": 8.666376859243698,
+          "p50": 8.512162,
+          "p95": 9.804821,
+          "p99": 11.978811,
+          "max": 15.480747
+        }
+      },
+      "client_loop_load_histogram": {
+        "count": 3601,
+        "mean_ms": 0.8254629754497814,
+        "max_ms": 30.501120549160987,
+        "p50_upper_ms": 1.0,
+        "p95_upper_ms": 2.0,
+        "p99_upper_ms": 4.0
+      }
+    }
+  ],
+  "action_phases": {
+    "setup": {
+      "committed_bus_rows": 960,
+      "actions_with_commit_evidence": 320,
+      "started": 320,
+      "completed_by_run_end": 320
+    },
+    "measurement": {
+      "committed_bus_rows": 4320,
+      "actions_with_commit_evidence": 1440,
+      "started": 1440,
+      "completed_by_run_end": 1440
+    },
+    "finalize": {
+      "committed_bus_rows": 960,
+      "actions_with_commit_evidence": 320,
+      "started": 440,
+      "completed_by_run_end": 440,
+      "preparation_noops": 120
+    }
+  },
+  "reused_table_action_operation_ids": {
+    "d643c7fbfa76:posbus_0011:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0017:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0007:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0014:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0021:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0023:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0022:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0010:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0019:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0016:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0009:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0006:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0012:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0004:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0020:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0015:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0013:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0008:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0018:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0005:till:0:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0007:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0011:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0017:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0020:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0022:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0005:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0021:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0006:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0014:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0023:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0004:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0010:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0019:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0018:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0009:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0008:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0013:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0015:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0012:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0016:till:1:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0007:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0021:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0017:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0022:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0011:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0006:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0014:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0020:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0023:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0004:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0019:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0010:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0005:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0013:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0009:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0018:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0015:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0012:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0008:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0016:till:2:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0004:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0022:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0014:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0010:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0009:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0005:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0018:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0017:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0007:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0019:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0006:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0011:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0020:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0015:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0016:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0023:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0021:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0013:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0008:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0012:till:2:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0010:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0014:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0005:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0022:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0006:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0011:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0007:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0019:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0023:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0004:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0013:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0021:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0017:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0009:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0016:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0012:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0018:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0015:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0008:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0020:till:3:table:0:prepare:final": 2,
+    "d643c7fbfa76:posbus_0009:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0011:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0010:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0019:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0013:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0005:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0006:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0014:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0012:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0023:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0004:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0018:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0007:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0017:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0016:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0021:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0008:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0020:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0022:till:3:table:1:prepare:final": 2,
+    "d643c7fbfa76:posbus_0015:till:3:table:1:prepare:final": 2
+  },
+  "readiness": {
+    "ready_databases": 20,
+    "expected_ready_databases": 20,
+    "open_tables_setup_completed": true,
+    "table_occupancy_preflight_databases": 20,
+    "occupied_preflight_databases": []
+  },
+  "existing_resource_cases": [
+    {
+      "case": "restaurant",
+      "cpu_percent_one_core": {
+        "postgres": {
+          "n": 176,
+          "mean": 6.02416668013985,
+          "p50": 4.949139401820584,
+          "p95": 13.854919636087432,
+          "p99": 15.832355917068579,
+          "max": 20.71509220355604
+        },
+        "odoo_other": {
+          "n": 176,
+          "mean": 225.37166824642807,
+          "p50": 224.9918429895072,
+          "p95": 239.2174475503662,
+          "p99": 260.04388662787375,
+          "max": 265.44378067070164
+        },
+        "gevent": {
+          "n": 176,
+          "mean": 1.9913233239684294,
+          "p50": 1.9762416505445368,
+          "p95": 2.9669937257695755,
+          "p99": 2.9702756231324146,
+          "max": 3.9396466578779257
+        },
+        "client": {
+          "n": 176,
+          "mean": 9.974049612901588,
+          "p50": 9.877490805127769,
+          "p95": 11.873839035388315,
+          "p99": 13.80343450983963,
+          "max": 16.830214340521525
+        }
+      },
+      "pg_activity_rows_peak_including_background": 89,
+      "stage_wall_ms": {
+        "queue_wait_max_ns": {
+          "n": 1559,
+          "mean": 0.1556978819756254,
+          "p50": 0.153824,
+          "p95": 0.203077,
+          "p99": 0.239187,
+          "max": 0.321543
+        },
+        "cursor_acquire_ns": {
+          "n": 1559,
+          "mean": 0.2005101853752405,
+          "p50": 0.179783,
+          "p95": 0.326294,
+          "p99": 0.406998,
+          "max": 0.508251
+        },
+        "session_validation_ns": {
+          "n": 1559,
+          "mean": 1.3483629781911481,
+          "p50": 1.316434,
+          "p95": 1.664738,
+          "p99": 1.783174,
+          "max": 2.767534
+        },
+        "fetch_ns": {
+          "n": 1559,
+          "mean": 0.42569422001282875,
+          "p50": 0.382,
+          "p95": 0.706981,
+          "p99": 1.043694,
+          "max": 2.143132
+        },
+        "dispatch_ns": {
+          "n": 1559,
+          "mean": 0.11253567094291211,
+          "p50": 0.105381,
+          "p95": 0.149406,
+          "p99": 0.185915,
+          "max": 0.304652
+        },
+        "duration_ns": {
+          "n": 1559,
+          "mean": 2.4342771597177677,
+          "p50": 2.397978,
+          "p95": 2.936007,
+          "p99": 3.316753,
+          "max": 4.517857
+        }
+      },
+      "matched_dispatch_batches": 1559
+    }
+  ],
+  "limits": [
+    "Measurement events use [start,end); recipient selection follows analyze.py inclusive commit boundaries and includes drain receipts.",
+    "Action bus rows are attributed by operation_id (including child operations) to actions started inside the window; commits may occur during drain. Native preparation noops can complete with zero sync RPC/bus rows; zero rows can also mean an incomplete action.",
+    "HTTP latency covers successful RPC completions in the window, including follower calls; failures/inflight RPCs are not latency samples.",
+    "Follower suppression is classified by receipt/callback time, separately from commit-window delivery metrics. Same-session other-sender sync callbacks suppress one read_config_open_orders request each; sender/other-session skips suppress none. Session inference uses own-sender saved payloads when device_started omits session_id.",
+    "Potential equal-sync repeats share device, websocket receive timestamp, type and payload. These are a hypothetical same-frame control opportunity in native runs; actual suppression requires coalesced_follower_callback evidence. Follower RPC starts can lag receipt windows.",
+    "Event-loop load histogram covers the driver load phase; stall-only samples omit lag at or below 50 ms. Histograms report upper bounds.",
+    "Telemetry PID/churn counts are sampled LOWER BOUNDS, not connection creation or restart totals. Processes living entirely between samples are omitted, including PostgreSQL backends. CPU is aggregate percent of one core; new PIDs omit first-interval ticks, so low sampled PostgreSQL CPU does not rule out expensive connection churn.",
+    "Odoo child commands do not distinguish HTTP workers from cron; their CPU/churn are combined. Host/PostgreSQL values include other VM activity.",
+    "Queue start is zero by sustained-driver construction unless explicitly recorded; end uses measurement_end or the last sample.",
+    "Browser-free protocol/cache emulator; no browser, kitchen display or printer execution."
+  ]
+}

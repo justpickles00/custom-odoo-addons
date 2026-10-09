@@ -1,5 +1,8 @@
 # POS/Bus load follow-up
 
+The [real restaurant follow-up](pos-bus-realistic-load.md) separates actual POS workload limits from the heavy synthetic Bus result below.
+
+
 This extends the [first investigation](pos-bus-investigation.md). It tests the
 limits of Odoo's existing Bus, using zero browsers and unchanged upstream source
 at `5bcf314eb0896bdf7e218341a134901004ba3d4d`. All writes belong to the isolated

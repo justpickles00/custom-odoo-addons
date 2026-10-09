@@ -1,0 +1,452 @@
+{
+  "run_id": "75335fe81115",
+  "args": {
+    "fixture": "/home/coder/playground/pos-bus-investigation/fixture.json",
+    "http_url": "http://127.0.0.1:8061",
+    "ws_url": "ws://127.0.0.1:8062",
+    "db_prefix": "posbus_",
+    "db_start": 4,
+    "tenants": 4,
+    "restaurant_fraction": 1.0,
+    "tills": 4,
+    "tables_per_till": 2,
+    "background": 0,
+    "duration": 180.0,
+    "think_time": 20.0,
+    "prepare_every": 4,
+    "cancel_fraction": 0.2,
+    "queue_size": 128,
+    "follower_concurrency": 8,
+    "startup_concurrency": 2,
+    "cache_limit": 10000,
+    "closed_cache": 64,
+    "rpc_timeout": 60,
+    "barrier_timeout": 60,
+    "drain_timeout": 120,
+    "canary_interval": 30,
+    "output": "/home/coder/playground/pos-bus-investigation/round3/results/restaurants-4-paced",
+    "mode": "follower",
+    "coalesce_equal_sync": false,
+    "run_id": "75335fe81115"
+  },
+  "counts": {
+    "run_start": 1,
+    "rpc_start": 3160,
+    "rpc_end": 3160,
+    "table_occupancy_preflight": 4,
+    "device_started": 16,
+    "ws_raw": 1788,
+    "notification": 5116,
+    "barrier_passed": 8,
+    "setup_start": 2,
+    "table_action_start": 440,
+    "table_action_complete": 440,
+    "follower_skipped": 832,
+    "follower_complete": 2496,
+    "setup_complete": 2,
+    "measurement_start": 1,
+    "event_loop_samples": 3690,
+    "table_action_scheduled": 288,
+    "load_sample": 184,
+    "monitor_canary_publish": 23,
+    "ws_heartbeat": 64,
+    "measurement_end": 1,
+    "table_finalized": 32,
+    "preparation_noop": 24,
+    "final_cache_assertion": 128,
+    "final_cache_snapshot": 16,
+    "run_complete": 1
+  },
+  "commit_to_receipt_ms": {
+    "canary_startup": {
+      "n": 16,
+      "mean": 9.1923848125,
+      "p50": 8.483024,
+      "p95": 12.328688,
+      "p99": 12.328688,
+      "max": 12.389444
+    },
+    "canary_startup_commit_to_claim": {
+      "n": 16,
+      "mean": 5.72250275,
+      "p50": 5.09175,
+      "p95": 7.202251,
+      "p99": 7.202251,
+      "max": 7.202251
+    },
+    "canary_startup_after_dispatch": {
+      "n": 16,
+      "mean": 0.5293655625,
+      "p50": 0.370577,
+      "p95": 1.162981,
+      "p99": 1.162981,
+      "max": 1.223737
+    },
+    "pos": {
+      "n": 3328,
+      "mean": 15.700343995793268,
+      "p50": 12.7389,
+      "p95": 33.998964,
+      "p99": 47.44138,
+      "max": 59.432126
+    },
+    "pos_commit_to_claim": {
+      "n": 3328,
+      "mean": 8.959603382211538,
+      "p50": 7.124112,
+      "p95": 19.763255,
+      "p99": 25.056951,
+      "max": 29.337834
+    },
+    "pos_after_dispatch": {
+      "n": 3328,
+      "mean": 2.8163848251201924,
+      "p50": 2.493091,
+      "p95": 7.504848,
+      "p99": 15.547203,
+      "max": 31.42486
+    },
+    "other": {
+      "n": 1664,
+      "mean": 15.700343995793268,
+      "p50": 12.7389,
+      "p95": 33.969838,
+      "p99": 47.44138,
+      "max": 59.432126
+    },
+    "other_commit_to_claim": {
+      "n": 1664,
+      "mean": 8.959603382211538,
+      "p50": 7.124112,
+      "p95": 19.720021,
+      "p99": 25.056951,
+      "max": 29.337834
+    },
+    "other_after_dispatch": {
+      "n": 1664,
+      "mean": 2.8163848251201924,
+      "p50": 2.493091,
+      "p95": 7.452238,
+      "p99": 15.547203,
+      "max": 31.42486
+    },
+    "canary": {
+      "n": 92,
+      "mean": 9.546314152173913,
+      "p50": 9.487795,
+      "p95": 10.275879,
+      "p99": 10.398003,
+      "max": 10.402261
+    },
+    "canary_commit_to_claim": {
+      "n": 92,
+      "mean": 6.225276826086956,
+      "p50": 6.192502,
+      "p95": 6.900656,
+      "p99": 6.935,
+      "max": 6.935
+    },
+    "canary_after_dispatch": {
+      "n": 92,
+      "mean": 0.5895952391304348,
+      "p50": 0.59224,
+      "p95": 0.793917,
+      "p99": 0.920097,
+      "max": 0.937399
+    },
+    "canary_final": {
+      "n": 16,
+      "mean": 25.592825125,
+      "p50": 22.663923,
+      "p95": 32.532424,
+      "p99": 32.532424,
+      "max": 32.57739
+    },
+    "canary_final_commit_to_claim": {
+      "n": 16,
+      "mean": 16.004172,
+      "p50": 13.91074,
+      "p95": 21.794943,
+      "p99": 21.794943,
+      "max": 21.794943
+    },
+    "canary_final_after_dispatch": {
+      "n": 16,
+      "mean": 1.053579625,
+      "p50": 0.975072,
+      "p95": 1.483472,
+      "p99": 1.483472,
+      "max": 1.528438
+    }
+  },
+  "by_tenant_ms": {
+    "posbus_0004": {
+      "n": 1280,
+      "mean": 15.54449943515625,
+      "p50": 12.860103,
+      "p95": 31.455364,
+      "p99": 37.364386,
+      "max": 47.583972
+    },
+    "posbus_0005": {
+      "n": 1280,
+      "mean": 16.483409281249997,
+      "p50": 12.706451,
+      "p95": 40.245225,
+      "p99": 51.935691,
+      "max": 59.432126
+    },
+    "posbus_0007": {
+      "n": 1276,
+      "mean": 15.00159626567398,
+      "p50": 12.702492,
+      "p95": 27.444506,
+      "p99": 41.485108,
+      "max": 58.494535
+    },
+    "posbus_0006": {
+      "n": 1280,
+      "mean": 15.369673043750002,
+      "p50": 12.379027,
+      "p95": 35.764916,
+      "p99": 52.676987,
+      "max": 54.296418
+    }
+  },
+  "event_max_receipt_ms": {
+    "n": 1279,
+    "mean": 16.72122613291634,
+    "p50": 13.626066,
+    "p95": 35.003652,
+    "p99": 51.935691,
+    "max": 59.432126
+  },
+  "batch_stage_wall_ms": {
+    "queue_wait_max_ns": {
+      "n": 311,
+      "mean": 0.18103554019292606,
+      "p50": 0.183189,
+      "p95": 0.248354,
+      "p99": 0.275687,
+      "max": 0.400305
+    },
+    "cursor_acquire_ns": {
+      "n": 311,
+      "mean": 0.2001094951768489,
+      "p50": 0.196426,
+      "p95": 0.268182,
+      "p99": 0.33516,
+      "max": 0.426203
+    },
+    "session_validation_ns": {
+      "n": 311,
+      "mean": 1.616837382636656,
+      "p50": 1.58141,
+      "p95": 2.06884,
+      "p99": 2.232702,
+      "max": 2.381046
+    },
+    "fetch_ns": {
+      "n": 311,
+      "mean": 0.49123632154340835,
+      "p50": 0.480748,
+      "p95": 0.594303,
+      "p99": 0.663335,
+      "max": 0.779789
+    },
+    "dispatch_ns": {
+      "n": 311,
+      "mean": 0.1443483536977492,
+      "p50": 0.137022,
+      "p95": 0.188481,
+      "p99": 0.235841,
+      "max": 0.308409
+    },
+    "serialize_ns": {
+      "n": 311,
+      "mean": 0.022892167202572346,
+      "p50": 0.02116,
+      "p95": 0.035507,
+      "p99": 0.042993,
+      "max": 0.066367
+    },
+    "enqueue_ns": {
+      "n": 311,
+      "mean": 0.08695988424437298,
+      "p50": 0.080022,
+      "p95": 0.118966,
+      "p99": 0.140809,
+      "max": 0.18289
+    },
+    "duration_ns": {
+      "n": 311,
+      "mean": 2.9087484405144695,
+      "p50": 2.870391,
+      "p95": 3.474735,
+      "p99": 3.67656,
+      "max": 3.830854
+    }
+  },
+  "batch_stage_total_wall_ms": {
+    "queue_wait_max_ns": 56.302053,
+    "cursor_acquire_ns": 62.234053,
+    "session_validation_ns": 502.836426,
+    "fetch_ns": 152.774496,
+    "dispatch_ns": 44.892338,
+    "serialize_ns": 7.119464,
+    "enqueue_ns": 27.044524,
+    "duration_ns": 904.620765
+  },
+  "order_rpc_method_ms": {
+    "n": 416,
+    "mean": 81.57411422596154,
+    "p50": 59.602409,
+    "p95": 215.729952,
+    "p99": 270.832118,
+    "max": 398.302536
+  },
+  "order_cursor_commit_ms": {
+    "n": 416,
+    "mean": 12.437304891826924,
+    "p50": 10.765003,
+    "p95": 24.135811,
+    "p99": 27.387788,
+    "max": 32.094417
+  },
+  "notification_types": {
+    "posbus.canary": 124,
+    "SYNCHRONISATION": 3328,
+    "ORDER_STATE_CHANGED": 1664
+  },
+  "payload_bytes_delivered": {
+    "canary_startup": 672,
+    "pos": 246272,
+    "other": 3328,
+    "canary": 7084,
+    "canary_final": 672
+  },
+  "stream_delivery": {
+    "canary": {
+      "expected": 124,
+      "received": 124,
+      "rows": 31,
+      "mismatches": []
+    },
+    "SYNCHRONISATION": {
+      "expected": 3328,
+      "received": 3328,
+      "rows": 832,
+      "mismatches": []
+    },
+    "ORDER_STATE_CHANGED": {
+      "expected": 1664,
+      "received": 1664,
+      "rows": 416,
+      "mismatches": []
+    }
+  },
+  "measurement_stream_delivery": {
+    "SYNCHRONISATION": {
+      "expected": 2304,
+      "received": 2304,
+      "rows": 576,
+      "mismatches": []
+    },
+    "ORDER_STATE_CHANGED": {
+      "expected": 1152,
+      "received": 1152,
+      "rows": 288,
+      "mismatches": []
+    },
+    "canary": {
+      "expected": 92,
+      "received": 92,
+      "rows": 23,
+      "mismatches": []
+    }
+  },
+  "measurement_commit_to_receipt_ms": {
+    "pos": {
+      "n": 2304,
+      "mean": 11.974496670138889,
+      "p50": 12.0834,
+      "p95": 14.508881,
+      "p99": 15.107022,
+      "max": 16.35119
+    },
+    "other": {
+      "n": 1152,
+      "mean": 11.974496670138889,
+      "p50": 12.0834,
+      "p95": 14.508881,
+      "p99": 15.107022,
+      "max": 16.35119
+    },
+    "canary": {
+      "n": 92,
+      "mean": 9.546314152173913,
+      "p50": 9.487795,
+      "p95": 10.275879,
+      "p99": 10.398003,
+      "max": 10.402261
+    }
+  },
+  "commit_rows_matched": 1279,
+  "dispatch_batches_matched": 311,
+  "duplicate_receipts": 0,
+  "unmatched_receipts": 0,
+  "observed_pos_rows_expected_deliveries": 3328,
+  "observed_pos_rows_received_deliveries": 3328,
+  "incomplete_pos_rows": [],
+  "recorder_drops": {
+    "279731": 0,
+    "279745": 0,
+    "279751": 0,
+    "284060": 0,
+    "279735": 0,
+    "284036": 0,
+    "284032": 0,
+    "284062": 0,
+    "279753": 0,
+    "284065": 0,
+    "284016": 0,
+    "279715": 0,
+    "279756": 0,
+    "279749": 0,
+    "279743": 0,
+    "284052": 0,
+    "284058": 0,
+    "284067": 0,
+    "279727": 0,
+    "279721": 0,
+    "284038": 0,
+    "279723": 0,
+    "284042": 0,
+    "279729": 0,
+    "279737": 0,
+    "284028": 0,
+    "279739": 0,
+    "279754": 0,
+    "279704": 0,
+    "279733": 0,
+    "284048": 0,
+    "284030": 0,
+    "279717": 0,
+    "284050": 0,
+    "284026": 0,
+    "284064": 0,
+    "284034": 0,
+    "284054": 0,
+    "279741": 0,
+    "284056": 0,
+    "279747": 0,
+    "284046": 0,
+    "279719": 0,
+    "284040": 0,
+    "284044": 0,
+    "279725": 0
+  },
+  "delivery_limit": "Server commit metadata includes wholly missing POS rows.",
+  "delivery_window": "All operations scheduled by this run, including drain; stage_wall uses commits inside scheduled measurement window.",
+  "stage_warning": "Stage spans are overlapping wall time, not CPU time. Commit-to-claim and receipt-minus-batch-end may be negative during overlapping fetch/send."
+}

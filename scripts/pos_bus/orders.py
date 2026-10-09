@@ -25,6 +25,7 @@ class Order:
         self.id = None
         self.uuid = self._uuid("order")
         self.date_order = timestamp()
+        self.write_date = None
         self.user_id = user_id or fixture["users"][0]["id"]
         self.table_id = fixture["tables"][table_index]["id"]
         self.lines = [
@@ -113,6 +114,7 @@ class Order:
     def pay(self):
         if not self.id or self.state != "draft":
             raise ValueError("Payment requires a persisted draft")
+        self.date_order = timestamp()
         payload = self._payload("paid")
         payload["payment_ids"] = [[1 if self.payment_id else 0, self.payment_id or 0, {
             "uuid": self._uuid("payment"), "amount": self.totals["total"],
@@ -139,6 +141,7 @@ class Order:
         if self.id and order["id"] != self.id:
             raise AssertionError("Server changed order identity")
         self.id, self.state = order["id"], order["state"]
+        self.write_date = order.get("write_date")
         by_uuid = {record["uuid"]: record for record in response.get("pos.order.line", [])}
         for line in self.lines:
             if line["uuid"] in by_uuid:

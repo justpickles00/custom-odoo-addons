@@ -1,0 +1,60 @@
+{
+  "run_id": "386e767fbecb",
+  "profile": "sustained-long-lived-restaurant",
+  "native": true,
+  "elapsed_s": 62.79078102600761,
+  "verification": null,
+  "limitations": "Protocol/cache emulator; no OWL, IndexedDB, DOM, kitchen display or printer I/O. Offered schedule is controlled; one serial writer per till, bounded queue, no retries. The first writer error stops further mutations on that till and abandons its queued/future work; the failed action may have committed and needs independent reconciliation. This does not emulate native offline dirty-state retry.",
+  "counts": {
+    "run_start": 1,
+    "rpc_start": 573,
+    "rpc_end": 572,
+    "table_occupancy_preflight": 50,
+    "device_started": 116,
+    "ws_heartbeat": 8,
+    "ws_disconnect": 116,
+    "run_error": 1
+  },
+  "histograms": {
+    "rpc./web/session/authenticate": {
+      "count": 169,
+      "mean_ms": 407.2963145325442,
+      "max_ms": 754.002352,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc.search_read": {
+      "count": 50,
+      "mean_ms": 38.75763940000001,
+      "max_ms": 269.903775,
+      "p50_upper_ms": 64.0,
+      "p95_upper_ms": 128.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc./web/session/get_session_info": {
+      "count": 118,
+      "mean_ms": 39.69463771186441,
+      "max_ms": 277.75186,
+      "p50_upper_ms": 32.0,
+      "p95_upper_ms": 128.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc.register_new_device_identifier": {
+      "count": 118,
+      "mean_ms": 102.77334158474581,
+      "max_ms": 7378.589133,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 32.0,
+      "p99_upper_ms": 2048.0
+    },
+    "rpc.load_data": {
+      "count": 118,
+      "mean_ms": 277.31243901694916,
+      "max_ms": 1230.124539,
+      "p50_upper_ms": 256.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 1024.0
+    }
+  }
+}

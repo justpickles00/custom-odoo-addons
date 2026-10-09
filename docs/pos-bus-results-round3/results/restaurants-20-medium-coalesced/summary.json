@@ -1,0 +1,230 @@
+{
+  "run_id": "6658884657f2",
+  "profile": "sustained-long-lived-restaurant",
+  "native": false,
+  "elapsed_s": 150.3916772470111,
+  "verification": {
+    "passed": true,
+    "checked_orders": 160,
+    "paid": 120,
+    "cancelled": 40,
+    "databases": 20
+  },
+  "limitations": "Protocol/cache emulator; no OWL, IndexedDB, DOM, kitchen display or printer I/O. Offered schedule is controlled; one serial writer per till, bounded queue, no retries. The first writer error stops further mutations on that till and abandons its queued/future work; the failed action may have committed and needs independent reconciliation. This does not emulate native offline dirty-state retry.",
+  "counts": {
+    "run_start": 1,
+    "rpc_start": 9500,
+    "rpc_end": 9500,
+    "table_occupancy_preflight": 20,
+    "device_started": 80,
+    "ws_raw": 8712,
+    "notification": 25356,
+    "barrier_passed": 40,
+    "setup_start": 2,
+    "table_action_start": 2200,
+    "table_action_complete": 2200,
+    "coalesced_follower_callback": 8320,
+    "follower_skipped": 2080,
+    "follower_complete": 6240,
+    "setup_complete": 2,
+    "measurement_start": 1,
+    "event_loop_samples": 2139,
+    "table_action_scheduled": 1440,
+    "load_sample": 106,
+    "monitor_canary_publish": 59,
+    "ws_heartbeat": 196,
+    "event_loop_stall": 2,
+    "measurement_end": 1,
+    "table_finalized": 160,
+    "preparation_noop": 120,
+    "final_cache_assertion": 640,
+    "final_cache_snapshot": 80,
+    "run_complete": 1
+  },
+  "histograms": {
+    "rpc./web/session/authenticate": {
+      "count": 100,
+      "mean_ms": 293.2458030199999,
+      "max_ms": 435.899751,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc.search_read": {
+      "count": 20,
+      "mean_ms": 9.82593425,
+      "max_ms": 12.03644,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 16.0,
+      "p99_upper_ms": 16.0
+    },
+    "rpc./web/session/get_session_info": {
+      "count": 80,
+      "mean_ms": 25.4025398375,
+      "max_ms": 53.56964,
+      "p50_upper_ms": 32.0,
+      "p95_upper_ms": 64.0,
+      "p99_upper_ms": 64.0
+    },
+    "rpc.register_new_device_identifier": {
+      "count": 80,
+      "mean_ms": 49.63971413749999,
+      "max_ms": 1463.848878,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 32.0,
+      "p99_upper_ms": 2048.0
+    },
+    "rpc.load_data": {
+      "count": 80,
+      "mean_ms": 258.6005259625,
+      "max_ms": 343.835804,
+      "p50_upper_ms": 256.0,
+      "p95_upper_ms": 512.0,
+      "p99_upper_ms": 512.0
+    },
+    "rpc./pos_bus_probe/publish": {
+      "count": 99,
+      "mean_ms": 69.46570378787881,
+      "max_ms": 234.504258,
+      "p50_upper_ms": 32.0,
+      "p95_upper_ms": 256.0,
+      "p99_upper_ms": 256.0
+    },
+    "table_action_queue_lag": {
+      "count": 2200,
+      "mean_ms": 0.6901833263636367,
+      "max_ms": 16.367996,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 4.0
+    },
+    "rpc.sync_from_ui": {
+      "count": 2040,
+      "mean_ms": 240.4835848627454,
+      "max_ms": 1262.666391,
+      "p50_upper_ms": 128.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "table_action.create": {
+      "count": 160,
+      "mean_ms": 615.3439847562497,
+      "max_ms": 1004.048854,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "follower_queue_lag": {
+      "count": 6240,
+      "mean_ms": 0.9919706310897445,
+      "max_ms": 55.005442,
+      "p50_upper_ms": 0.5,
+      "p95_upper_ms": 4.0,
+      "p99_upper_ms": 16.0
+    },
+    "rpc.read": {
+      "count": 720,
+      "mean_ms": 294.7106264125002,
+      "max_ms": 779.900889,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc.read_config_open_orders": {
+      "count": 6240,
+      "mean_ms": 250.66309055528757,
+      "max_ms": 1124.815683,
+      "p50_upper_ms": 128.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "table_action.prepare": {
+      "count": 720,
+      "mean_ms": 551.4169337486109,
+      "max_ms": 1649.512363,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 2048.0,
+      "p99_upper_ms": 2048.0
+    },
+    "event_loop_lag.load": {
+      "count": 1800,
+      "mean_ms": 0.8916651787391553,
+      "max_ms": 50.14443502295762,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 4.0
+    },
+    "table_action.edit": {
+      "count": 1120,
+      "mean_ms": 86.7457142437501,
+      "max_ms": 147.162045,
+      "p50_upper_ms": 128.0,
+      "p95_upper_ms": 128.0,
+      "p99_upper_ms": 128.0
+    },
+    "event_loop_lag.drain": {
+      "count": 1,
+      "mean_ms": 1.0076399194076657,
+      "max_ms": 1.0076399194076657,
+      "p50_upper_ms": 2.0,
+      "p95_upper_ms": 2.0,
+      "p99_upper_ms": 2.0
+    },
+    "event_loop_lag.finalize": {
+      "count": 332,
+      "mean_ms": 3.1285258699054213,
+      "max_ms": 67.9125539609231,
+      "p50_upper_ms": 2.0,
+      "p95_upper_ms": 16.0,
+      "p99_upper_ms": 64.0
+    },
+    "table_action.prepare_cancel": {
+      "count": 40,
+      "mean_ms": 479.6773740749999,
+      "max_ms": 864.773126,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc.cancel_order_from_pos": {
+      "count": 40,
+      "mean_ms": 581.5626319249998,
+      "max_ms": 888.245321,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "table_action.cancel": {
+      "count": 40,
+      "mean_ms": 581.871951525,
+      "max_ms": 888.542558,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "table_action.pay": {
+      "count": 120,
+      "mean_ms": 767.6426822249999,
+      "max_ms": 1263.298127,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 2048.0,
+      "p99_upper_ms": 2048.0
+    },
+    "event_loop_lag.verify": {
+      "count": 6,
+      "mean_ms": 6.402234537138914,
+      "max_ms": 34.92336784256622,
+      "p50_upper_ms": 1.0,
+      "p95_upper_ms": 64.0,
+      "p99_upper_ms": 64.0
+    },
+    "rpc./pos_bus_probe/flush": {
+      "count": 1,
+      "mean_ms": 9.639705,
+      "max_ms": 9.639705,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 16.0,
+      "p99_upper_ms": 16.0
+    }
+  }
+}

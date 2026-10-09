@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "applied": true,
+  "run_id": "c626a9a377a2",
+  "counts": {
+    "cancelled": 160
+  },
+  "order_count": 160,
+  "detail_location": "Full original summary, exact order identities and RPC responses are preserved in cleanup-raw.tar.gz."
+}

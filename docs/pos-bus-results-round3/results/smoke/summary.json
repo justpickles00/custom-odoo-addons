@@ -1,0 +1,78 @@
+{
+  "run_id": "7446141085e2",
+  "profile": "sustained-long-lived-restaurant",
+  "native": true,
+  "elapsed_s": 1.377091377042234,
+  "verification": null,
+  "limitations": "Protocol/cache emulator; no OWL, IndexedDB, DOM, kitchen display or printer I/O. Offered schedule is controlled; one serial writer per till, bounded queue, no retries.",
+  "counts": {
+    "run_start": 1,
+    "rpc_start": 10,
+    "rpc_end": 10,
+    "device_started": 2,
+    "ws_raw": 2,
+    "notification": 2,
+    "barrier_passed": 1,
+    "setup_start": 1,
+    "table_action_start": 1,
+    "run_error": 1
+  },
+  "histograms": {
+    "rpc./web/session/authenticate": {
+      "count": 2,
+      "mean_ms": 537.3180150000001,
+      "max_ms": 538.407691,
+      "p50_upper_ms": 1024.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc./web/session/get_session_info": {
+      "count": 2,
+      "mean_ms": 122.292462,
+      "max_ms": 166.52784,
+      "p50_upper_ms": 128.0,
+      "p95_upper_ms": 256.0,
+      "p99_upper_ms": 256.0
+    },
+    "rpc.register_new_device_identifier": {
+      "count": 2,
+      "mean_ms": 15.78654,
+      "max_ms": 18.214655,
+      "p50_upper_ms": 16.0,
+      "p95_upper_ms": 32.0,
+      "p99_upper_ms": 32.0
+    },
+    "rpc.load_data": {
+      "count": 2,
+      "mean_ms": 441.7940585,
+      "max_ms": 556.280452,
+      "p50_upper_ms": 512.0,
+      "p95_upper_ms": 1024.0,
+      "p99_upper_ms": 1024.0
+    },
+    "rpc./pos_bus_probe/publish": {
+      "count": 1,
+      "mean_ms": 100.147228,
+      "max_ms": 100.147228,
+      "p50_upper_ms": 128.0,
+      "p95_upper_ms": 128.0,
+      "p99_upper_ms": 128.0
+    },
+    "table_action_queue_lag": {
+      "count": 1,
+      "mean_ms": 0.002454,
+      "max_ms": 0.002454,
+      "p50_upper_ms": 0.125,
+      "p95_upper_ms": 0.125,
+      "p99_upper_ms": 0.125
+    },
+    "rpc.sync_from_ui": {
+      "count": 1,
+      "mean_ms": 74.947127,
+      "max_ms": 74.947127,
+      "p50_upper_ms": 128.0,
+      "p95_upper_ms": 128.0,
+      "p99_upper_ms": 128.0
+    }
+  }
+}

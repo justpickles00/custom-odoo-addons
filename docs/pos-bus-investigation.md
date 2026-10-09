@@ -1,5 +1,8 @@
 # Odoo POS Bus investigation
 
+The [real restaurant follow-up](pos-bus-realistic-load.md) tests native POS and redundant-refresh controls with corrected HTTP memory limits.
+
+
 **Follow-up:** the [expanded load investigation](pos-bus-load-followup.md)
 reproduced multi-second Bus delivery congestion with independent producer and
 receiver processes, including a dispatcher-tracing-disabled control. This page

@@ -1,0 +1,46 @@
+{
+  "created_wall_ns": 1791550161589093297,
+  "odoo_revision": "5bcf314eb0896bdf7e218341a134901004ba3d4d",
+  "baseline_repository_revision": "efbc6bd",
+  "http_workers": 20,
+  "gevent_pool": 40,
+  "http_pool_per_process": 2,
+  "memory_soft_http_mib": 1024,
+  "registry_lru": 4,
+  "db_start": 4,
+  "retained_dbs_avoid": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "no_browsers": true,
+  "intended_cases": [
+    {
+      "active_restaurants": 4,
+      "tills": 4,
+      "tables_per_till": 2,
+      "think_seconds_per_table": 20,
+      "duration_seconds": 180
+    },
+    {
+      "active_restaurants": 20,
+      "tills": 4,
+      "tables_per_till": 2,
+      "think_seconds_per_table": 20,
+      "duration_seconds": 180
+    },
+    {
+      "active_restaurants": 50,
+      "tills": 4,
+      "tables_per_till": 2,
+      "think_seconds_per_table": 20,
+      "duration_seconds": 180
+    }
+  ],
+  "adaptive_stop": "Do not escalate tenant count after host memory guard, HTTP resource saturation, admission misses, fidelity failure or client bottleneck. Diagnose first. Higher action rates only after healthy baseline.",
+  "latency_target_ms": 1000,
+  "latency_target_quantile": 0.99,
+  "target_note": "Investigation acceptance target, not an Odoo guarantee. Must also have no action errors, admission misses, growing backlog or delivery loss.",
+  "smoke_failure": "DB0000 had retained draft on table28; native create merged into existing order73 and harness refused UUID mismatch. No measured window; historical raw round2 evidence remains unchanged; do not reuse DB0-3."
+}

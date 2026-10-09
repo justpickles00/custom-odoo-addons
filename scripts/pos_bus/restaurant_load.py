@@ -16,6 +16,8 @@ from pathlib import Path
 import time
 import uuid
 
+import aiohttp
+
 from client import Device, Metrics
 from orders import Order
 from run import barrier, fixtures_from_manifest, monitor_event_loop, periodic_canary
@@ -37,9 +39,22 @@ class TableOrder(Order):
         line['customer_note'] = f'Table service request {self.edit_count}: serve together'
         return self._payload(dirty_lines=[line])
 
-    def prepare_table(self):
-        payload = self._payload()
+    def prepare_table(self, cancelled=False):
+        payload = self._payload(state=self.state)
         commands, new_lines = [], []
+        if cancelled:
+            # Native updateLastOrderChange({cancelled: true}) cancels every
+            # previously prepared unit, without first preparing unsent changes.
+            for batch in self.prep_batches:
+                updates = []
+                for part in batch['lines']:
+                    if part['cancelled'] != part['qty']:
+                        part['cancelled'] = part['qty']
+                        updates.append([1, part['id'], {'cancelled': part['cancelled']}])
+                if updates:
+                    commands.append([1, batch['id'], {'prep_line_ids': updates}])
+            payload['prep_order_ids'] = commands
+            return payload
         for index, line in enumerate(self.lines):
             sent = sum(part['qty'] - part['cancelled'] for batch in self.prep_batches for part in batch['lines'] if part['line_index'] == index)
             delta = line['qty'] - sent
@@ -77,8 +92,8 @@ class TableOrder(Order):
         return payload
 
     def accept(self, response, step):
+        expected = 'paid' if step == 'pay' else 'cancel' if step == 'cancel' else self.state
         row = self.apply_response(response)
-        expected = 'paid' if step == 'pay' else 'cancel' if step == 'cancel' else 'draft'
         assert row['state'] == expected, (row['state'], expected)
         for key, total in [('amount_total', self.totals['total']), ('amount_tax', self.totals['tax'])]:
             assert abs(row[key] - total) < .005, (key, row[key], total)
@@ -129,6 +144,7 @@ def arguments():
     parser.add_argument('--cancel-fraction', type=float, default=.2)
     parser.add_argument('--queue-size', type=int, default=128)
     parser.add_argument('--follower-concurrency', type=int, default=8)
+    parser.add_argument('--coalesce-equal-sync', action='store_true', help='COUNTERFACTUAL: coalesce equal native follower callbacks only within one websocket frame; preserve every raw receipt')
     parser.add_argument('--startup-concurrency', type=int, default=12)
     parser.add_argument('--cache-limit', type=int, default=10000)
     parser.add_argument('--closed-cache', type=int, default=64)
@@ -145,7 +161,7 @@ def arguments():
         parser.error('background, closed cache and canary interval must be nonnegative')
     if not 0 < args.restaurant_fraction <= 1 or not 0 <= args.cancel_fraction <= 1:
         parser.error('invalid fraction')
-    args.mode, args.coalesce_equal_sync = 'follower', False
+    args.mode = 'follower'
     args.run_id = uuid.uuid4().hex[:12]
     args.output = args.output or Path('/home/coder/playground/pos-bus-results') / ('restaurant-' + args.run_id)
     return args
@@ -161,10 +177,25 @@ async def transition(device, order, step, scheduled_ns, metrics, sequence):
     if step == 'cancel':
         result = await device.call('pos.order', 'cancel_order_from_pos', [[order.id]], {'context': order.context(device.identifier)}, operation)
     else:
-        payload = order.edit_table() if step == 'edit' else order.prepare_table() if step == 'prepare' else getattr(order, step)()
-        result = await device.call('pos.order', 'sync_from_ui', [[payload]], {'context': order.context(device.identifier)}, operation)
-    order.accept(result, step)
-    await device.missing_recursive(result)
+        if step == 'prepare':
+            # checkPreparationStateAndSentOrderInPreparation reads even when
+            # no new preparation quantities will need synchronizing.
+            rows = await device.call('pos.order', 'read', [[order.id], ['write_date']], operation_id=operation + ':check')
+            if len(rows) != 1 or rows[0]['write_date'] != order.write_date:
+                raise RuntimeError(f'Unexpected external write before preparation: {order.id}')
+        payload = (order.edit_table() if step == 'edit' else
+                   order.prepare_table(cancelled=step == 'prepare_cancel') if step in ('prepare', 'prepare_cancel') else
+                   getattr(order, step)())
+        # Native syncAllOrders filters orders with no dirty fields. Notes have
+        # already been sent by edit actions; a note-only preparation adds no RPC.
+        if step in ('prepare', 'prepare_cancel') and not payload['prep_order_ids']:
+            result = None
+            metrics.event('preparation_noop', device=device.name, db=device.db, order_id=order.id, step=step)
+        else:
+            result = await device.call('pos.order', 'sync_from_ui', [[payload]], {'context': order.context(device.identifier)}, operation)
+    if result is not None:
+        order.accept(result, step)
+        await device.missing_recursive(result)
     device.prune_closed()
     metrics.observe('table_action.' + step, (time.monotonic_ns() - started) / 1e6)
     metrics.event('table_action_complete', device=device.name, db=device.db, operation_id=operation,
@@ -175,14 +206,20 @@ async def transition(device, order, step, scheduled_ns, metrics, sequence):
 async def writer(device, queue, metrics):
     while True:
         order, step, sequence, scheduled_ns = await queue.get()
-        device.writer_active = True
         try:
+            if device.failed:
+                metrics.event('table_action_abandoned', device=device.name, db=device.db,
+                              order_id=order.id, step=step, sequence=sequence, scheduled_ns=scheduled_ns,
+                              reason='writer_failed', source='queued')
+                continue
+            device.writer_active = True
             await transition(device, order, step, scheduled_ns, metrics, sequence)
         except asyncio.CancelledError:
             raise
         except Exception as error:
             device.failed = True
-            metrics.event('table_action_error', device=device.name, db=device.db, order_id=order.id, step=step, error=str(error))
+            metrics.event('table_action_error', device=device.name, db=device.db, order_id=order.id, step=step, error=str(error),
+                          fail_stop=True, reconciliation_required=True)
         finally:
             device.writer_active = False
             queue.task_done()
@@ -199,6 +236,11 @@ async def schedule_table(device, order, queue, start, phase, args, metrics):
         step = 'prepare' if sequence % args.prepare_every == 0 else 'edit'
         metrics.event('table_action_scheduled', device=device.name, db=device.db, order_id=order.id,
                       table_id=order.table_id, step=step, sequence=sequence, scheduled_ns=int(deadline * 1e9))
+        if device.failed:
+            metrics.event('table_action_abandoned', device=device.name, db=device.db,
+                          order_id=order.id, step=step, sequence=sequence, scheduled_ns=int(deadline * 1e9),
+                          reason='writer_failed', source='future_schedule')
+            continue
         try:
             queue.put_nowait((order, step, sequence, int(deadline * 1e9)))
         except asyncio.QueueFull:
@@ -268,7 +310,7 @@ def verify_persisted(expected, output):
                         assert line_id == order['lines'][part['line_index']]['id']
                         assert float(qty) == part['qty'] and float(removed) == part['cancelled']
                         net[line_id] += float(qty - removed)
-                    assert all(net[line['id']] == line['qty'] for line in order['lines'])
+                    assert all(net[line['id']] == (0 if state == 'cancel' else line['qty']) for line in order['lines'])
                     checked += 1
     result = {'passed': True, 'checked_orders': checked, 'paid': paid, 'cancelled': cancelled, 'databases': len(expected)}
     (output / 'persisted-verification.json').write_text(json.dumps(result, indent=2) + '\n')
@@ -289,9 +331,33 @@ async def run(args):
     sampler = loop_monitor = None
     verification = None
     try:
-        metrics.event('run_start', run_id=args.run_id, profile='sustained-long-lived-restaurant', native=True, args=vars(args),
+        metrics.event('run_start', run_id=args.run_id, profile='sustained-long-lived-restaurant', native=not args.coalesce_equal_sync, args=vars(args),
                       setup_policy='Creation and finalization serial within each database; databases parallel. Only sustained actions are measured; one concurrent writer per till.')
         semaphore = asyncio.Semaphore(args.startup_concurrency)
+        async def preflight(fixture):
+            if not fixture.get('restaurant', True):
+                return
+            async with semaphore:
+                device = Device(fixture, fixture['db'] + ':preflight', 'background', args, metrics)
+                try:
+                    device.http = aiohttp.ClientSession(cookie_jar=aiohttp.CookieJar(unsafe=True), timeout=aiohttp.ClientTimeout(total=args.rpc_timeout))
+                    user = fixture['users'][0]
+                    info = await device.rpc('/web/session/authenticate', {'db': fixture['db'], 'login': user['login'], 'password': user['password']})
+                    if not info or not info.get('uid'):
+                        raise RuntimeError('Preflight authentication failed: ' + fixture['db'])
+                    table_ids = [table['id'] for table in fixture['tables'][:args.tills * args.tables_per_till]]
+                    occupied = await device.call('pos.order', 'search_read', [[['state', '=', 'draft'], ['table_id', 'in', table_ids]]],
+                                                 {'fields': ['id', 'uuid', 'table_id', 'config_id'], 'context': {'allowed_company_ids': [fixture['company_id']]}})
+                    metrics.event('table_occupancy_preflight', db=fixture['db'], table_ids=table_ids, occupied=occupied)
+                    if occupied:
+                        raise RuntimeError(f"Intended tables have retained draft orders in {fixture['db']}: {occupied}")
+                finally:
+                    await device.close()
+        # Complete every read-only occupancy check before device registration
+        # or order creation: native sync can merge a new UUID into a table draft.
+        preflights = [asyncio.create_task(preflight(fixture)) for fixture in fixtures]
+        phase_tasks.extend(preflights)
+        await asyncio.gather(*preflights)
         async def start_device(device):
             async with semaphore:
                 await device.start()
@@ -378,9 +444,16 @@ async def run(args):
             if device.failed:
                 raise RuntimeError('writer failed for ' + device.name)
             for index, order in enumerate(orders[device]):
-                await transition(device, order, 'prepare', time.monotonic_ns(), metrics, 'final')
                 cancel = ((device.till_index * 19 + index * 37) % 100) < args.cancel_fraction * 100
-                await transition(device, order, 'cancel' if cancel else 'pay', time.monotonic_ns(), metrics, 'final')
+                if cancel:
+                    await transition(device, order, 'prepare_cancel', time.monotonic_ns(), metrics, 'final')
+                    await transition(device, order, 'cancel', time.monotonic_ns(), metrics, 'final')
+                else:
+                    # Explicitly submit outstanding kitchen changes before
+                    # payment. Native sync ignores preparation edits once paid.
+                    await transition(device, order, 'prepare', time.monotonic_ns(), metrics, 'final-before-pay')
+                    await transition(device, order, 'pay', time.monotonic_ns(), metrics, 'final')
+                    await transition(device, order, 'prepare', time.monotonic_ns(), metrics, 'final-after-pay')
                 metrics.event('table_finalized', device=device.name, db=device.db, expected=order.expected())
         metrics.event('setup_start', measured=False, phase='finalize', serial_within_db=True)
         await per_database_phase(finalize)
@@ -427,9 +500,9 @@ async def run(args):
             'description': 'Owned order identities and local state for reconciliation. On failure, local values may include an unacknowledged mutation; inspect committed state independently.',
             'tenants': owned,
         }, indent=2) + '\n')
-        summary = {'run_id': args.run_id, 'profile': 'sustained-long-lived-restaurant', 'native': True,
+        summary = {'run_id': args.run_id, 'profile': 'sustained-long-lived-restaurant', 'native': not args.coalesce_equal_sync,
                    'elapsed_s': time.monotonic() - state['start'], 'verification': verification,
-                   'limitations': 'Protocol/cache emulator; no OWL, IndexedDB, DOM, kitchen display or printer I/O. Offered schedule is controlled; one serial writer per till, bounded queue, no retries.', **metrics.summary()}
+                   'limitations': 'Protocol/cache emulator; no OWL, IndexedDB, DOM, kitchen display or printer I/O. Offered schedule is controlled; one serial writer per till, bounded queue, no retries. The first writer error stops further mutations on that till and abandons its queued/future work; the failed action may have committed and needs independent reconciliation. This does not emulate native offline dirty-state retry.', **metrics.summary()}
         (args.output / 'summary.json').write_text(json.dumps(summary, indent=2) + '\n')
         metrics.close()
         print(json.dumps({'output': str(args.output), **summary}), flush=True)

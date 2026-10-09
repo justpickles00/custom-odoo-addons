@@ -1,0 +1,603 @@
+{
+  "run_id": "75335fe81115",
+  "directory": "/home/coder/playground/pos-bus-investigation/round3/results/restaurants-4-paced",
+  "args": {
+    "fixture": "/home/coder/playground/pos-bus-investigation/fixture.json",
+    "http_url": "http://127.0.0.1:8061",
+    "ws_url": "ws://127.0.0.1:8062",
+    "db_prefix": "posbus_",
+    "db_start": 4,
+    "tenants": 4,
+    "restaurant_fraction": 1.0,
+    "tills": 4,
+    "tables_per_till": 2,
+    "background": 0,
+    "duration": 180.0,
+    "think_time": 20.0,
+    "prepare_every": 4,
+    "cancel_fraction": 0.2,
+    "queue_size": 128,
+    "follower_concurrency": 8,
+    "startup_concurrency": 2,
+    "cache_limit": 10000,
+    "closed_cache": 64,
+    "rpc_timeout": 60,
+    "barrier_timeout": 60,
+    "drain_timeout": 120,
+    "canary_interval": 30,
+    "output": "/home/coder/playground/pos-bus-investigation/round3/results/restaurants-4-paced",
+    "mode": "follower",
+    "coalesce_equal_sync": false,
+    "run_id": "75335fe81115"
+  },
+  "audit": {
+    "successful_run": true,
+    "blockers": [],
+    "failure_counts": {},
+    "verification": {
+      "passed": true,
+      "checked_orders": 32,
+      "paid": 24,
+      "cancelled": 8,
+      "databases": 4
+    },
+    "final_cache_assertions": 128,
+    "expected_final_cache_assertions_from_finalized_orders": 128,
+    "unfinished_rpcs": 0,
+    "probe_metadata_missing_rows": 0,
+    "recorder_pids_observed_in_run": 22,
+    "recorder_nonzero_dropped_total_by_pid_in_run": {}
+  },
+  "windows": [
+    {
+      "window": 1,
+      "start_ns": 339528090837119,
+      "end_ns": 339708090837119,
+      "duration_s": 180.0,
+      "actions": {
+        "offered": 288,
+        "admitted": 288,
+        "dropped": 0,
+        "future_scheduled_abandoned_before_admission": 0,
+        "queued_abandoned_after_admission": 0,
+        "started": 288,
+        "completed": 288,
+        "offered_per_s": 1.6,
+        "completed_per_s": 1.6,
+        "errors": 0,
+        "preparation_noops": 0,
+        "queue_lag_ms": {
+          "n": 288,
+          "mean": 1.471141826388889,
+          "p50": 1.469328,
+          "p95": 2.410785,
+          "p99": 3.152969,
+          "max": 3.331384
+        },
+        "by_step": {
+          "edit": {
+            "started": 224,
+            "completed_in_window": 224,
+            "completed_by_run_end": 224,
+            "operations_with_commit_evidence": 224,
+            "bus_rows_per_started_action": {
+              "n": 224,
+              "mean": 3.0,
+              "p50": 3.0,
+              "p95": 3.0,
+              "p99": 3.0,
+              "max": 3.0
+            },
+            "committed_rows_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": 448,
+              "e174727c26f14bba-ORDER_STATE_CHANGED": 224
+            },
+            "row_payload_bytes_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": {
+                "n": 448,
+                "mean": 74.0,
+                "p50": 74.0,
+                "p95": 74.0,
+                "p99": 74.0,
+                "max": 74.0
+              },
+              "e174727c26f14bba-ORDER_STATE_CHANGED": {
+                "n": 224,
+                "mean": 2.0,
+                "p50": 2.0,
+                "p95": 2.0,
+                "p99": 2.0,
+                "max": 2.0
+              }
+            },
+            "bus_rows_per_started_action_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": {
+                "n": 224,
+                "mean": 2.0,
+                "p50": 2.0,
+                "p95": 2.0,
+                "p99": 2.0,
+                "max": 2.0
+              },
+              "e174727c26f14bba-ORDER_STATE_CHANGED": {
+                "n": 224,
+                "mean": 1.0,
+                "p50": 1.0,
+                "p95": 1.0,
+                "p99": 1.0,
+                "max": 1.0
+              }
+            },
+            "total_payload_bytes_per_started_action": {
+              "n": 224,
+              "mean": 150.0,
+              "p50": 150.0,
+              "p95": 150.0,
+              "p99": 150.0,
+              "max": 150.0
+            }
+          },
+          "prepare": {
+            "started": 64,
+            "completed_in_window": 64,
+            "completed_by_run_end": 64,
+            "operations_with_commit_evidence": 64,
+            "bus_rows_per_started_action": {
+              "n": 64,
+              "mean": 3.0,
+              "p50": 3.0,
+              "p95": 3.0,
+              "p99": 3.0,
+              "max": 3.0
+            },
+            "committed_rows_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": 128,
+              "e174727c26f14bba-ORDER_STATE_CHANGED": 64
+            },
+            "row_payload_bytes_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": {
+                "n": 128,
+                "mean": 74.0,
+                "p50": 74.0,
+                "p95": 74.0,
+                "p99": 74.0,
+                "max": 74.0
+              },
+              "e174727c26f14bba-ORDER_STATE_CHANGED": {
+                "n": 64,
+                "mean": 2.0,
+                "p50": 2.0,
+                "p95": 2.0,
+                "p99": 2.0,
+                "max": 2.0
+              }
+            },
+            "bus_rows_per_started_action_by_type": {
+              "e174727c26f14bba-SYNCHRONISATION": {
+                "n": 64,
+                "mean": 2.0,
+                "p50": 2.0,
+                "p95": 2.0,
+                "p99": 2.0,
+                "max": 2.0
+              },
+              "e174727c26f14bba-ORDER_STATE_CHANGED": {
+                "n": 64,
+                "mean": 1.0,
+                "p50": 1.0,
+                "p95": 1.0,
+                "p99": 1.0,
+                "max": 1.0
+              }
+            },
+            "total_payload_bytes_per_started_action": {
+              "n": 64,
+              "mean": 150.0,
+              "p50": 150.0,
+              "p95": 150.0,
+              "p99": 150.0,
+              "max": 150.0
+            }
+          }
+        }
+      },
+      "queue": {
+        "start_backlog": 0,
+        "end_backlog": 0,
+        "growth": 0,
+        "first_sample_backlog": 0,
+        "peak_sample_backlog": 1,
+        "peak_follower_backlog": 6
+      },
+      "http_rpc_completion_latency_ms": {
+        "pos.order.sync_from_ui": {
+          "n": 288,
+          "mean": 76.95956801041667,
+          "p50": 75.694733,
+          "p95": 97.718522,
+          "p99": 128.570624,
+          "max": 174.274299
+        },
+        "pos.config.read_config_open_orders": {
+          "n": 1728,
+          "mean": 74.19431958969908,
+          "p50": 73.116622,
+          "p95": 93.629325,
+          "p99": 105.38989,
+          "max": 150.039621
+        },
+        "/pos_bus_probe/publish": {
+          "n": 23,
+          "mean": 26.17528495652174,
+          "p50": 26.311023,
+          "p95": 29.355358,
+          "p99": 40.53035,
+          "max": 58.945608
+        },
+        "pos.order.read": {
+          "n": 64,
+          "mean": 11.1028815,
+          "p50": 8.800833,
+          "p95": 15.810937,
+          "p99": 16.684247,
+          "max": 16.724031
+        }
+      },
+      "client_loop_stall_ms": {
+        "n": 0
+      },
+      "follower_capacity": {
+        "concurrency_per_device": 8,
+        "queue_capacity_per_device": 128,
+        "saturation_events": 0,
+        "queue_full_events": 0,
+        "completed_callbacks": 1728
+      },
+      "follower_refreshes": {
+        "coalesced_callbacks": 0,
+        "coalesced_classification": {},
+        "eligible_read_config_open_orders_requests_suppressed": 0,
+        "coalesced_sender_skips_without_read_request": 0,
+        "potential_equal_sync_repeats_in_frames": {
+          "same_session_other_sender_refresh": 864,
+          "same_sender_skip": 288
+        },
+        "potential_eligible_read_requests_suppressible": 864,
+        "notification_recipient_classification": {
+          "same_session_other_sender_refresh": 1728,
+          "non_synchronisation": 1244,
+          "same_sender_skip": 576
+        },
+        "tills_with_unambiguous_session_evidence": 16,
+        "tills_without_unambiguous_session_evidence": 0
+      },
+      "measured_cold_load_data": {
+        "rpc_starts": 0,
+        "rpc_completions": 0,
+        "rpc_errors": 0
+      },
+      "recipient_exact_sets": {
+        "SYNCHRONISATION": {
+          "rows": 576,
+          "expected": 2304,
+          "received": 2304,
+          "mismatch_rows": 0,
+          "mismatch_examples": []
+        },
+        "ORDER_STATE_CHANGED": {
+          "rows": 288,
+          "expected": 1152,
+          "received": 1152,
+          "mismatch_rows": 0,
+          "mismatch_examples": []
+        },
+        "canary": {
+          "rows": 23,
+          "expected": 92,
+          "received": 92,
+          "mismatch_rows": 0,
+          "mismatch_examples": []
+        }
+      },
+      "saved_delivery_analysis_agrees": true,
+      "resources": {
+        "samples": 177,
+        "sample_start_ns": 339528810848549,
+        "sample_end_ns": 339707147639470,
+        "host_memory_minima": {
+          "MemAvailable_bytes": 6024323072,
+          "MemFree_bytes": 1560109056,
+          "SwapFree_bytes": 0
+        },
+        "cpu_percent_one_core": {
+          "postgres": {
+            "n": 176,
+            "mean": 8.142136081951588,
+            "p50": 7.8922607984519155,
+            "p95": 17.778097959127194,
+            "p99": 20.73086525268194,
+            "max": 22.708718313165285
+          },
+          "odoo_master": {
+            "n": 176,
+            "mean": 0.46544121054861803,
+            "p50": 0.0,
+            "p95": 0.9883780353014101,
+            "p99": 1.9742624797997905,
+            "max": 1.9766740659474036
+          },
+          "odoo_worker_http_or_cron": {
+            "n": 176,
+            "mean": 53.62478436792497,
+            "p50": 59.227874393993716,
+            "p95": 70.03677015266285,
+            "p99": 72.14860340708024,
+            "max": 75.01901068101229
+          },
+          "gevent": {
+            "n": 176,
+            "mean": 0.5943932197779508,
+            "p50": 0.9850868984901414,
+            "p95": 0.9884734545394476,
+            "p99": 1.9757123234198717,
+            "max": 1.9819901667085822
+          },
+          "client": {
+            "n": 176,
+            "mean": 2.9214217558771236,
+            "p50": 2.961351016979072,
+            "p95": 3.9523377043490875,
+            "p99": 3.958208185098354,
+            "max": 4.93691110438502
+          }
+        },
+        "role_rss_bytes": {
+          "postgres": {
+            "min": 3490398208,
+            "max": 3996389376
+          },
+          "odoo_master": {
+            "min": 157224960,
+            "max": 157224960
+          },
+          "odoo_worker_http_or_cron": {
+            "min": 3753476096,
+            "max": 3801972736
+          },
+          "gevent": {
+            "min": 199929856,
+            "max": 199929856
+          },
+          "client": {
+            "min": 76292096,
+            "max": 78782464
+          }
+        },
+        "pid_churn": {
+          "postgres": {
+            "unique_pids": 1054,
+            "appeared_after_first_sample": 990,
+            "disappeared_before_last_sample": 992,
+            "sampled_counts_are_lower_bounds": true
+          },
+          "odoo_master": {
+            "unique_pids": 1,
+            "appeared_after_first_sample": 0,
+            "disappeared_before_last_sample": 0,
+            "sampled_counts_are_lower_bounds": true
+          },
+          "odoo_worker_http_or_cron": {
+            "unique_pids": 21,
+            "appeared_after_first_sample": 0,
+            "disappeared_before_last_sample": 0,
+            "sampled_counts_are_lower_bounds": true
+          },
+          "gevent": {
+            "unique_pids": 1,
+            "appeared_after_first_sample": 0,
+            "disappeared_before_last_sample": 0,
+            "sampled_counts_are_lower_bounds": true
+          },
+          "client": {
+            "unique_pids": 1,
+            "appeared_after_first_sample": 0,
+            "disappeared_before_last_sample": 0,
+            "sampled_counts_are_lower_bounds": true
+          }
+        }
+      },
+      "sustained_admission_without_growth": true,
+      "commit_to_receipt_ms": {
+        "pos": {
+          "n": 2304,
+          "mean": 11.974496670138889,
+          "p50": 12.0834,
+          "p95": 14.508881,
+          "p99": 15.107022,
+          "max": 16.35119
+        },
+        "other": {
+          "n": 1152,
+          "mean": 11.974496670138889,
+          "p50": 12.0834,
+          "p95": 14.508881,
+          "p99": 15.107022,
+          "max": 16.35119
+        },
+        "canary": {
+          "n": 92,
+          "mean": 9.546314152173913,
+          "p50": 9.487795,
+          "p95": 10.275879,
+          "p99": 10.398003,
+          "max": 10.402261
+        }
+      },
+      "client_loop_load_histogram": {
+        "count": 3601,
+        "mean_ms": 1.0025086787458684,
+        "max_ms": 5.068319966085255,
+        "p50_upper_ms": 1.0,
+        "p95_upper_ms": 2.0,
+        "p99_upper_ms": 4.0
+      }
+    }
+  ],
+  "action_phases": {
+    "setup": {
+      "committed_bus_rows": 192,
+      "actions_with_commit_evidence": 64,
+      "started": 64,
+      "completed_by_run_end": 64
+    },
+    "measurement": {
+      "committed_bus_rows": 864,
+      "actions_with_commit_evidence": 288,
+      "started": 288,
+      "completed_by_run_end": 288
+    },
+    "finalize": {
+      "committed_bus_rows": 192,
+      "actions_with_commit_evidence": 64,
+      "started": 88,
+      "completed_by_run_end": 88,
+      "preparation_noops": 24
+    }
+  },
+  "reused_table_action_operation_ids": {
+    "75335fe81115:posbus_0006:till:0:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0004:till:0:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0005:till:0:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0007:till:0:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0006:till:1:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0004:till:1:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0005:till:1:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0007:till:1:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0006:till:2:table:0:prepare:final": 2,
+    "75335fe81115:posbus_0007:till:2:table:0:prepare:final": 2,
+    "75335fe81115:posbus_0004:till:2:table:0:prepare:final": 2,
+    "75335fe81115:posbus_0005:till:2:table:0:prepare:final": 2,
+    "75335fe81115:posbus_0006:till:2:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0007:till:2:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0005:till:2:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0004:till:2:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0006:till:3:table:0:prepare:final": 2,
+    "75335fe81115:posbus_0007:till:3:table:0:prepare:final": 2,
+    "75335fe81115:posbus_0005:till:3:table:0:prepare:final": 2,
+    "75335fe81115:posbus_0006:till:3:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0004:till:3:table:0:prepare:final": 2,
+    "75335fe81115:posbus_0007:till:3:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0005:till:3:table:1:prepare:final": 2,
+    "75335fe81115:posbus_0004:till:3:table:1:prepare:final": 2
+  },
+  "readiness": {
+    "ready_databases": 4,
+    "expected_ready_databases": 4,
+    "open_tables_setup_completed": true,
+    "table_occupancy_preflight_databases": 4,
+    "occupied_preflight_databases": []
+  },
+  "existing_resource_cases": [
+    {
+      "case": "restaurant",
+      "cpu_percent_one_core": {
+        "postgres": {
+          "n": 176,
+          "mean": 8.142136081951588,
+          "p50": 7.8922607984519155,
+          "p95": 17.778097959127194,
+          "p99": 20.73086525268194,
+          "max": 22.708718313165285
+        },
+        "odoo_other": {
+          "n": 176,
+          "mean": 54.090225578473586,
+          "p50": 59.769966660753525,
+          "p95": 70.98751998087943,
+          "p99": 73.1140341836308,
+          "max": 75.01901068101229
+        },
+        "gevent": {
+          "n": 176,
+          "mean": 0.5943932197779508,
+          "p50": 0.9850868984901414,
+          "p95": 0.9884734545394476,
+          "p99": 1.9757123234198717,
+          "max": 1.9819901667085822
+        },
+        "client": {
+          "n": 176,
+          "mean": 2.9214217558771236,
+          "p50": 2.961351016979072,
+          "p95": 3.9523377043490875,
+          "p99": 3.958208185098354,
+          "max": 4.93691110438502
+        }
+      },
+      "pg_activity_rows_peak_including_background": 65,
+      "stage_wall_ms": {
+        "queue_wait_max_ns": {
+          "n": 311,
+          "mean": 0.18103554019292606,
+          "p50": 0.183189,
+          "p95": 0.248354,
+          "p99": 0.275687,
+          "max": 0.400305
+        },
+        "cursor_acquire_ns": {
+          "n": 311,
+          "mean": 0.2001094951768489,
+          "p50": 0.196426,
+          "p95": 0.268182,
+          "p99": 0.33516,
+          "max": 0.426203
+        },
+        "session_validation_ns": {
+          "n": 311,
+          "mean": 1.616837382636656,
+          "p50": 1.58141,
+          "p95": 2.06884,
+          "p99": 2.232702,
+          "max": 2.381046
+        },
+        "fetch_ns": {
+          "n": 311,
+          "mean": 0.49123632154340835,
+          "p50": 0.480748,
+          "p95": 0.594303,
+          "p99": 0.663335,
+          "max": 0.779789
+        },
+        "dispatch_ns": {
+          "n": 311,
+          "mean": 0.1443483536977492,
+          "p50": 0.137022,
+          "p95": 0.188481,
+          "p99": 0.235841,
+          "max": 0.308409
+        },
+        "duration_ns": {
+          "n": 311,
+          "mean": 2.9087484405144695,
+          "p50": 2.870391,
+          "p95": 3.474735,
+          "p99": 3.67656,
+          "max": 3.830854
+        }
+      },
+      "matched_dispatch_batches": 311
+    }
+  ],
+  "limits": [
+    "Measurement events use [start,end); recipient selection follows analyze.py inclusive commit boundaries and includes drain receipts.",
+    "Action bus rows are attributed by operation_id (including child operations) to actions started inside the window; commits may occur during drain. Native preparation noops can complete with zero sync RPC/bus rows; zero rows can also mean an incomplete action.",
+    "HTTP latency covers successful RPC completions in the window, including follower calls; failures/inflight RPCs are not latency samples.",
+    "Follower suppression is classified by receipt/callback time, separately from commit-window delivery metrics. Same-session other-sender sync callbacks suppress one read_config_open_orders request each; sender/other-session skips suppress none. Session inference uses own-sender saved payloads when device_started omits session_id.",
+    "Potential equal-sync repeats share device, websocket receive timestamp, type and payload. These are a hypothetical same-frame control opportunity in native runs; actual suppression requires coalesced_follower_callback evidence. Follower RPC starts can lag receipt windows.",
+    "Event-loop load histogram covers the driver load phase; stall-only samples omit lag at or below 50 ms. Histograms report upper bounds.",
+    "Telemetry PID/churn counts are sampled LOWER BOUNDS, not connection creation or restart totals. Processes living entirely between samples are omitted, including PostgreSQL backends. CPU is aggregate percent of one core; new PIDs omit first-interval ticks, so low sampled PostgreSQL CPU does not rule out expensive connection churn.",
+    "Odoo child commands do not distinguish HTTP workers from cron; their CPU/churn are combined. Host/PostgreSQL values include other VM activity.",
+    "Queue start is zero by sustained-driver construction unless explicitly recorded; end uses measurement_end or the last sample.",
+    "Browser-free protocol/cache emulator; no browser, kitchen display or printer execution."
+  ]
+}

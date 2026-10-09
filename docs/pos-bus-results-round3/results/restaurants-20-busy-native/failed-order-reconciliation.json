@@ -1,0 +1,63 @@
+{
+  "scope": "Authoritative native server snapshot after failed writer run, before cleanup; no claim of valid workload after HTTP errors. The harness lacks native offline dirty-field retry; continuing after failed writes can desynchronize local totals and server line quantities.",
+  "checked_orders": 160,
+  "inconsistent_orders": [
+    {
+      "db": "posbus_0005",
+      "id": 53,
+      "order_total": 49.5,
+      "line_total": 44.0,
+      "order_tax": 4.5,
+      "line_tax": 4.0
+    },
+    {
+      "db": "posbus_0011",
+      "id": 38,
+      "order_total": 66.0,
+      "line_total": 60.5,
+      "order_tax": 6.0,
+      "line_tax": 5.5
+    },
+    {
+      "db": "posbus_0014",
+      "id": 35,
+      "order_total": 49.5,
+      "line_total": 44.0,
+      "order_tax": 4.5,
+      "line_tax": 4.0
+    },
+    {
+      "db": "posbus_0016",
+      "id": 40,
+      "order_total": 66.0,
+      "line_total": 60.5,
+      "order_tax": 6.0,
+      "line_tax": 5.5
+    },
+    {
+      "db": "posbus_0017",
+      "id": 33,
+      "order_total": 66.0,
+      "line_total": 60.5,
+      "order_tax": 6.0,
+      "line_tax": 5.5
+    },
+    {
+      "db": "posbus_0021",
+      "id": 34,
+      "order_total": 49.5,
+      "line_total": 44.0,
+      "order_tax": 4.5,
+      "line_tax": 4.0
+    },
+    {
+      "db": "posbus_0023",
+      "id": 31,
+      "order_total": 66.0,
+      "line_total": 60.5,
+      "order_tax": 6.0,
+      "line_tax": 5.5
+    }
+  ],
+  "passed": false
+}
